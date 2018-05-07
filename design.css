@@ -12,12 +12,14 @@ h1{
     font-size: 75px;
     text-align: center;
     margin-top: 100px;
-<<<<<<< HEAD
-
-=======
->>>>>>> a750fbdae8aaa84149a30161869afb14e0fe8c4a
 }
 
+.header {
+  background-color: white;
+  border-radius: 12px;
+  height: 100px;
+  width: 500px;
+}
 
 .inlog {
 
@@ -42,7 +44,7 @@ h2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: lighter;
     text-align: center;
-    
+
 }
 
 h3
