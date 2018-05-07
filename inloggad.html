@@ -1,0 +1,60 @@
+<html>
+    <head>
+    <title>inloggad</title>
+    <link rel="stylesheet" href="./design.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./ikon.png">
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    </head>
+    <body>
+
+
+        <nav role="navigation">
+        <div id="menuToggle">
+            <!--
+            A fake / hidden checkbox is used as click reciever,
+            so you can use the :checked selector on it.
+            -->
+            <input type="checkbox" />
+
+            <!--
+            Some spans to act as a hamburger.
+
+            They are acting like a real hamburger,
+            not that McDonalds stuff.
+            -->
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <!--
+            Too bad the menu has to be inside of the button
+            but hey, it's pure CSS magic.
+            -->
+            <ul id="menu">
+              <a href="#"><li>Hem</li></a>
+              <a href="#"><li>Min profil</li></a>
+              <a href="#"><li>Om oss</li></a>
+              <a href="#"><li>Kontakt</li></a>
+                <a href="#"><li>Inställningar</li></a>
+                <a href="./index.html"><li>Logga ut</li></a>
+              </ul>
+        </div>
+        </nav>
+        <div id="graph"> </div>
+        <script>
+            var trace1 = {
+              x: [1, 2, 3, 4], 
+              y: [10, 15, 13, 17], 
+              type: 'scatter'};
+            var trace2 = {
+              x: [1, 2, 3, 4], 
+              y: [16, 5, 11, 9], 
+              type: 'scatter'};
+            var data = [trace1, trace2];
+            Plotly.newPlot('graph', data);
+
+        </script>
+
+    </body>
+</html>
