@@ -49,10 +49,14 @@ h2 {
     text-align: center;
     width: 60px;
     height: 40px;
+    border: none;
+    border-radius: 10px;
 }
 
 #submit:hover {
   background-color: #F8B195;
+  border-radius: 10px;
+  border: none;
 }
 
 .inlog_form p {
