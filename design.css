@@ -52,3 +52,9 @@ h2 {
 #submit:hover {
   background-color: #F8B195;
 }
+
+.inlog_form p {
+
+    font-size: 10px;
+    font-family: "Helvetica";
+}
