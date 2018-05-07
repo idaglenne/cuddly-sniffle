@@ -7,7 +7,7 @@ body{
 h1{
 
     color: #75C2F6;
-    font-family: "Helvetica";
+    font-family: 'Montserrat', sans-serif;
     font-weight: lighter;
     font-size: 70px;
     text-align: center;
@@ -26,7 +26,7 @@ h1{
     border: none;
     border-radius: 5px;
     background-color: white;
-    font-family: "Helvetica";
+    font-family: 'Montserrat', sans-serif;
     font-weight: lighter;
     font-size: 12px;
     margin-top: 20px;
@@ -36,14 +36,14 @@ h1{
 
 h2 {
     color: #F8B195;
-    font-family: "Helvetica";
+    font-family: 'Montserrat', sans-serif;
     font-weight: lighter;
     text-align: center;
 }
 
 #submit {
     background-color: #7DC383;
-    font-family: "Helvetica";
+    font-family: 'Montserrat', sans-serif;
     font-weight: lighter;
     margin-top: 20px;
     text-align: center;
@@ -62,5 +62,5 @@ h2 {
 .inlog_form p {
 
     font-size: 11px;
-    font-family: "Helvetica";
+    font-family: 'Montserrat', sans-serif;
 }
