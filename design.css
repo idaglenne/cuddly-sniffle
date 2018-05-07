@@ -56,21 +56,41 @@ h2 {
     height: 30px;
     border: none;
     border-radius: 10px;
-    transition: color 0.3s ease;
+
 }
 
 #submit:hover {
   background-color: #F8B595;
   border-radius: 10px;
   border: none;
-transition: color 0.3s ease;
+
+}
+
+input[type=submit]{
+    transition: color 0.3s ease;
+    
 }
 
 .inlog_form p {
 
     font-size: 11px;
     font-family: 'Montserrat', sans-serif;
-        transition: color 0.3s ease;
+
+}
+
+.inlog_form a{
+        
+        color: #75C2F6;
+    text-decoration: none;
+    transition: color 0.3s ease;
+        
+}
+
+.inlog_form a:hover{
+    
+    color: #F8B595;
+    
+    
 }
 
 .register {
