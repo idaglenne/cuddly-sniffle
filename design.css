@@ -9,7 +9,7 @@ h1{
     color: #75C2F6;
     font-family: 'Montserrat', sans-serif;
     font-weight: lighter;
-    font-size: 70px;
+    font-size: 75px;
     text-align: center;
     margin-top: 100px;
 }
@@ -63,7 +63,7 @@ h2 {
 
 
 .submit:hover {
-    
+
   background-color: #F8B595;
 
 }
@@ -264,9 +264,9 @@ h3 {
 
 /*design på grafen*/
 #graph{
-    
+
     width: 600px;
     height: 300px;;
     float: right;
-    
+
 }
