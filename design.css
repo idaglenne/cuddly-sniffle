@@ -42,7 +42,7 @@ h2 {
 }
 
 #submit {
-    color: #BEEB9F;
+    color: #7DC383;
     font-family: "Helvetica";
     font-weight: lighter;
     margin-top: 20px;
@@ -54,7 +54,7 @@ h2 {
 }
 
 #submit:hover {
-  background-color: #7DC383;
+  background-color: #F8B595;
   border-radius: 10px;
   border: none;
 }
