@@ -13,9 +13,8 @@ h1{
     text-align: center;
     margin-top: 100px;
 
-
-
 }
+
 
 .inlog {
 
@@ -35,10 +34,21 @@ h1{
 
 
 h2 {
+
     color: #F8B195;
     font-family: 'Montserrat', sans-serif;
     font-weight: lighter;
     text-align: center;
+    
+}
+
+h3
+{
+    color: #F8B195;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 #submit {
@@ -63,4 +73,17 @@ h2 {
 
     font-size: 11px;
     font-family: 'Montserrat', sans-serif;
+}
+#text
+{
+    background-color: #A7D7C5;
+    margin-left: 350px;
+    margin-right: 350px;
+    padding: 30px;
+    border: none;
+    border-radius: 10px;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    text-align: center;
 }
