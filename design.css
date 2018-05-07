@@ -121,8 +121,8 @@ h3 {
 #menu a
 {
   text-decoration: none;
- font-family: "Helvetica";
-    font-weight: lighter;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: lighter;
   color: #232323;
   transition: color 0.3s ease;
 }
