@@ -40,8 +40,10 @@ h2 {
     font-weight: lighter;
     text-align: center;
 }
-<<<<<<< HEAD
-=======
 
-
->>>>>>> 9e66cdd9748003a5080fc2a2d9d375be2d411cbc
+.inlog_form p {
+    
+    font-size: 10px;
+    font-family: "Helvetica";
+    
+}
