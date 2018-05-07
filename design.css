@@ -1,5 +1,6 @@
 body{
     
+    text-align: center;
     background-color: #D6E6F2;
 }
 
@@ -12,5 +13,21 @@ h1{
     text-align: center;
     margin-top: 100px;
     
+    
+}
+
+.inlog {
+    
+    text-align: center;
+    width: 400px;
+    height: auto;
+    padding: 7px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    font-family: "Helvetica";
+    font-weight: lighter;
+    font-size: 12px;
+    margin-top: 20px;
     
 }
