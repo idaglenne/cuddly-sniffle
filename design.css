@@ -1,5 +1,5 @@
 body{
- 
+
     text-align: center;
     background-color: #D6E6F2;
 }
@@ -13,12 +13,12 @@ h1{
     text-align: center;
     margin-top: 100px;
 
-    
-    
+
+
 }
 
 .inlog {
-    
+
     text-align: center;
     width: 400px;
     height: auto;
@@ -30,14 +30,18 @@ h1{
     font-weight: lighter;
     font-size: 12px;
     margin-top: 20px;
-    
+
 }
 
 
 h2 {
-    color: #FFCDCD;
+    color: #F8B195;
     font-family: "Helvetica";
     font-weight: lighter;
     text-align: center;
 }
 
+::placeholder {
+  font-family: "Helvetica";
+  font-family: lighter;
+}
