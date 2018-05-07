@@ -126,11 +126,13 @@ a:hover{
 }
 
 h3 {
-  color: #F8B195;
+  color: #75C2F6;
   font-family: 'Montserrat', sans-serif;
   font-weight: lighter;
     font-size: 40px;
+    margin-top: -20px;
   text-align: center;
+    
 }
 
 
