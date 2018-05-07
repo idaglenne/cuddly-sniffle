@@ -12,9 +12,6 @@ h1{
     font-size: 70px;
     text-align: center;
     margin-top: 100px;
-
-
-
 }
 
 .inlog {
@@ -48,7 +45,7 @@ h2 {
     margin-top: 20px;
     text-align: center;
     width: 60px;
-    height: 40px;
+    height: auto;
     border: none;
     border-radius: 10px;
 }
