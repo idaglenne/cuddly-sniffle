@@ -56,18 +56,21 @@ h2 {
     height: 30px;
     border: none;
     border-radius: 10px;
+    transition: color 0.3s ease;
 }
 
 #submit:hover {
   background-color: #F8B595;
   border-radius: 10px;
   border: none;
+transition: color 0.3s ease;
 }
 
 .inlog_form p {
 
     font-size: 11px;
     font-family: 'Montserrat', sans-serif;
+        transition: color 0.3s ease;
 }
 
 .register {
@@ -99,15 +102,16 @@ h3 {
 
 /*hamburgermeny*/
 
-a
+#menu a
 {
   text-decoration: none;
+ font-family: "Helvetica";
+    font-weight: lighter;
   color: #232323;
-
   transition: color 0.3s ease;
 }
 
-a:hover
+#menu a:hover
 {
   color: #F8B595;
 }
