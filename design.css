@@ -40,8 +40,15 @@ h2 {
     font-weight: lighter;
     text-align: center;
 }
-<<<<<<< HEAD
-=======
 
+#submit {
+    color: #BEEB9F;
+    font-family: "Helvetica";
+    font-weight: lighter;
+    margin-top: 20px;
+    text-align: center;
+}
 
->>>>>>> 9e66cdd9748003a5080fc2a2d9d375be2d411cbc
+#submit:hover {
+  background-color: #F8B195;
+}
