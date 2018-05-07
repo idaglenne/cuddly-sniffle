@@ -41,7 +41,7 @@ h2 {
     text-align: center;
 }
 
-::placeholder {
+.inlog::placeholder {
   font-family: "Helvetica";
   font-family: lighter;
 }
