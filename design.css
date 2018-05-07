@@ -41,9 +41,20 @@ h2 {
     text-align: center;
 }
 
+#submit {
+    color: #BEEB9F;
+    font-family: "Helvetica";
+    font-weight: lighter;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#submit:hover {
+  background-color: #F8B195;
+}
+
 .inlog_form p {
-    
+
     font-size: 10px;
     font-family: "Helvetica";
-    
 }
