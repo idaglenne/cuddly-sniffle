@@ -15,10 +15,12 @@ h1{
 }
 
 .header {
-  background-color: white;
+  background-color: #D6E6F2;
   border-radius: 12px;
+  border-color: white;
   height: 100px;
   width: 500px;
+  text-align: center;
 }
 
 .inlog {
