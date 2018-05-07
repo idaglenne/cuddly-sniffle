@@ -76,7 +76,7 @@ h2 {
 
 }
 
-.inlog_form a{
+a{
 
         color: #75C2F6;
     text-decoration: none;
@@ -84,7 +84,7 @@ h2 {
 
 }
 
-.inlog_form a:hover{
+a:hover{
 
     color: #F8B595;
 
