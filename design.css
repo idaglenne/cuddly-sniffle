@@ -261,3 +261,12 @@ h3 {
 {
   transform: none;
 }
+
+/*design på grafen*/
+#graph{
+    
+    width: 600px;
+    height: 300px;;
+    float: right;
+    
+}
