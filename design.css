@@ -40,8 +40,3 @@ h2 {
     font-weight: lighter;
     text-align: center;
 }
-
-::-webkit-input-placeholder {
-  font-family: "Helvetica";
-  font-family: lighter;
-}
