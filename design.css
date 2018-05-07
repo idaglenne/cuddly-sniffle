@@ -38,6 +38,10 @@ h2 {
     text-align: center;
 }
 
+#omOss {
+    text-align: right;
+}
+
 #submit {
     background-color: #7DC383;
     font-family: 'Montserrat', sans-serif;
