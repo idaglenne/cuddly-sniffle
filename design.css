@@ -70,37 +70,8 @@ h2 {
     font-family: 'Montserrat', sans-serif;
 }
 
-.register {
-  text-align: center;
-  width: 400px;
-  height: 40x;
-  padding: 7px;
-  border: none;
-  border-radius: 5px;
-  background-color: white;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: lighter;
-  font-size: 12px;
-  margin-top: 20px;
-}
-
-.register_form p {
-  font-size: 11px;
-  font-family: 'Montserrat', sans-serif;
-}
 
 /*hamburgermeny*/
-/*
- * Made by Erik Terwan
- * 24th of November 2015
- * MIT License
- *
- *
- * If you are thinking of using this in
- * production code, beware of the browser
- * prefixes.
- */
-
 
 a
 {
@@ -112,7 +83,7 @@ a
 
 a:hover
 {
-  color: tomato;
+  color: #F8B595;
 }
 
 #menuToggle
@@ -213,7 +184,8 @@ a:hover
 #menu
 {
   position: absolute;
-  width: 300px;
+  width: 100px;
+    height: 100vh;
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
@@ -242,4 +214,3 @@ a:hover
 {
   transform: none;
 }
->>>>>>> ecf73b562f100ced485c016b9aedd093b1543f4e
