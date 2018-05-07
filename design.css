@@ -280,10 +280,7 @@ h3 {
 /*design på grafen*/
 #graph{
 
-  float: right; 
-    height:20vh; 
-    width:60vw;
-
+    margin-right: 20px;
 
 }
 #text
