@@ -47,6 +47,8 @@ h2 {
     font-weight: lighter;
     margin-top: 20px;
     text-align: center;
+    width: 60px;
+    height: 40px;
 }
 
 #submit:hover {
