@@ -1,17 +1,22 @@
 body{
+<<<<<<< HEAD
     
     text-align: center;
+=======
+
+>>>>>>> e5e050e1b55df08c5bd651ddb30a009661f8402e
     background-color: #D6E6F2;
 }
 
 h1{
-    
+
     color: #75C2F6;
     font-family: "Helvetica";
     font-weight: lighter;
     font-size: 70px;
     text-align: center;
     margin-top: 100px;
+<<<<<<< HEAD
     
     
 }
