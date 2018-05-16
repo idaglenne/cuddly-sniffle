@@ -345,8 +345,7 @@ a:hover{
 /*Underrubrik till formulär betygskala */
 .question p {
     font-family: 'Montserrat', sans-serif;
-    font-size: 12pt;
-    padding-bottom: 0;
+    font-size: 11pt;
 }
 
 /*Stil på checkbox delen i formuläret */
