@@ -46,7 +46,7 @@ if (isset($_SESSION["clientName"]))
             <ul id="menu">
               <a href="#" target="_blank"><li>Hem</li></a>
               <a href="./OmOss.php" target="_blank"><li>Om oss</li></a>
-              <a href="#" target="_blank"><li>Kontakt</li></a>
+              <a href="#" target="_blank"><li>Kontaktuppgifter</li></a>
                 <a href="./logout.php"><li>Logga ut</li></a>
               </ul>
         </div>
