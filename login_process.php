@@ -41,7 +41,7 @@ if (isset($_POST["submit"])) {
 
                         //while ($name = $get_name->fetch_assoc()){
                         //Initierar en session för användaren
-                        $_SESSION["clientName"] = "$name["clientName"]";
+                        $_SESSION["clientName"] = $name["clientName"];
                         header("Refresh: 0; URL=inloggad.php");
                     }
 
@@ -56,3 +56,4 @@ if (isset($_POST["submit"])) {
         
         }
     }
+}
