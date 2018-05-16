@@ -330,7 +330,7 @@ h3 {
     width: auto;
     
 }
-
+/*Stil på checkbox delen i formuläret */
 .symptom {
     font-family: 'Montserrat', sans-serif;
     font-weight: lighter;
@@ -345,6 +345,7 @@ h3 {
     margin-top: 5%;
 }
 
+/* Delar in checkbox delen i en ruta */
 .partOfFormCheck {
   text-align: left;
   margin-left: 40%;
