@@ -49,11 +49,12 @@ h3 {
 }
 
 .omOss {
-    text-align: right;
+    text-align: center;
+    margin-top: 10%;
     font-family: 'Montserrat', sans-serif;
     font-weight: lighter;
-    font-size: 12px;
-    color: #F8B195;
+    font-size: 11px;
+    color: black;
 }
 
 .submit {
@@ -88,7 +89,7 @@ h3 {
 
 a{
 
-        color: #75C2F6;
+    color: #75C2F6;
     text-decoration: none;
     transition: color 0.4s ease;
 
@@ -118,17 +119,6 @@ a:hover{
   font-size: 11px;
   font-family: 'Montserrat', sans-serif;
 }
-
-h3 {
-  color: #75C2F6;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: lighter;
-    font-size: 40px;
-    margin-top: -20px;
-  text-align: center;
-    
-}
-
 
 /*hamburgermeny*/
 
@@ -350,9 +340,13 @@ h3 {
 /*försök att dela upp så de skulle ordna sig horisontellt :-)*/
 .alternative label{
     display: block;
-    width: auto;
-    
+    width: auto; 
 }
+
+.alternative p {
+    display: inline-block;
+}
+
 /*Stil på checkbox delen i formuläret */
 .symptom {
     font-family: 'Montserrat', sans-serif;
@@ -403,4 +397,10 @@ h3 {
     margin-top: 15px;
     margin-left: 5vw;
 
+}
+
+.errorMessage {
+    font-family: 'Montserrat', sans-serif;;
+    font-size: 12pt;
+    font-weight: lighter;   
 }
