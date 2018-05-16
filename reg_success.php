@@ -9,7 +9,7 @@
     <body>
         <h1>mood log</h1>
         <h2>Nu är du registrerad!</h2>
-        <h2>Logga in och börja logga ditt mående</h2>
+        <h3>Logga in och börja logga ditt mående</h3>
 
         <form action="index.php">
         <input type="submit" class="submit" value="Logga in" name="submit"> 
