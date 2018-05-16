@@ -2,22 +2,22 @@ function validateform() {
 
     var namn = document.forms["comment_form"]["inputName"].value;
     var email = document.forms["comment_form"]["inputEmail"].value;
-    var comment = document.forms["comment_form"]["inputComment"].value;
+    var psw = document.forms["reg_form"]["inputRegPsw"].value;
+    var confirm_psw = document.forms["reg_form"]["inputRegPsw"].value;
     var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
 
     var name_error = document.getElementById("name_error");
     var email_error = document.getElementById("email_error");
-    var comment_error = document.getElementById("comment_error");
+    var psw_error = document.getElementById("psw_error");
 
     var trimmedName = namn.trim();
     var trimmedEmail = email.trim();
-    var trimmedComment = comment.trim();
-    var dot = ".";
+    var trimmedPsw = psw.trim();
+    var trimmedConfirmPsw = confirm_psw.trim();
 
     if (!filter.test(email)) {
-    alert('Ogilitig mailadress!');
-    email.focus;
-    return false;
+        email_error.textContent = "Ogilitig mailadress!";
+        return false;
     }
 
     if (trimmedName == "") {
@@ -25,17 +25,21 @@ function validateform() {
         return false;
     }
 
-    if (trimmedEmail == "" || trimmedEmail.search("@") == -1 || trimmedEmail.indexOf(dot) == -1) {
-        email_error.textContent = "Ogiltig mailadress!";
+   else if (trimmedPsw.length < 6) {
+        psw_error.textContent ="Lösenordet måste bestå av minst 6 tecken!";
         return false;
     }
 
-    else if (trimmedComment == "") {
-        comment_error.textContent ="Glöm inte att skriva din kommentar!";
+    else if (!(trimmedConfirmPsw == trimmedPsw)){
+
+        psw_error.textContent ="Lösenorden matchar inte!";
         return false;
+
     }
+
 
 }
+
 
 function validate_reg_form() {
 

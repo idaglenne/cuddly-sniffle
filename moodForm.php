@@ -29,8 +29,8 @@ include "db_connect.php";
       <div class=alternative>
       <input type="radio" class=mood id="alt_2" name="moodOneToSeven" value="2">
       <label for="alt_2">2</label>
-      <!--</div>
-      <div class=alternative>-->
+      </div>
+      <div class=alternative>
       <input type="radio" class=mood id="alt_3" name="moodOneToSeven" value="3">
       <label for="alt_3">3</label>
       </div>

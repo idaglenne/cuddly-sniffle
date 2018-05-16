@@ -19,7 +19,7 @@ if (isset($_POST["submit"])) {
         {
             $query = "INSERT INTO Clients (clientName, clientEmail, clientPassword) VALUES ('".$reg_name."', '".$reg_email."', '".$psw."')";
             $connection->query($query);
-            header("Refresh: 5; URL=register_success.php");
+            header("Refresh: 5; URL=index.php");
 
         }
         else 
