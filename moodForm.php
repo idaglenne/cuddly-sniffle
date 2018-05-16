@@ -89,9 +89,9 @@ include "db_connect.php";
         <input type="checkbox" class="symptom" id="alt_tired" name="tired">
         <label for="alt_tired">Trötthet/Sömnsvårigheter</label>
         <br>
-        <label for="textarea">Kommentar</label>
-        <br/>
-      </div>
+        </div>
+      <label for="textarea">Kommentar</label>
+      <br/>
       <textarea placeholder="Skriv en kommentar">Skriv en kommentar</textarea>
     </form>
     </body>
