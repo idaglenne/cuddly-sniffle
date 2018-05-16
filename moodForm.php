@@ -34,7 +34,7 @@ include "db_connect.php";
       <label for="alt_7">7</label>
       <br>
       <label>Har du upplevt några av följande symptom idag?</label>
-      <br>
+      <br/>
       <input type="checkbox" class=mood id="alt_tensionBack" name="symptom">
       <label for="alt_tensionBack">Spänd rygg och nacke</label>
       <br>
