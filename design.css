@@ -398,3 +398,9 @@ a:hover{
     margin-left: 5vw;
 
 }
+
+.errorMessage {
+    font-family: 'Montserrat', sans-serif;;
+    font-size: 12pt;
+    font-weight: lighter;   
+}

@@ -32,7 +32,9 @@ if (isset($_SESSION["clientName"])){
 
         <input type="submit" class="submit" value="Logga in" name="submit">
         </form>
+        <div class="errorMessage">
         <span><?php echo $error; ?></span>
+        </div>
         <div class="omOss">
     <p><a href="./OmOss.php" target="_blank">Här</a> kan du läsa om oss!</p>
       </div>
