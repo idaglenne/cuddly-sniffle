@@ -1,4 +1,7 @@
-<!DOCTYPE html>
+<?php
+include "db_connect.php";
+
+?>
 <html>
     <head>
     <title>Bakgrund</title>

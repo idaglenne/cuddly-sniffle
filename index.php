@@ -1,3 +1,8 @@
+<?php
+include "db_connect.php";
+
+?>
+
 <html>
     <head>
     <title>mood log</title>

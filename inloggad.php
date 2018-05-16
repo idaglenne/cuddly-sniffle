@@ -1,3 +1,7 @@
+<?php
+include "db_connect.php";
+
+?>
 <html>
     <head>
     <title>inloggad</title>
