@@ -16,7 +16,9 @@ include "db_connect.php";
     </div>
 
     <form class="mood_form">
+      <div class="question">
       <label>Hur mår du på en skala från ett till sju idag?</label>
+      </div>
       <br>
       <input type="radio" class=mood id="alt_1" name="moodOneToSeven" value="1">
       <label for="alt_1">1</label>
@@ -33,7 +35,9 @@ include "db_connect.php";
       <input type="radio" class=mood id="alt_7" name="moodOneToSeven" value="7">
       <label for="alt_7">7</label>
       <br>
+      <div class="question">
       <label>Har du upplevt några av följande symptom idag?</label>
+      </div>
       <br/>
       <input type="checkbox" class=mood id="alt_tensionBack" name="symptom">
       <label for="alt_tensionBack">Spänd rygg och nacke</label>
