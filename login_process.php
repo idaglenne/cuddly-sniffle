@@ -33,6 +33,7 @@ if (isset($_POST["submit"])) {
                        
                 //Hämtar lösenordet associerat med emailen från databasen
                 while ($password = $get_password->fetch_assoc()){
+                    while ($name = $get_name->fetch_assoc()){
 
                     //Jämför lösenordet med användarens input
                     if (($password["clientPassword"]) == $user_psw)
@@ -40,8 +41,8 @@ if (isset($_POST["submit"])) {
 
                         //while ($name = $get_name->fetch_assoc()){
                         //Initierar en session för användaren
-                        $_SESSION["clientName"] = "$user_email";
-                        header("Refresh: 0; URL=inloggad.php");}
+                        $_SESSION["clientName"] = $name["clientName"];
+                        header("Refresh: 0; URL=inloggad.php");
                     }
 
                     else {
@@ -55,3 +56,4 @@ if (isset($_POST["submit"])) {
         
         }
     }
+}

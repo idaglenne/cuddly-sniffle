@@ -15,7 +15,7 @@ if (isset($_SESSION["clientName"]))
     <title>inloggad</title>
     <link rel="stylesheet" href="./design.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link rel="icon" type="image/png" href="./doge3.png">
+    <link rel="icon" type="image/png" href="./cloud.png">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
     </head>
     <body>
@@ -46,10 +46,10 @@ if (isset($_SESSION["clientName"]))
             <ul id="menu">
               <a href="#" target="_blank"><li>Hem</li></a>
               <a href="#" target="_blank"><li>Min profil</li></a>
-              <a href="#" target="_blank"><li>Om oss</li></a>
+              <a href="./OmOss.php" target="_blank"><li>Om oss</li></a>
               <a href="#" target="_blank"><li>Kontakt</li></a>
                 <a href="#" target="_blank"><li>Inställningar</li></a>
-                <a href="./index.html"><li>Logga ut</li></a>
+                <a href="./logout.php"><li>Logga ut</li></a>
               </ul>
         </div>
         </nav>
