@@ -344,7 +344,8 @@ a:hover{
 }
 
 .alternative p {
-    text-anchor: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12pt;
 }
 
 /*Stil på checkbox delen i formuläret */
