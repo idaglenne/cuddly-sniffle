@@ -15,7 +15,7 @@ if (isset($_SESSION["clientName"]))
     <title>inloggad</title>
     <link rel="stylesheet" href="./design.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link rel="icon" type="image/png" href="./doge3.png">
+    <link rel="icon" type="image/png" href="./cloud.png">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
     </head>
     <body>
