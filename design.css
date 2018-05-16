@@ -341,7 +341,7 @@ h3 {
 #comment {
     font-family: 'Montserrat', sans-serif;
     font-weight: lighter;
-    margin-top: 20px;
+    margin-top: 10%;
 }
 
 .partOfFormCheck {
@@ -354,7 +354,7 @@ h3 {
     font-weight: lighter;
     width: 200px;
     height: 100px;
-    border-radius: 10px;
+    border-radius: 3%;
     border: none;
     resize: none;
 
