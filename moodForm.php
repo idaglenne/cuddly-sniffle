@@ -46,7 +46,7 @@ include "db_connect.php";
             <label for="alt_6">6</label>
           </div>
           <div class="alternative">
-            <input type="radio" class="mood" id="alt_7" name="moodOneToSeven" value="7"><p>Mycket Bra</p>
+            <p>Mycket Bra</p><input type="radio" class="mood" id="alt_7" name="moodOneToSeven" value="7">
             <label for="alt_7">7</label>
           </div>
         </div>
