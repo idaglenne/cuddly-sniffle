@@ -17,7 +17,7 @@ include ('register_process.php');
         <h2>Logga ditt mående</h2>
           <h3>Fyll i dina uppgifter och registrera dig nu!</h3>
 
-      <form class=register_form>
+      <form class="register_form" method=POST>
         <input type="text" class=register id=name_register placeholder="Namn" name="reg_name">
         <br>
         <input type="text" class=register id=email_register placeholder="E-mail" name="reg_email">

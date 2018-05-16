@@ -2,8 +2,8 @@
 include "db_connect.php";
 
 if (isset($_POST["submit"])) {
-    if (empty($_POST["inputRegEmail"]) || empty($_POST["inputRegPsw"]) || !filter_var($_POST["inputRegEmail"], FILTER_VALIDATE_EMAIL)) {
-    echo "Fyll i email och lösenord korrekt";
+    if (empty($_POST["reg_name"]) || empty($_POST["reg_email"]) || empty($_POST["reg_psw"]) || !filter_var($_POST["reg_email"], FILTER_VALIDATE_EMAIL)) {
+    echo "Invalid input";
     }
 
     else{
