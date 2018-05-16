@@ -1,6 +1,8 @@
 <?php
 include "db_connect.php";
 
+include ('register_process.php');
+
 ?>
 <html>
     <head>
@@ -16,16 +18,17 @@ include "db_connect.php";
           <h3>Fyll i dina uppgifter och registrera dig nu!</h3>
 
       <form class=register_form>
-        <input type="text" class=register id=name_register placeholder="Namn">
+        <input type="text" class=register id=name_register placeholder="Namn" name="reg_name">
         <br>
-        <input type="text" class=register id=email_register placeholder="E-mail">
+        <input type="text" class=register id=email_register placeholder="E-mail" name="reg_email">
         <br>
-        <input type="text" class=register id=newpsw_register placeholder="Nytt lösenord">
+        <input type="text" class=register id=newpsw_register placeholder="Nytt lösenord" name="reg_psw">
         <br>
-        <input type="text" class=register id=confirmpsw_register placeholder="Bekräfta lösenord">
-        <p>Har du redan ett konto? <a href="./index.html">Logga in här!</a></p>
+        <input type="text" class=register id=confirmpsw_register placeholder="Bekräfta lösenord" name="reg_confirmpsw">
+        <p>Har du redan ett konto? <a href="./index.php">Logga in här!</a></p>
         <br>
-        <input type="submit" class="submit" value="Klar!">
+        <input type="submit" class="submit" value="Klar!" name="submit">
+        <span><?php echo $error; ?></span>
       </form>
 
     </body>
