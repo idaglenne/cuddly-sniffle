@@ -303,6 +303,8 @@ h3 {
 .mood {
     font-family: 'Montserrat', sans-serif;
     font-weight: lighter;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .mood_form {
