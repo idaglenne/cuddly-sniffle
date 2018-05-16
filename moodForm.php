@@ -88,8 +88,6 @@ include "db_connect.php";
       <input type="checkbox" class=mood id="alt_tired" name="symptom">
       <label for="alt_tired">Trötthet/Sömnsvårigheter</label>
       <br>
-      <div id="comment">
-=======
       <div class="partOfFormCheck">
         <input type="checkbox" class="symptom" id="alt_tensionBack" name="tensionBack">
         <label for="alt_tensionBack">Spänd rygg och nacke</label>
@@ -122,9 +120,9 @@ include "db_connect.php";
         <label for="alt_tired">Trötthet/Sömnsvårigheter</label>
         <br>
         </div>
->>>>>>> 37a9c3332e36e85f42211026991aba565ac78c41
+        <div id="comment">
       <label for="textarea">Kommentar</label>
-      <br/>
+      <br>
       <textarea placeholder="Skriv en kommentar">Skriv en kommentar</textarea>
       </div>
     </form>
