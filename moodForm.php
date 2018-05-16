@@ -18,19 +18,19 @@ include "db_connect.php";
     <form class=mood_form>
       <label>Hur mår du på en skala från ett till sju idag?</label>
       <br>
-      <input type="radio" class=mood id="alt_1" name="moodOneToFive" value="1">
+      <input type="radio" class=mood id="alt_1" name="moodOneToSeven" value="1">
       <label for="alt_1">1</label>
-      <input type="radio" class=mood id="alt_2" name="moodOneToFive" value="2">
+      <input type="radio" class=mood id="alt_2" name="moodOneToSeven" value="2">
       <label for="alt_2">2</label>
-      <input type="radio" class=mood id="alt_3" name="moodOneToFive" value="3">
+      <input type="radio" class=mood id="alt_3" name="moodOneToSeven" value="3">
       <label for="alt_3">3</label>
-      <input type="radio" class=mood id="alt_4" name="moodOneToFive" value="4">
+      <input type="radio" class=mood id="alt_4" name="moodOneToSeven" value="4">
       <label for="alt_4">4</label>
-      <input type="radio" class=mood id="alt_5" name="moodOneToFive" value="5">
+      <input type="radio" class=mood id="alt_5" name="moodOneToSeven" value="5">
       <label for="alt_5">5</label>
-      <input type="radio" class=mood id="alt_6" name="moodOneToFive" value="6">
+      <input type="radio" class=mood id="alt_6" name="moodOneToSeven" value="6">
       <label for="alt_6">6</label>
-      <input type="radio" class=mood id="alt_7" name="moodOneToFive" value="7">
+      <input type="radio" class=mood id="alt_7" name="moodOneToSeven" value="7">
       <label for="alt_7">7</label>
       <br>
       <label>Har du upplevt några av följande symptom idag?</label>
@@ -44,26 +44,26 @@ include "db_connect.php";
       <input type="checkbox" class=mood id="alt_hyperventilation" name="symptom">
       <label for="alt_hyperventilation">Hyperventilering</label>
       <br>
-      <input type="checkbox" class=mood id="alt_hyperventilation" name="symptom">
-      <label for="alt_hyperventilation">Bröstsmärtor</label>
+      <input type="checkbox" class=mood id="alt_chestPain" name="symptom">
+      <label for="alt_chestPain">Bröstsmärtor</label>
       <br>
-      <input type="checkbox" class=mood id="alt_hyperventilation" name="symptom">
-      <label for="alt_hyperventilation">Orolig mage/Illamående</label>
+      <input type="checkbox" class=mood id="alt_stomach" name="symptom">
+      <label for="alt_stomach">Orolig mage/Illamående</label>
       <br>
-      <input type="checkbox" class=mood id="alt_hyperventilation" name="symptom">
-      <label for="alt_hyperventilation">Yr/Svimfärdig</label>
+      <input type="checkbox" class=mood id="alt_dizzy" name="symptom">
+      <label for="alt_dizzy">Yr/Svimfärdig</label>
       <br>
-      <input type="checkbox" class=mood id="alt_hyperventilation" name="symptom">
-      <label for="alt_hyperventilation">Hjärtklappning</label>
+      <input type="checkbox" class=mood id="alt_heartRacing" name="symptom">
+      <label for="alt_heartRacing">Hjärtklappning</label>
       <br>
-      <input type="checkbox" class=mood id="alt_hyperventilation" name="symptom">
-      <label for="alt_hyperventilation">Kallsvettningar</label>
+      <input type="checkbox" class=mood id="alt_coldSweat" name="symptom">
+      <label for="alt_coldSweat">Kallsvettningar</label>
       <br>
-      <input type="checkbox" class=mood id="alt_hyperventilation" name="symptom">
-      <label for="alt_hyperventilation">Koncentrationssvårigheter</label>
+      <input type="checkbox" class=mood id="alt_concentration" name="symptom">
+      <label for="alt_concentration">Koncentrationssvårigheter</label>
       <br>
-      <input type="checkbox" class=mood id="alt_hyperventilation" name="symptom">
-      <label for="alt_hyperventilation">Trötthet/Sömnsvårigheter</label>
+      <input type="checkbox" class=mood id="alt_tired" name="symptom">
+      <label for="alt_tired">Trötthet/Sömnsvårigheter</label>
       <br>
     </form>
     </body>
