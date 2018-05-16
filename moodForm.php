@@ -90,7 +90,7 @@ include "db_connect.php";
         <br>
         </div>
       <div id="comment">
-      <label for="textarea">Kommentar</label>
+      <label for="textarea">Lägg till valfri kommentar</label>
       <br>
       <textarea id="commentSection" placeholder="Skriv en kommentar">Skriv en kommentar</textarea>
       </div>
