@@ -1,8 +1,8 @@
 <?php
 $uname = "dbtrain_776";
-$pass = "fwmdkg";
+$pass = "jutgsk";
 $host = "dbtrain.im.uu.se";
-$dbname = "dbtrain_611";
+$dbname = "dbtrain_776";
 $connection = new mysqli($host, $uname, $pass, $dbname);
 
 if ($connection->connect_error)
