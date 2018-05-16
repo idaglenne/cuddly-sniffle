@@ -15,7 +15,7 @@ include "db_connect.php";
       <h1>mood log</h1>
     </div>
 
-    <form class=mood_form>
+    <form class="mood_form">
       <label>Hur mår du på en skala från ett till sju idag?</label>
       <br>
       <input type="radio" class=mood id="alt_1" name="moodOneToSeven" value="1">
