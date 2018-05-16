@@ -340,9 +340,9 @@ a:hover{
 /*försök att dela upp så de skulle ordna sig horisontellt :-)*/
 .alternative label{
     display: block;
-    width: auto;
-    
+    width: auto; 
 }
+
 /*Stil på checkbox delen i formuläret */
 .symptom {
     font-family: 'Montserrat', sans-serif;
