@@ -322,7 +322,7 @@ h3 {
   margin-bottom: 10px;
 }
 
-.radioButtons {
+#radioButtons {
   display: inline-block;
   text-align: center;
 }
