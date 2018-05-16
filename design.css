@@ -342,8 +342,8 @@ a:hover{
     display: block;
     width: auto; 
 }
-
-.alternative p {
+/*Underrubrik till formulär betygskala */
+.question p {
     font-family: 'Montserrat', sans-serif;
     font-size: 12pt;
 }
