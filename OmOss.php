@@ -10,8 +10,7 @@ include "db_connect.php";
     </head>
     <body>
 
-        <h1>mood log</h1>
-            <h3>Om oss:</h3>
+        <h1>om mood log</h1>
                 <h2>Loggen som ger dig överblick över ditt mående</h2>
 
                 <div id="text">
