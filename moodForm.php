@@ -18,10 +18,10 @@ include "db_connect.php";
       <form class="mood_form">
         <div class="question">
         <label>Hur mår du på en skala från ett till sju idag?</label>
+        <p>Där 1 betyder mycket dåligt och 7 betyder mycket bra</p>
         </div>
         <br>
         <div class="radioButtons">
-          <p>Mycket Dåligt</p>
           <div class="alternative">
            <input type="radio" class=mood id="alt_1" name="moodOneToSeven" value="1">
             <label for="alt_1">1</label>
@@ -49,7 +49,6 @@ include "db_connect.php";
           <div class="alternative">
             <input type="radio" class="mood" id="alt_7" name="moodOneToSeven" value="7">
             <label for="alt_7">7</label>
-            <p>Mycket Bra</p>
           </div>
         </div>
         <br>

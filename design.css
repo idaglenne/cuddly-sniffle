@@ -11,7 +11,25 @@ h1{
     font-weight: lighter;
     font-size: 75px;
     text-align: center;
-    margin-top: 5%;
+    margin-top: 8%;
+}
+
+
+h2{
+
+    color: #F8B195;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    text-align: center;
+
+}
+
+h3{
+    color: #F8B195;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    margin-bottom: 10%;
 }
 
 
@@ -31,30 +49,28 @@ h1{
 
 }
 
-h2 {
-
-    color: #F8B195;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: lighter;
-    text-align: center;
-
-}
-
-h3 {
-    color: #F8B195;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: lighter;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
 .omOss {
     text-align: center;
-    margin-top: 10%;
+    margin-top: 8%;
     font-family: 'Montserrat', sans-serif;
     font-weight: lighter;
-    font-size: 11px;
+    font-size: 10pt;
     color: black;
+}
+
+/*Om oss text*/
+#text
+{
+    width: 40vw;
+    background-color: #A7D7C5;
+    padding: 30px;
+    border: none;
+    border-radius: 10px;
+    color: black;
+    text-align: center;
+    position: absolute;
+    left: 27.5%;
+    
 }
 
 .submit {
@@ -62,10 +78,10 @@ h3 {
     background-color: #7DC383;
     font-family: 'Montserrat', sans-serif;
     font-weight: lighter;
-    margin-top: 20px;
+    margin-top: 1%;
     text-align: center;
     width: 10%;
-    height: 30px;
+    height: 6%;
     border: none;
     border-radius: 10px;
     transition: all 0.4s ease 0s;
@@ -81,7 +97,7 @@ h3 {
 
 .inlog_form p {
 
-    font-size: 11px;
+    font-size: 10pt;
     font-family: 'Montserrat', sans-serif;
 
 }
@@ -270,20 +286,7 @@ a:hover{
 
 }
 
-/*Om oss text*/
-#text
-{
-    width: 40vw;
-    background-color: #A7D7C5;
-    padding: 30px;
-    border: none;
-    border-radius: 10px;
-    color: black;
-    text-align: center;
-    position: absolute;
-    left: 27.5%;
-    
-}
+
 
 #text p{
 
@@ -341,9 +344,10 @@ a:hover{
     display: block;
     width: auto; 
 }
-
-.alternative p {
-    display: inline-block;
+/*Underrubrik till formulär betygskala */
+.question p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11pt;
 }
 
 /*Stil på checkbox delen i formuläret */
@@ -365,7 +369,7 @@ a:hover{
 /* Delar in checkbox delen i en ruta */
 .partOfFormCheck {
   text-align: left;
-  margin-left: 40%;
+  margin-left: 30%;
 }
 
 /*själva kommentarsfältet*/

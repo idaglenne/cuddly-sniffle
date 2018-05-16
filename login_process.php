@@ -47,7 +47,7 @@ if (isset($_POST["submit"])) {
 
                     else {
 
-                        $error = "Lösenordet verkar inte stämma;
+                        $error = "Lösenordet verkar inte stämma";
 
                         }
                             
