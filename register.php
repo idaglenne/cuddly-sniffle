@@ -23,9 +23,9 @@ include ('register_process.php');
         <br>
         <input type="text" class=register id=email_register placeholder="E-mail" name="reg_email">
         <br>
-        <input type="text" class=register id=newpsw_register placeholder="Nytt lösenord" name="reg_psw">
+        <input type="password" class=register id=newpsw_register placeholder="Nytt lösenord" name="reg_psw">
         <br>
-        <input type="text" class=register id=confirmpsw_register placeholder="Bekräfta lösenord" name="reg_confirmpsw">
+        <input type="password" class=register id=confirmpsw_register placeholder="Bekräfta lösenord" name="reg_confirmpsw">
         <p>Har du redan ett konto? <a href="./index.php">Logga in här!</a></p>
         <br>
         <input type="submit" class="submit" value="Klar!" name="submit">

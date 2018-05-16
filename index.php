@@ -23,7 +23,7 @@ include "db_connect.php";
 
         <input type="text" class="inlog" id="name_inlog" placeholder="Namn">
         <br>
-        <input type="text" class="inlog" id="psw_inlog" placeholder="Lösenord">
+        <input type="password" class="inlog" id="psw_inlog" placeholder="Lösenord">
         <p>Ny på mood log? <a href="./register.php">Registrera dig här!</a></p>
         <br>
 
