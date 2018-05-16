@@ -20,6 +20,7 @@ include "db_connect.php";
       <label>Hur mår du på en skala från ett till sju idag?</label>
       </div>
       <br>
+      <div class="radioButtons">
       <input type="radio" class=mood id="alt_1" name="moodOneToSeven" value="1">
       <label for="alt_1">1</label>
       <input type="radio" class=mood id="alt_2" name="moodOneToSeven" value="2">
@@ -34,6 +35,7 @@ include "db_connect.php";
       <label for="alt_6">6</label>
       <input type="radio" class=mood id="alt_7" name="moodOneToSeven" value="7">
       <label for="alt_7">7</label>
+      </div>
       <br>
       <div class="question">
       <label>Har du upplevt några av följande symptom idag?</label>
