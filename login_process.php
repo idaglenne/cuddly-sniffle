@@ -1,9 +1,5 @@
 <?php
-$uname = "dbtrain_611";
-$pass = "fwmdkg";
-$host = "dbtrain.im.uu.se";
-$dbname = "dbtrain_611";
-$connection = new mysqli($host, $uname, $pass, $dbname);
+include "db_connect.php";
 
 if ($connection->connect_error)
 {
@@ -39,13 +35,13 @@ if (isset($_POST["submit"])) {
                 while ($password = $get_password->fetch_assoc()){
 
                     //Jämför lösenordet med användarens input
-                    if (($password["user_psw"]) == $user_psw)
+                    if (($password["clientPassword"]) == $user_psw)
                     {
 
-                        while ($name = $get_name->fetch_assoc()){
+                        //while ($name = $get_name->fetch_assoc()){
                         //Initierar en session för användaren
-                        $_SESSION["useremail"] = "$name";
-                        header("Refresh: 0; URL=index.php");}
+                        $_SESSION["clientName"] = "$user_email";
+                        header("Refresh: 0; URL=inloggad.php");}
                     }
 
                     else {

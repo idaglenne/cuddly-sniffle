@@ -357,3 +357,20 @@ h3 {
     border: none;
     resize: none;
 }
+
+.welcome{
+
+    padding-top: 2px;
+    text-align: center;
+    width: 15vw;
+    height: 5vh;
+    background-color:#EBEBEB;  
+    color: #307672;
+    font-weight: bold;
+    box-sizing: border-box;
+    border-radius: 7px;
+    font-family: "Helvetica";
+    font-size: 12px;
+
+
+}
