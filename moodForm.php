@@ -22,14 +22,15 @@ include "db_connect.php";
       <br>
       <div class="radioButtons">
         <div class=alternative>
+          
       <input type="radio" class=mood id="alt_1" name="moodOneToSeven" value="1">
       <label for="alt_1">1</label>
       </div>
       <div class=alternative>
       <input type="radio" class=mood id="alt_2" name="moodOneToSeven" value="2">
       <label for="alt_2">2</label>
-      </div>
-      <div class=alternative>
+      <!--</div>
+      <div class=alternative>-->
       <input type="radio" class=mood id="alt_3" name="moodOneToSeven" value="3">
       <label for="alt_3">3</label>
       </div>
@@ -48,6 +49,7 @@ include "db_connect.php";
       <div class=alternative>
       <input type="radio" class=mood id="alt_7" name="moodOneToSeven" value="7">
       <label for="alt_7">7</label>
+      
       </div>
       </div>
       <br>
