@@ -32,7 +32,7 @@ if (isset($_SESSION["clientName"])){
         <p>Ny på mood log? <a href="./register.php">Registrera dig här!</a></p>
         <br>
 
-        <input type="submit" class="submit" value="Klar!" name="submit">
+        <input type="submit" class="submit" value="Logga in" name="submit">
         </form>
 
 
