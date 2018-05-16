@@ -330,3 +330,9 @@ h3 {
     width: auto;
     
 }
+.symptom {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
