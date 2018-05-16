@@ -300,6 +300,7 @@ h3 {
     text-align: center;
 }
 
+/*alternativen från 1 till 7*/
 .mood {
     font-family: 'Montserrat', sans-serif;
     font-weight: lighter;
@@ -307,17 +308,19 @@ h3 {
     margin-bottom: 10px;
 }
 
+/*hela mående-formuläret*/
 .mood_form {
     font-family: 'Montserrat', sans-serif;
     font-weight: lighter;
 }
 
+/*frågorna i mående-formuläret*/
 .question {
     font-family: 'Montserrat', sans-serif;
     font-weight: lighter;
     font-size: 20px;
 }
-
+/*alternativ 1 till 7-knapparna*/
 .radioButtons {
   margin-bottom: 10px;
   display: inline-block;
@@ -325,6 +328,7 @@ h3 {
   width: auto;
 }
 
+/*försök att dela upp så de skulle ordna sig horisontellt :-)*/
 .alternative label{
     display: block;
     width: auto;
@@ -339,6 +343,7 @@ h3 {
     text-align: left;
 }
 
+/*rubriken till kommentarsfältet*/
 #comment {
     font-family: 'Montserrat', sans-serif;
     font-weight: lighter;
@@ -351,6 +356,7 @@ h3 {
   margin-left: 40%;
 }
 
+/*själva kommentarsfältet*/
 #commentSection {
     font-family: 'Montserrat', sans-serif;
     font-weight: lighter;
@@ -359,9 +365,12 @@ h3 {
     border-radius: 10%;
     border: none;
     resize: none;
-
 }
 
+.partOfFormCheck {
+  text-align: left;
+  margin-left: 40%;
+}
 /*Väkomsttext på inlogg*/
 .welcome{
 
