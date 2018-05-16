@@ -11,7 +11,7 @@ $error = "";
 //Kollar om inputfälten är tomma
 if (isset($_POST["submit"])) {
     if (empty($_POST["email_inlog"]) || empty($_POST["psw_inlog"])) {
-    $error = "Fyll i email och lösenord korrekt";
+    $error = "Fyll i email och lösenord korrekt!";
     }
     else
     {
@@ -26,7 +26,7 @@ if (isset($_POST["submit"])) {
         //Kollar om det finns något salt i variabeln = om den hittade rätt email
         if ($get_password->num_rows == 0)
             {
-                $error = "Fel mailadress";
+                $error = "Mailadressen verkar inte stämma!";
 
             }
             else{
@@ -47,7 +47,7 @@ if (isset($_POST["submit"])) {
 
                     else {
 
-                        $error = "Fel lösenord";
+                        $error = "Lösenordet verkar inte stämma;
 
                         }
                             
