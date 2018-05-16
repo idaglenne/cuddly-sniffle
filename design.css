@@ -11,7 +11,7 @@ h1{
     font-weight: lighter;
     font-size: 75px;
     text-align: center;
-    margin-top: 5%;
+    margin-top: 8%;
 }
 
 .inlog {
@@ -44,15 +44,15 @@ h3 {
     font-family: 'Montserrat', sans-serif;
     font-weight: lighter;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 10%;
 }
 
 .omOss {
     text-align: center;
-    margin-top: 10%;
+    margin-top: 8%;
     font-family: 'Montserrat', sans-serif;
     font-weight: lighter;
-    font-size: 12px;
+    font-size: 10pt;
     color: black;
 }
 
@@ -61,10 +61,10 @@ h3 {
     background-color: #7DC383;
     font-family: 'Montserrat', sans-serif;
     font-weight: lighter;
-    margin-top: 20px;
+    margin-top: 1%;
     text-align: center;
     width: 10%;
-    height: 30px;
+    height: 6%;
     border: none;
     border-radius: 10px;
     transition: all 0.4s ease 0s;
@@ -81,7 +81,7 @@ h3 {
 
 .inlog_form p {
 
-    font-size: 12px;
+    font-size: 10pt;
     font-family: 'Montserrat', sans-serif;
 
 }
