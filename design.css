@@ -344,7 +344,7 @@ a:hover{
 }
 
 .alternative p {
-    display: inline-block;
+    text-anchor: none;
 }
 
 /*Stil på checkbox delen i formuläret */

@@ -21,9 +21,8 @@ include "db_connect.php";
         </div>
         <br>
         <div class="radioButtons">
-          <p>Mycket Dåligt</p>
           <div class="alternative">
-           <input type="radio" class=mood id="alt_1" name="moodOneToSeven" value="1">
+           <p>Mycket Dåligt</p><input type="radio" class=mood id="alt_1" name="moodOneToSeven" value="1">
             <label for="alt_1">1</label>
           </div>
           <div class="alternative">
@@ -47,9 +46,8 @@ include "db_connect.php";
             <label for="alt_6">6</label>
           </div>
           <div class="alternative">
-            <input type="radio" class="mood" id="alt_7" name="moodOneToSeven" value="7">
+            <p>Mycket Bra</p><input type="radio" class="mood" id="alt_7" name="moodOneToSeven" value="7">
             <label for="alt_7">7</label>
-            <p>Mycket Bra</p>
           </div>
         </div>
         <br>
