@@ -49,11 +49,12 @@ h3 {
 }
 
 .omOss {
-    text-align: right;
+    text-align: center;
+    margin-top: 10%;
     font-family: 'Montserrat', sans-serif;
     font-weight: lighter;
-    font-size: 12px;
-    color: #F8B195;
+    font-size: 11px;
+    color: black;
 }
 
 .submit {
