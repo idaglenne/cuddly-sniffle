@@ -330,6 +330,7 @@ h3 {
     width: auto;
     
 }
+
 .symptom {
     font-family: 'Montserrat', sans-serif;
     font-weight: lighter;
@@ -360,6 +361,7 @@ h3 {
 
 }
 
+/*Väkomsttext på inlogg*/
 .welcome{
 
     padding-top: 2px;

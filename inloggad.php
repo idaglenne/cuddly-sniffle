@@ -49,7 +49,7 @@ if (isset($_SESSION["clientName"]))
               <a href="#" target="_blank"><li>Om oss</li></a>
               <a href="#" target="_blank"><li>Kontakt</li></a>
                 <a href="#" target="_blank"><li>Inställningar</li></a>
-                <a href="./index.html"><li>Logga ut</li></a>
+                <a href="./logout.php"><li>Logga ut</li></a>
               </ul>
         </div>
         </nav>
