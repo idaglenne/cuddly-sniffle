@@ -12,7 +12,7 @@ include "db_connect.php";
     </head>
     <body>
       <div class="omOss">
-<p><a href="./OmOss.html" target="_blank">Här</a> kan du läsa om oss!</p>
+<p><a href="./OmOss.php" target="_blank">Här</a> kan du läsa om oss!</p>
       </div>
       <div class="header">
       <h1>mood log</h1>
@@ -24,7 +24,7 @@ include "db_connect.php";
         <input type="text" class="inlog" id="name_inlog" placeholder="Namn">
         <br>
         <input type="text" class="inlog" id="psw_inlog" placeholder="Lösenord">
-        <p>Ny på mood log? <a href="./register.html">Registrera dig här!</a></p>
+        <p>Ny på mood log? <a href="./register.php">Registrera dig här!</a></p>
         <br>
 
         <input type="submit" class="submit" value="Klar!">
