@@ -15,7 +15,7 @@ include "db_connect.php";
                 <h2>Loggen som ger dig överblick över ditt mående</h2>
 
                 <div id="text">
-                    <p>sska vi skriva "tjänstekonceptet här? i stil med servicefinder så blir owen glad</p>
+                    <p>ska vi skriva "tjänstekonceptet här? i stil med servicefinder så blir owen glad</p>
                 </div>
 
     </body>
