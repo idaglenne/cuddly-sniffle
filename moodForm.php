@@ -31,6 +31,7 @@ include "db_connect.php";
       <label for="alt_2">2</label>
       </div>
       <div class="alternative">
+
       <input type="radio" class=mood id="alt_3" name="moodOneToSeven" value="3">
       <label for="alt_3">3</label>
       </div>
