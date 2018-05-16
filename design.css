@@ -299,3 +299,13 @@ h3 {
     font-weight: lighter;
     text-align: center;
 }
+
+.mood {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+}
+
+.mood_form {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+}
