@@ -4,10 +4,10 @@ include "db_connect.php";
 ?>
 <html>
     <head>
-    <title>mood log</title>
-    <link rel="stylesheet" href="./design.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link rel="icon" type="image/png" href="./cloud.png">
+      <title>mood log</title>
+      <link rel="stylesheet" href="./design.css">
+      <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+      <link rel="icon" type="image/png" href="./cloud.png">
     </head>
 
     <body>
