@@ -11,11 +11,11 @@ include "db_connect.php";
     </head>
     <body>
 
-        <h1>om oss</h1>
+        <h1>om mood log</h1>
                 <h2>Loggen som ger dig överblick över ditt mående</h2>
 
                 <div id="text">
-                    <p>hej, välkomna till denna sida som är fokuserad på allt möjligt, test, test, etc</p>
+                    <p>sska vi skriva "tjänstekonceptet här? i stil med servicefinder så blir owen glad</p>
                 </div>
 
     </body>
