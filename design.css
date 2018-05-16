@@ -321,3 +321,14 @@ h3 {
 .radioButtons {
   margin-bottom: 10px;
 }
+
+.radioButtons label {
+  display: inline-block;
+  text-align: center;
+  margin: 0 0.2em;
+}
+
+.radioButtons label input[type="radio"] {
+  display: block;
+  margin: 0.5em auto;
+}
