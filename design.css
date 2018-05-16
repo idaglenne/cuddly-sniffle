@@ -312,8 +312,12 @@ h3 {
     font-weight: lighter;
 }
 
-.questions {
+.question {
     font-family: 'Montserrat', sans-serif;
     font-weight: lighter;
     font-size: 20px;
+}
+
+#alt_1 {
+  margin-bottom: 10px;
 }
