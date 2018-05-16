@@ -21,32 +21,33 @@ include "db_connect.php";
       </div>
       <br>
       <div class="radioButtons">
-        <div class=alternative>
+        <div class="alternative">
           
       <input type="radio" class=mood id="alt_1" name="moodOneToSeven" value="1">
       <label for="alt_1">1</label>
       </div>
-      <div class=alternative>
+      <div class="alternative">
       <input type="radio" class=mood id="alt_2" name="moodOneToSeven" value="2">
       <label for="alt_2">2</label>
-      <!--</div>
-      <div class=alternative>-->
+      </div>
+      <div class="alternative">
+
       <input type="radio" class=mood id="alt_3" name="moodOneToSeven" value="3">
       <label for="alt_3">3</label>
       </div>
-      <div class=alternative>
+      <div class="alternative">
       <input type="radio" class=mood id="alt_4" name="moodOneToSeven" value="4">
       <label for="alt_4">4</label>
       </div>
-      <div class=alternative>
+      <div class="alternative">
       <input type="radio" class=mood id="alt_5" name="moodOneToSeven" value="5">
       <label for="alt_5">5</label>
       </div>
-      <div class=alternative>
+      <div class="alternative">
       <input type="radio" class=mood id="alt_6" name="moodOneToSeven" value="6">
       <label for="alt_6">6</label>
       </div>
-      <div class=alternative>
+      <div class="alternative">
       <input type="radio" class=mood id="alt_7" name="moodOneToSeven" value="7">
       <label for="alt_7">7</label>
       
