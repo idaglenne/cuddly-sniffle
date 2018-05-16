@@ -346,6 +346,7 @@ a:hover{
 .question p {
     font-family: 'Montserrat', sans-serif;
     font-size: 12pt;
+    padding-bottom: 0;
 }
 
 /*Stil på checkbox delen i formuläret */
