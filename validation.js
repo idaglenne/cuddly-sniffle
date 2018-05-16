@@ -3,6 +3,7 @@ function validateform() {
     var namn = document.forms["comment_form"]["inputName"].value;
     var email = document.forms["comment_form"]["inputEmail"].value;
     var comment = document.forms["comment_form"]["inputComment"].value;
+    var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
 
     var name_error = document.getElementById("name_error");
     var email_error = document.getElementById("email_error");
@@ -12,6 +13,12 @@ function validateform() {
     var trimmedEmail = email.trim();
     var trimmedComment = comment.trim();
     var dot = ".";
+
+    if (!filter.test(email)) {
+    alert('Ogilitig mailadress!');
+    email.focus;
+    return false;
+    }
 
     if (trimmedName == "") {
         name_error.textContent = "Du måste fylla i ditt namn!";
