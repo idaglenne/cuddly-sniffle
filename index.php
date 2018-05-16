@@ -13,7 +13,7 @@ if (isset($_SESSION["clientName"])){
     <title>mood log</title>
     <link rel="stylesheet" href="./design.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link rel="icon" type="image/png" href="./molll_icon.png">
+    <link rel="icon" type="image/png" href="./cloud.png">
     </head>
     <body>
       <div class="omOss">
