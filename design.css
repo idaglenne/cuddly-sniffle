@@ -350,9 +350,14 @@ h3 {
 /*försök att dela upp så de skulle ordna sig horisontellt :-)*/
 .alternative label{
     display: block;
-    width: auto;
-    
+    width: auto; 
 }
+
+/*Beskriver skalan i radiobuttons*/
+.radioButtons p {
+  display: inline-block;
+}
+
 /*Stil på checkbox delen i formuläret */
 .symptom {
     font-family: 'Montserrat', sans-serif;
