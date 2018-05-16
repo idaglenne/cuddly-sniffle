@@ -72,6 +72,7 @@ include "db_connect.php";
       <label for="alt_tired">Trötthet/Sömnsvårigheter</label>
       <br>
       <label for="textarea">Kommentar</label>
+      <br/>
       <textarea placeholder="Skriv en kommentar">Skriv en kommentar</textarea>
     </form>
     </body>
