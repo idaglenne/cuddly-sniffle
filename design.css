@@ -343,6 +343,10 @@ a:hover{
     width: auto; 
 }
 
+.alternative p {
+    text-align: none;
+}
+
 /*Stil på checkbox delen i formuläret */
 .symptom {
     font-family: 'Montserrat', sans-serif;
