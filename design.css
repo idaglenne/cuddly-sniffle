@@ -342,7 +342,6 @@ h3 {
     font-family: 'Montserrat', sans-serif;
     font-weight: lighter;
     margin-top: 20px;
-    margin-bottom: 15px;
 }
 
 .partOfFormCheck {
@@ -358,4 +357,5 @@ h3 {
     border-radius: 10px;
     border: none;
     resize: none;
+    margin-top: 15px;
 }
