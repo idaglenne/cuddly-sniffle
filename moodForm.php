@@ -54,9 +54,10 @@ include "db_connect.php";
       </div>
       <br>
       <div class="question">
-      <label>Har du upplevt några av följande symptom idag?</label>
+        <label>Har du upplevt några av följande symptom idag?</label>
       </div>
       <br/>
+<<<<<<< HEAD
       <input type="checkbox" class=mood id="alt_tensionBack" name="symptom">
       <label for="alt_tensionBack">Spänd rygg och nacke</label>
       <br>
@@ -88,6 +89,40 @@ include "db_connect.php";
       <label for="alt_tired">Trötthet/Sömnsvårigheter</label>
       <br>
       <div id="comment">
+=======
+      <div class="partOfFormCheck">
+        <input type="checkbox" class="symptom" id="alt_tensionBack" name="tensionBack">
+        <label for="alt_tensionBack">Spänd rygg och nacke</label>
+        <br>
+        <input type="checkbox" class="symptom" id="alt_stomachAche" name="stomachAche">
+        <label for="alt_stomachAche">Ont i magen</label>
+        <br>
+        <input type="checkbox" class="symptom" id="alt_hyperventilation" name="hyperventilation">
+        <label for="alt_hyperventilation">Hyperventilering</label>
+        <br>
+        <input type="checkbox" class="symptom" id="alt_chestPain" name="chestPain">
+        <label for="alt_chestPain">Bröstsmärtor</label>
+        <br>
+        <input type="checkbox" class="symptom" id="alt_stomach" name="stomach">
+        <label for="alt_stomach">Orolig mage/Illamående</label>
+        <br>
+        <input type="checkbox" class="symptom" id="alt_dizzy" name="dizzy">
+        <label for="alt_dizzy">Yr/Svimfärdig</label>
+        <br>
+        <input type="checkbox" class="symptom" id="alt_heartRacing" name="heartRacing">
+        <label for="alt_heartRacing">Hjärtklappning</label>
+        <br>
+        <input type="checkbox" class="symptom" id="alt_coldSweat" name="coldSweat">
+        <label for="alt_coldSweat">Kallsvettningar</label>
+        <br>
+        <input type="checkbox" class="symptom" id="alt_concentration" name="concentration">
+        <label for="alt_concentration">Koncentrationssvårigheter</label>
+        <br>
+        <input type="checkbox" class="symptom" id="alt_tired" name="tired">
+        <label for="alt_tired">Trötthet/Sömnsvårigheter</label>
+        <br>
+        </div>
+>>>>>>> 37a9c3332e36e85f42211026991aba565ac78c41
       <label for="textarea">Kommentar</label>
       <br/>
       <textarea placeholder="Skriv en kommentar">Skriv en kommentar</textarea>

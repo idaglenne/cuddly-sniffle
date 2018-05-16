@@ -335,10 +335,18 @@ h3 {
     font-weight: lighter;
     margin-top: 10px;
     margin-bottom: 10px;
+<<<<<<< HEAD
     text-align: left;
 }
 
 #comment {
     font-family: 'Montserrat', sans-serif;
     font-weight: lighter;
+=======
+}
+
+.partOfFormCheck {
+  text-align: left;
+  margin-left: 30%;
+>>>>>>> 37a9c3332e36e85f42211026991aba565ac78c41
 }
