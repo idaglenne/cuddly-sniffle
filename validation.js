@@ -1,9 +1,9 @@
 function validateform() {
 
-    var namn = document.forms["comment_form"]["inputName"].value;
-    var email = document.forms["comment_form"]["inputEmail"].value;
-    var psw = document.forms["reg_form"]["inputRegPsw"].value;
-    var confirm_psw = document.forms["reg_form"]["inputRegPsw"].value;
+    var namn = document.forms["reg_form"]["reg_name"].value;
+    var email = document.forms["reg_form"]["reg_email"].value;
+    var psw = document.forms["reg_form"]["reg_psw"].value;
+    var confirm_psw = document.forms["reg_form"]["reg_confirmpsw"].value;
     var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
 
     var name_error = document.getElementById("name_error");
