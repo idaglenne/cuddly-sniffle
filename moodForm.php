@@ -57,37 +57,6 @@ include "db_connect.php";
         <label>Har du upplevt några av följande symptom idag?</label>
       </div>
       <br/>
-<<<<<<< HEAD
-      <input type="checkbox" class=mood id="alt_tensionBack" name="symptom">
-      <label for="alt_tensionBack">Spänd rygg och nacke</label>
-      <br>
-      <input type="checkbox" class=mood id="alt_stomachAche" name="symptom">
-      <label for="alt_stomachAche">Ont i magen</label>
-      <br>
-      <input type="checkbox" class=mood id="alt_hyperventilation" name="symptom">
-      <label for="alt_hyperventilation">Hyperventilering</label>
-      <br>
-      <input type="checkbox" class=mood id="alt_chestPain" name="symptom">
-      <label for="alt_chestPain">Bröstsmärtor</label>
-      <br>
-      <input type="checkbox" class=mood id="alt_stomach" name="symptom">
-      <label for="alt_stomach">Orolig mage/Illamående</label>
-      <br>
-      <input type="checkbox" class=mood id="alt_dizzy" name="symptom">
-      <label for="alt_dizzy">Yr/Svimfärdig</label>
-      <br>
-      <input type="checkbox" class=mood id="alt_heartRacing" name="symptom">
-      <label for="alt_heartRacing">Hjärtklappning</label>
-      <br>
-      <input type="checkbox" class=mood id="alt_coldSweat" name="symptom">
-      <label for="alt_coldSweat">Kallsvettningar</label>
-      <br>
-      <input type="checkbox" class=mood id="alt_concentration" name="symptom">
-      <label for="alt_concentration">Koncentrationssvårigheter</label>
-      <br>
-      <input type="checkbox" class=mood id="alt_tired" name="symptom">
-      <label for="alt_tired">Trötthet/Sömnsvårigheter</label>
-      <br>
       <div class="partOfFormCheck">
         <input type="checkbox" class="symptom" id="alt_tensionBack" name="tensionBack">
         <label for="alt_tensionBack">Spänd rygg och nacke</label>
@@ -120,7 +89,7 @@ include "db_connect.php";
         <label for="alt_tired">Trötthet/Sömnsvårigheter</label>
         <br>
         </div>
-        <div id="comment">
+      <div id="comment">
       <label for="textarea">Kommentar</label>
       <br>
       <textarea placeholder="Skriv en kommentar">Skriv en kommentar</textarea>
