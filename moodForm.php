@@ -20,7 +20,7 @@ include "db_connect.php";
       <label>Hur mår du på en skala från ett till sju idag?</label>
       </div>
       <br>
-      <div id="radioButtons">
+      <div class="radioButtons">
         <div class=alternative>
       <input type="radio" class=mood id="alt_1" name="moodOneToSeven" value="1">
       <label for="alt_1">1</label>
