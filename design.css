@@ -346,6 +346,12 @@ h3 {
   width: auto;
 }
 
+/*Radio buttons centrerade över labels*/
+.alternative {
+  display: inline-block;
+  text-align: center;
+}
+
 /*försök att dela upp så de skulle ordna sig horisontellt :-)*/
 .alternative label{
     display: block;
