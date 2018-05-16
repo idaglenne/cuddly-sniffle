@@ -1,5 +1,13 @@
 <?php
 include "db_connect.php";
+include "login_process.php";
+
+if (isset($_SESSION["clientName"]))
+{
+    $client_name =  $_SESSION["clientName"];
+    echo "<div class=welcome>"."Välkommen $client_name"."</div>";
+
+}
 
 ?>
 <html>
