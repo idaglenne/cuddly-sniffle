@@ -311,3 +311,9 @@ h3 {
     font-family: 'Montserrat', sans-serif;
     font-weight: lighter;
 }
+
+.mood_form label {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    font-size: 16px;
+}
