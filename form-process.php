@@ -11,11 +11,11 @@
 
         $query = "INSERT INTO Log (clientID, rating, comment) VALUES ('".$client_ID."', '".$moodRating."', '".$moodComment."')";
         $connection->query($query);
-
+       
         $secondquery = "INSERT INTO Symptoms (clientID, symptomType) VALUES ('".$client_ID."', '".$moodSymptom."')";
         $connection->query($secondquery);
-
-        header("Refresh: 0; URL=inloggad.php");
+        
+        //header("Refresh: 0; URL=inloggad.php");
         
     }
     else
