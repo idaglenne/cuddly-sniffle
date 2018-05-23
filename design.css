@@ -437,3 +437,10 @@ a:hover{
     font-size: 12pt;
     font-weight: lighter;   
 }
+
+/* Grafen */
+.chart_container{
+    width: 50%;
+    height: 300px;
+    margin: 0 auto;
+}

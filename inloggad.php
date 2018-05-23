@@ -49,7 +49,7 @@ print json_encode($data);
     <link rel="stylesheet" href="./design.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="icon" type="image/png" href="./cloud.png">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    
     </head>
     <body>
 
@@ -85,48 +85,22 @@ print json_encode($data);
         </div>
         </nav>
 
-        <div class="graph" style= "float: right; height:15vh; width:40vw">
-            <canvas id="grafen"></canvas>
-            <script>
-                var ctx = document.getElementById("grafen").getContext('2d');
-                var myChart = new Chart(ctx, {
-                    type: 'line',
-                    data: {
-                             dataset: <?php echo json_encode($data, JSON_NUMERIC_CHECK); ?>
-
-                    }
-
-                            backgroundColor: [
-                                'rgba(255, 99, 132, 0.2)',
-                                'rgba(54, 162, 235, 0.2)',
-                                'rgba(255, 206, 86, 0.2)',
-                                'rgba(75, 192, 192, 0.2)',
-                                'rgba(153, 102, 255, 0.2)',
-                                'rgba(255, 159, 64, 0.2)'
-                            ],
-                            borderColor: [
-                                'rgba(255,99,132,1)',
-                                'rgba(54, 162, 235, 1)',
-                                'rgba(255, 206, 86, 1)',
-                                'rgba(75, 192, 192, 1)',
-                                'rgba(153, 102, 255, 1)',
-                                'rgba(255, 159, 64, 1)'
-                            ],
-                            borderWidth: 1
-                        }]
-                    },
-                    options: {
-                        scales: {
-                            yAxes: [{
-                                ticks: {
-                                    beginAtZero:true
-                                }
-                            }]
-                        }
-                    }
-                });
-            </script>
+        <div class="chart_container">
+            <canvas id="line_chart"></canvas>
         </div>
 
+
+        <!-- javascript -->
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js" integrity="sha256-Xxq2X+KtazgaGuA2cWR1v3jJsuMJUozyIXDB3e793L8="
+  crossorigin="anonymous"></script>
+        <script src="js/Chart.min.js"></script>
+        <script src="js/chart.js"></script>
+
+        <!-- Grafen -->
+       <script type="text/javascript">
+            
+       </script>
+
+    
     </body>
 </html>
