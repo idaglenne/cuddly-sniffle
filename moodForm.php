@@ -86,12 +86,13 @@ include "db_connect.php";
           <input type="checkbox" class="symptom" id="alt_tired" name="tired">
           <label for="alt_tired">Trötthet/Sömnsvårigheter</label>
           <br>
-          </div>
+        </div>
         <div id="comment">
           <label for="textarea">Lägg till valfri kommentar</label>
           <br>
           <textarea id="commentSection" placeholder="Skriv en kommentar">Skriv en kommentar</textarea>
         </div>
+        <input type="submit" id="moodSubmit" name="moodSubmit" value="Klar!">
       </form>
     </body>
 
