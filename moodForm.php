@@ -15,7 +15,7 @@ include "db_connect.php";
       <h1>mood log</h1>
     </div>
 
-      <form class="mood_form">
+      <form class="mood_form" method=POST action="form-process.php">
         <div class="question">
         <label>Hur mår du på en skala från ett till sju idag?</label>
         <p>Där 1 betyder mycket dåligt och 7 betyder mycket bra.</p>
@@ -56,41 +56,41 @@ include "db_connect.php";
         </div>
         <br/>
         <div class="partOfFormCheck">
-          <input type="checkbox" class="symptom" id="alt_tensionBack" name="tensionBack">
+          <input type="checkbox" class="symptom" id="alt_tensionBack" name="symptom">
           <label for="alt_tensionBack">Spänd rygg och nacke</label>
           <br>
-          <input type="checkbox" class="symptom" id="alt_stomachAche" name="stomachAche">
+          <input type="checkbox" class="symptom" id="alt_stomachAche" name="symptom">
           <label for="alt_stomachAche">Ont i magen</label>
           <br>
-          <input type="checkbox" class="symptom" id="alt_hyperventilation" name="hyperventilation">
+          <input type="checkbox" class="symptom" id="alt_hyperventilation" name="symptom">
           <label for="alt_hyperventilation">Hyperventilering</label>
           <br>
-          <input type="checkbox" class="symptom" id="alt_chestPain" name="chestPain">
+          <input type="checkbox" class="symptom" id="alt_chestPain" name="symptom">
           <label for="alt_chestPain">Bröstsmärtor</label>
           <br>
-          <input type="checkbox" class="symptom" id="alt_stomach" name="stomach">
+          <input type="checkbox" class="symptom" id="alt_stomach" name="symptom">
           <label for="alt_stomach">Orolig mage/Illamående</label>
           <br>
-          <input type="checkbox" class="symptom" id="alt_dizzy" name="dizzy">
+          <input type="checkbox" class="symptom" id="alt_dizzy" name="symptom">
           <label for="alt_dizzy">Yr/Svimfärdig</label>
           <br>
-          <input type="checkbox" class="symptom" id="alt_heartRacing" name="heartRacing">
+          <input type="checkbox" class="symptom" id="alt_heartRacing" name="symptom">
           <label for="alt_heartRacing">Hjärtklappning</label>
           <br>
-          <input type="checkbox" class="symptom" id="alt_coldSweat" name="coldSweat">
+          <input type="checkbox" class="symptom" id="alt_coldSweat" name="symptom">
           <label for="alt_coldSweat">Kallsvettningar</label>
           <br>
-          <input type="checkbox" class="symptom" id="alt_concentration" name="concentration">
+          <input type="checkbox" class="symptom" id="alt_concentration" name="symptom">
           <label for="alt_concentration">Koncentrationssvårigheter</label>
           <br>
-          <input type="checkbox" class="symptom" id="alt_tired" name="tired">
+          <input type="checkbox" class="symptom" id="alt_tired" name="symptom">
           <label for="alt_tired">Trötthet/Sömnsvårigheter</label>
           <br>
         </div>
         <div id="comment">
           <label for="textarea">Lägg till valfri kommentar</label>
           <br>
-          <textarea id="commentSection" placeholder="Skriv en kommentar">Skriv en kommentar</textarea>
+          <textarea name="commentSection" id="commentSection" placeholder="Skriv en kommentar">Skriv en kommentar</textarea>
         </div>
         <input type="submit" class="submit" id="moodSubmit" name="moodSubmit" value="Klar!">
       </form>
