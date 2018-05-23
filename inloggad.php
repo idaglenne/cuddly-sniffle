@@ -26,14 +26,15 @@ else{
 }
 
 $client_ID =  $_SESSION["clientID"];
-$date_query = "SELECT logDate FROM Log WHERE clientID LIKE $client_ID";
-$rating_query = "SELECT rating FROM Log WHERE clientID LIKE $client_ID";
+$date_query = "SELECT logDate, rating FROM Log WHERE clientID = '".$client_ID."'";
+//$rating_query = "SELECT rating FROM Log WHERE clientID LIKE $client_ID";
 $dates = $connection->query($date_query);
-$rating = $connection->query($rating_query);
+//$rating = $connection->query($rating_query);
 
-foreach($result as $row){
+foreach($dates as $row){
 
-    array_push($rating, array("x"=> $row->x, "y"=> $row->y));
+    array_push($data, array("logDate"=> $row->x, "rating"=> $row->y));
+
     }
 
 
@@ -87,14 +88,10 @@ foreach($result as $row){
                 var myChart = new Chart(ctx, {
                     type: 'line',
                     data: {
-                        labels: <?php echo json_encode($dates, JSON_NUMERIC_CHECK); ?>,
-                        datasets: [{
+                             dataset: <?php echo json_encode($data, JSON_NUMERIC_CHECK); ?>
+                       
 
-                            label: '# of Votes',
-                            data:  [12, 19, 3, 5, 2, 3],
-
-                            label: 'Din måendekurva',
-                            data: [12, 19, 3, 5, 2, 3],
+                    }
 
                             backgroundColor: [
                                 'rgba(255, 99, 132, 0.2)',
