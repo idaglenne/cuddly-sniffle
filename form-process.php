@@ -17,8 +17,7 @@
     $moodRating = $connection->real_escape_string($_POST["moodOneToSeven"]);
     $moodSymptom = $connection->real_escape_string($_POST["symptom"]);
 
-
-    
+    $query = "INSERT INTO Log (clientID, rating, comment) VALUES ('".$client_ID."', '".$moodRating."', '".$moodComment."')";
     $secondquery = "INSERT INTO Symptoms (symptomType) VALUES ('".$moodSymptom."')";
     $connection->query($query);
     $connection->query($secondquery);
