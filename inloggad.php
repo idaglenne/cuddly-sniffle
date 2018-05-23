@@ -2,12 +2,33 @@
 include "db_connect.php";
 include "login_process.php";
 
-if (isset($_SESSION["clientName"]))
+if (isset($_SESSION["clientID"]))
 {
-    $client_name =  $_SESSION["clientName"];
-    echo "<div class=welcome>"."Välkommen $client_name"."</div>";
+    
+    $client_ID =  $_SESSION["clientID"];
+    $name_query = "SELECT clientName, clientID FROM Clients";
+    $name = $connection->query($name_query);
+    
+    while ($row = $name->fetch_assoc()){
+
+        if ($row["clientID"] == $client_ID){
+
+            echo "<div class=welcome>"."Välkommen " .$row["clientName"]."</div>";
+        }
+        
+    }
 
 }
+else{
+    header("Refresh: 0; URL=index.php");
+
+}
+
+//$chart_query = "SELECT logDate, rating FROM Log WHERE clientID LIKE '".$client_ID."'";
+//$chart_values = $connection->query($chart_query);
+//echo $chart_values["logDate"];
+
+
 
 ?>
 <html>
@@ -59,7 +80,7 @@ if (isset($_SESSION["clientName"]))
                 var myChart = new Chart(ctx, {
                     type: 'line',
                     data: {
-                        labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+                        labels: ["Blue", "Yellow", "Green", "Purple", "Orange"],
                         datasets: [{
 
                             label: '# of Votes',
