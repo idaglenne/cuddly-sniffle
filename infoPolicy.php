@@ -11,13 +11,13 @@ include "db_connect.php";
     </head>
     <body>
         <h2>mood logs personuppgiftspolicy</h2>
-    <h3>Vi sparar följande personuppgifter om dig:</h3>
-    <p><ul>
+    <div class="policy"><h3>Vi sparar följande personuppgifter om dig:</h3>
+    <ul>
   <li>Namn</li>
   <li>E-postadress</li>
   <li>Data och ev. kommentarer som skrivs i loggen</li>
   <li>Statistik över datan i loggen</li>
-</ul></p>
+</ul>
 <br>
 <h3>Varför?</h3>
 <p>Vi lagrar denna information om dig för att tjänsten ska fungera så smidigt som möjligt för dig som mood log-användare och för att vi ska kunna följa upp ditt mående med personliga meddelanden.</p>
@@ -27,5 +27,6 @@ include "db_connect.php";
 Om du vill begära ut ett registerutdrag för att se samtliga personuppgifter om dig: maila oss på seinfo@gmail.com
 Om du vill ändra någon personuppgift: skicka den inaktuella informationen samt den nya informationen till korrigerainfo@gmail.com
 Om du vill ta bort samtliga personuppgifter: maila oss på raderainfo@gmail.com</p>
+</div>
 
 </html>
