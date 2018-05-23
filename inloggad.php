@@ -31,11 +31,15 @@ $date_query = "SELECT logDate, rating FROM Log WHERE clientID = '".$client_ID."'
 $dates = $connection->query($date_query);
 //$rating = $connection->query($rating_query);
 
+$data = array();
 foreach($dates as $row){
 
-    array_push($data, array("logDate"=> $row->x, "rating"=> $row->y));
+
+    $data[] = $row;
 
     }
+
+print json_encode($data);
 
 
 ?>
@@ -89,7 +93,6 @@ foreach($dates as $row){
                     type: 'line',
                     data: {
                              dataset: <?php echo json_encode($data, JSON_NUMERIC_CHECK); ?>
-                       
 
                     }
 
