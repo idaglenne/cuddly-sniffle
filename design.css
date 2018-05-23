@@ -49,11 +49,17 @@ h3{
     text-align: center;
 }
 
+.policyHeader {
+    margin-top: 10%;
+    font-size: 20pt;
+}
+
 /*listan i policy-sidan*/
 ul {
     font-family: 'Montserrat', sans-serif;
     font-weight: lighter;
-    text-align: center;
+    text-align: left;
+    margin-left: 30%;    
 }
 
 .inlog {
