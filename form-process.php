@@ -10,8 +10,9 @@
         $moodSymptom = implode(',', $_POST["symptom"]);
 
         $query = "INSERT INTO Log (clientID, rating, comment) VALUES ('".$client_ID."', '".$moodRating."', '".$moodComment."')";
-        $secondquery = "INSERT INTO Symptoms (symptomType) VALUES ('".$moodSymptom."')";
         $connection->query($query);
+
+        $secondquery = "INSERT INTO Symptoms (clientID, symptomType) VALUES ('".$client_ID."', '".$moodSymptom."')";
         $connection->query($secondquery);
 
         header("Refresh: 0; URL=inloggad.php");
