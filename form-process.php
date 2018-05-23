@@ -13,6 +13,7 @@
         exit;
     } */
 
+    $client_ID =  $_SESSION["clientID"];
     $moodComment = $connection->real_escape_string($_POST["commentSection"]);
     $moodRating = $connection->real_escape_string($_POST["moodOneToSeven"]);
     $moodSymptom = $connection->real_escape_string($_POST["symptom"]);
