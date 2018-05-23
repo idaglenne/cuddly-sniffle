@@ -34,13 +34,11 @@ $dates = $connection->query($date_query);
 $data = array();
 foreach($dates as $row){
 
-
     $data[] = $row;
 
     }
 
 print json_encode($data);
-
 
 ?>
 <html>
