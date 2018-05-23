@@ -20,14 +20,21 @@ if (isset($_SESSION["clientID"]))
 
 }
 else{
+
     header("Refresh: 0; URL=index.php");
 
 }
 
-//$chart_query = "SELECT logDate, rating FROM Log WHERE clientID LIKE '".$client_ID."'";
-//$chart_values = $connection->query($chart_query);
-//echo $chart_values["logDate"];
+$client_ID =  $_SESSION["clientID"];
+$date_query = "SELECT logDate FROM Log WHERE clientID LIKE $client_ID";
+$rating_query = "SELECT rating FROM Log WHERE clientID LIKE $client_ID";
+$dates = $connection->query($date_query);
+$rating = $connection->query($rating_query);
 
+foreach($result as $row){
+
+    array_push($rating, array("x"=> $row->x, "y"=> $row->y));
+    }
 
 
 ?>
@@ -80,7 +87,7 @@ else{
                 var myChart = new Chart(ctx, {
                     type: 'line',
                     data: {
-                        labels: ["Blue", "Yellow", "Green", "Purple", "Orange"],
+                        labels: <?php echo json_encode($dates, JSON_NUMERIC_CHECK); ?>,
                         datasets: [{
 
                             label: '# of Votes',
