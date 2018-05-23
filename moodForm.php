@@ -15,7 +15,7 @@ include "db_connect.php";
       <h1>mood log</h1>
     </div>
 
-      <form class="mood_form" method=POST action="form-process.php">
+      <form class="mood_form" action="form-process.php" method="POST">
         <div class="question">
         <label>Hur mår du på en skala från ett till sju idag?</label>
         <p>Där 1 betyder mycket dåligt och 7 betyder mycket bra.</p>
