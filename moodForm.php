@@ -18,7 +18,7 @@ include "db_connect.php";
       <form class="mood_form">
         <div class="question">
         <label>Hur mår du på en skala från ett till sju idag?</label>
-        <p>Där 1 betyder mycket dåligt och 7 betyder mycket bra</p>
+        <p>Där 1 betyder mycket dåligt och 7 betyder mycket bra.</p>
         </div>
         <br>
         <div class="radioButtons">
