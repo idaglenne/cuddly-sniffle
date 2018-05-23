@@ -19,9 +19,9 @@ if (isset($_POST["submit"])) {
         $user_psw = $connection->real_escape_string($_POST["psw_inlog"]);
 
         $query = "SELECT clientPassword FROM Clients WHERE clientEmail = '".$user_email."'";
-        $name_query = "SELECT clientName FROM Clients WHERE clientEmail = '".$user_email."'";
+        $id_query = "SELECT clientID FROM Clients WHERE clientEmail = '".$user_email."'";
         $get_password = $connection->query($query);
-        $get_name = $connection->query($name_query);
+        $get_id = $connection->query($id_query);
 
         //Kollar om det finns något salt i variabeln = om den hittade rätt email
         if ($get_password->num_rows == 0)
@@ -33,15 +33,16 @@ if (isset($_POST["submit"])) {
                        
                 //Hämtar lösenordet associerat med emailen från databasen
                 while ($password = $get_password->fetch_assoc()){
-                    while ($name = $get_name->fetch_assoc()){
+                   
+                    while ($client_ID = $get_id->fetch_assoc()){
 
                     //Jämför lösenordet med användarens input
                     if (($password["clientPassword"]) == $user_psw)
                     {
 
-                        //while ($name = $get_name->fetch_assoc()){
+                        
                         //Initierar en session för användaren
-                        $_SESSION["clientName"] = $name["clientName"];
+                        $_SESSION["clientID"] =  $client_ID["clientID"];
                         header("Refresh: 0; URL=inloggad.php");
                     }
 
