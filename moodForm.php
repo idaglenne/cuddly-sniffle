@@ -56,34 +56,34 @@ include "db_connect.php";
         </div>
         <br/>
         <div class="partOfFormCheck">
-          <input type="checkbox" class="symptom" id="alt_tensionBack" name="symptom[]" value="1">
+          <input type="checkbox" class="symptom" id="alt_tensionBack" name="symptom1" value="1">
           <label for="alt_tensionBack">Spänd rygg och nacke</label>
           <br>
-          <input type="checkbox" class="symptom" id="alt_stomachAche" name="symptom[]" value="2">
+          <input type="checkbox" class="symptom" id="alt_stomachAche" name="symptom2" value="2">
           <label for="alt_stomachAche">Ont i magen</label>
           <br>
-          <input type="checkbox" class="symptom" id="alt_hyperventilation" name="symptom[]" value="3">
+          <input type="checkbox" class="symptom" id="alt_hyperventilation" name="symptom3" value="3">
           <label for="alt_hyperventilation">Hyperventilering</label>
           <br>
-          <input type="checkbox" class="symptom" id="alt_chestPain" name="symptom[]" value="4">
+          <input type="checkbox" class="symptom" id="alt_chestPain" name="symptom4" value="4">
           <label for="alt_chestPain">Bröstsmärtor</label>
           <br>
-          <input type="checkbox" class="symptom" id="alt_stomach" name="symptom[]" value="5">
+          <input type="checkbox" class="symptom" id="alt_stomach" name="symptom5" value="5">
           <label for="alt_stomach">Orolig mage/Illamående</label>
           <br>
-          <input type="checkbox" class="symptom" id="alt_dizzy" name="symptom[]" value="6">
+          <input type="checkbox" class="symptom" id="alt_dizzy" name="symptom6" value="6">
           <label for="alt_dizzy">Yr/Svimfärdig</label>
           <br>
-          <input type="checkbox" class="symptom" id="alt_heartRacing" name="symptom[]" value="7">
+          <input type="checkbox" class="symptom" id="alt_heartRacing" name="symptom7" value="7">
           <label for="alt_heartRacing">Hjärtklappning</label>
           <br>
-          <input type="checkbox" class="symptom" id="alt_coldSweat" name="symptom[]" value="8">
+          <input type="checkbox" class="symptom" id="alt_coldSweat" name="symptom8" value="8">
           <label for="alt_coldSweat">Kallsvettningar</label>
           <br>
-          <input type="checkbox" class="symptom" id="alt_concentration" name="symptom[]" value="9">
+          <input type="checkbox" class="symptom" id="alt_concentration" name="symptom9" value="9">
           <label for="alt_concentration">Koncentrationssvårigheter</label>
           <br>
-          <input type="checkbox" class="symptom" id="alt_tired" name="symptom[]" value="10">
+          <input type="checkbox" class="symptom" id="alt_tired" name="symptom10" value="10">
           <label for="alt_tired">Trötthet/Sömnsvårigheter</label>
           <br>
         </div>
