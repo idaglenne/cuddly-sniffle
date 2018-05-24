@@ -21,6 +21,8 @@ foreach($dates as $row){
 
 while ($weekrating = $dates->fetch_assoc()){
 
+
+
 }
 
 
