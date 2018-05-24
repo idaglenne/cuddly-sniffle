@@ -24,6 +24,11 @@ print json_encode($data);
 $rating_query = "SELECT rating FROM Log WHERE clientID = $client_ID";
 
 
+<<<<<<< HEAD
+=======
+print json_encode($data);
+//hej
+>>>>>>> 18fc602ee5de9a512f8c15569fb2eb125930e962
 
 
 
