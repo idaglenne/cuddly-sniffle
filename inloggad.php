@@ -25,9 +25,6 @@ else{
 
 }
 
-
-
-
 ?>
 <html>
     <head>
@@ -38,10 +35,37 @@ else{
     
     </head>
     <body>
+    
+    <?php 
 
-        <form id="todaysMoodLog" action="./moodForm.php">
-    <input type="submit" class="submit" value="Skriv dagens logg">
-        </form>
+        date_default_timezone_set('UTC');
+        $date = date('Y-m-d');
+        $todayslog_query = "SELECT * FROM Log WHERE clientID = '".$client_ID."' AND logDate = '".$date."'";
+        $log = $connection->query($todayslog_query);
+
+        if(empty($log)){
+            
+            echo "<form id='todaysMoodLog' action='./moodForm.php'>
+                <input type='submit' class='submit' value='Skriv dagens logg'>
+            </form>";
+
+        }
+        else{
+
+            echo "Du har fyllt i dagens logg!";
+        }
+
+
+        while ($hej = $log->fetch_assoc()){
+            echo $hej["rating"];
+        }
+        if(!empty($log)){
+            echo "hej";
+        }
+
+            //7<!--Knapp till mood formuläret-->
+            
+        ?>
 
         <nav role="navigation">
         <div id="menuToggle">

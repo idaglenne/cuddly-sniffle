@@ -36,8 +36,9 @@ if (isset($_SESSION["clientName"])){
         <span><?php echo $error; ?></span>
         </div>
         <div class="omOss">
-    <p><a href="./OmOss.php" target="_blank">Här</a> kan du läsa om oss!</p>
-    <p><a href="infoPolicy.php" target="_blank">Personuppgiftspolicy</a></p>
+    
+    <p><a href="./OmOss.php">Här</a> kan du läsa om oss!</p>
+    <p><a href="infoPolicy.php">Personuppgiftspolicy</a></p>
 
       </div>
 
