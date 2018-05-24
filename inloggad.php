@@ -50,23 +50,21 @@ else{
             </form>";
 
         }
+        else{
+
+            echo "Du har fyllt i dagens logg!";
+        }
 
 
-        //while ($hej = $log->fetch_assoc()){
-         //   echo $hej["rating"];
-        //}
-        //if(!empty($log)){
-        //    echo "hej";
-        //}
+        while ($hej = $log->fetch_assoc()){
+            echo $hej["rating"];
+        }
+        if(!empty($log)){
+            echo "hej";
+        }
 
             //7<!--Knapp till mood formuläret-->
             
-
-       // <?PHP
-         //   if ($_Session['WorkMode'] == 'New' || $_Session['WorkMode'] == "") 
-       // echo "<input id='Submit' name='Submit' value='Submit' type='button'>";
-        //    else
-       // echo "<input id='Update' name='Update' value='Update' type='button'>";
         ?>
 
         <nav role="navigation">
