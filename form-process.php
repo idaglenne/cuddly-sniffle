@@ -96,7 +96,7 @@
         }
        
 
-        $secondquery = "INSERT INTO Symptoms (clientID, symptom1, symptom2, symptom3, symptom4, symptom5, symptom6, symptom7, symptom8, symptom9, symptom10,) VALUES ('".$client_ID."', '".$check1."', '".$check2."', '".$check3."', '".$check4."', '".$check5."', '".$check6."', '".$check7."', '".$check8."', '".$check9."', '".$check10."')";
+        $secondquery = "INSERT INTO Symptoms (clientID, symptom1, symptom2, symptom3, symptom4, symptom5, symptom6, symptom7, symptom8, symptom9, symptom10) VALUES ('".$client_ID."', '".$check1."', '".$check2."', '".$check3."', '".$check4."', '".$check5."', '".$check6."', '".$check7."', '".$check8."', '".$check9."', '".$check10."')";
         $result = $connection->query($secondquery);
 
 
