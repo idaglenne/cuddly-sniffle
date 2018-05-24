@@ -48,8 +48,9 @@ $(document).ready(function(){
                         data: mood.rating,
                         backgroundcolor: "#F8B195",
                         borderColor: "#F8B195",
-                        fill: false,
-                        lineTension: 0.5,
+                        fillColor: "#F8B195",
+                        fill: true,
+                        lineTension: 0.4,
                         pointRadius: 3
 
                     }
