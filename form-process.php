@@ -11,7 +11,7 @@
         date_default_timezone_set('UTC');
         $date = date('Y-m-d');
 
-        $query = "INSERT INTO Log VALUES ('".$client_ID."', '".$date."', '".$moodRating."', '".$moodComment."')";
+        $query = "INSERT INTO Log (clientID, rating, comment) VALUES ('".$client_ID."', '".$moodRating."', '".$moodComment."')";
         $connection->query($query);
 
         if(isset($_POST["symptom1"]))
