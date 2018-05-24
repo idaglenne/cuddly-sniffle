@@ -43,25 +43,26 @@ else{
         $todayslog_query = "SELECT * FROM Log WHERE clientID = '".$client_ID."' AND logDate = '".$date."'";
         $log = $connection->query($todayslog_query);
 
-        if(empty($log)){
+        if ($log->num_rows == 0){
             
             echo "<form id='todaysMoodLog' action='./moodForm.php'>
-                <input type='submit' class='submit' value='Skriv dagens logg'>
-            </form>";
+                            <input type='submit' class='submit' value='Skriv dagens logg'>
+                        </form>";
 
         }
         else{
-
-            echo "Du har fyllt i dagens logg!";
+            
+            echo "Du har fyllt i dagens logg!";     
+            
         }
 
 
-        while ($hej = $log->fetch_assoc()){
-            echo $hej["rating"];
-        }
-        if(!empty($log)){
-            echo "hej";
-        }
+        //while ($hej = $log->fetch_assoc()){
+        //    echo $hej["rating"];
+       // }
+        //if(!empty($log)){
+        //    echo "hej";
+       // }
 
             //7<!--Knapp till mood formuläret-->
             
