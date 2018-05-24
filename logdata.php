@@ -24,6 +24,8 @@ $rating_query = "SELECT rating FROM Log WHERE clientID = '".$client_ID."'";
 
 while ($weekrating = $dates->fetch_assoc()){
 
+
+
 }
 //lägg ihop 7 dagars rating & spara i variabel
 
