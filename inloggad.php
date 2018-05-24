@@ -25,9 +25,6 @@ else{
 
 }
 
-
-
-
 ?>
 <html>
     <head>
@@ -38,10 +35,39 @@ else{
     
     </head>
     <body>
+    
+    <?php 
 
-        <form id="todaysMoodLog" action="./moodForm.php">
-    <input type="submit" class="submit" value="Skriv dagens logg">
-        </form>
+        date_default_timezone_set('UTC');
+        $date = date('Y-m-d');
+        $todayslog_query = "SELECT * FROM Log WHERE clientID = '".$client_ID."' AND logDate = '".$date."'";
+        $log = $connection->query($todayslog_query);
+
+        if(empty($log)){
+            
+            echo "<form id='todaysMoodLog' action='./moodForm.php'>
+                <input type='submit' class='submit' value='Skriv dagens logg'>
+            </form>";
+
+        }
+
+
+        //while ($hej = $log->fetch_assoc()){
+         //   echo $hej["rating"];
+        //}
+        //if(!empty($log)){
+        //    echo "hej";
+        //}
+
+            //7<!--Knapp till mood formuläret-->
+            
+
+       // <?PHP
+         //   if ($_Session['WorkMode'] == 'New' || $_Session['WorkMode'] == "") 
+       // echo "<input id='Submit' name='Submit' value='Submit' type='button'>";
+        //    else
+       // echo "<input id='Update' name='Update' value='Update' type='button'>";
+        ?>
 
         <nav role="navigation">
         <div id="menuToggle">

@@ -78,6 +78,7 @@ $(document).ready(function(){
                 fontColor: "#75C2F6"
 
             },
+            events: ['click'],
             legend: {
                 display: true,
                 position: "bottom"
