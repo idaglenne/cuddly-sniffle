@@ -1,9 +1,10 @@
 // dagens datum
-var today = new Date();
-var dd = today.getDate();
-var mm = today.getMonth()+1; //January is 0!
-var yyyy = today.getFullYear();
+//var today = new Date();
+//var dd = today.getDate();
+//var mm = today.getMonth()+1; //January is 0!
+//var yyyy = today.getFullYear();
 
+//detta är alltså långt från klart
 
 var d = new Date();
 var dayOfWeek = d.getDay();
