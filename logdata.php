@@ -19,14 +19,15 @@ foreach($dates as $row){
     }
 
 
+$rating_query = "SELECT rating FROM Log WHERE clientID = '".$client_ID."'";
+
+
 while ($weekrating = $dates->fetch_assoc()){
 
-    $weekrating = ($weekrating + $dates["rating"]);
 }
 
-print json_encode($data);
-//hej
 
+print json_encode($data);
 
 
 ?>
