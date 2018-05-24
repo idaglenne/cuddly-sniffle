@@ -25,18 +25,16 @@
         {
             if(isset($symptoms[$i]))
             {
-                $symptoms[$i] = 1;
+                $symptoms[$i] = true;
             }
             else
             {
-                $symptoms[$i] = 0;
+                $symptoms[$i] = false;
             }
         }
        
 
         $secondquery = "INSERT INTO Symptoms (clientID, sDate, symptom1, symptom2, symptom3, symptom4, symptom5, symptom6, symptom7, symptom8, symptom9, symptom10) VALUES ('".$client_ID."', '".$date."', '".$symptoms[0]."', '".$symptoms[1]."', '".$symptoms[2]."', '".$symptoms[3]."', '".$symptoms[4]."', '".$symptoms[5]."', '".$symptoms[6]."', '".$symptoms[7]."', '".$symptoms[8]."', '".$symptoms[9]."')";
-
-        $secondquery = "INSERT INTO Symptoms (clientID, sDate, symptom1, symptom2, symptom3, symptom4, symptom5, symptom6, symptom7, symptom8, symptom9, symptom10) VALUES ('".$client_ID."', '".$date."', '".$check1."', '".$check2."', '".$check3."', '".$check4."', '".$check5."', '".$check6."', '".$check7."', '".$check8."', '".$check9."', '".$check10."')";
 
         $result = $connection->query($secondquery);
 
