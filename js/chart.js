@@ -15,22 +15,36 @@ $(document).ready(function(){
 
             console.log(data.length);
 
-            for (var i = 0; i < len; i++){
+            //Om mindre än 7 inlägg
+            if (len < 8){
+
+                for (var i = 0; i < len; i++){
 
                 console.log(data[i]);
                 mood.rating.push(data[i].rating);
                 mood.logDate.push(data[i].logDate);
-                
+                }
             }
+            //Om fler än 7 inlägg
+            else if(len > 7) {
+                for (var i = 0; i < 7; i++){
+
+               // console.log(data[i]);
+                mood.rating.push(data[i].rating);
+                mood.logDate.push(data[i].logDate);
+            }
+
+            }
+            
 
             console.log(mood);
 
            var ctx = $("#line_chart");
+
                 var data= {
                     labels: mood.logDate,
                     datasets: [{
                         label: "Mood rating",
-                    
                         data: mood.rating,
                         backgroundcolor: "#F8B195",
                         borderColor: "#F8B195",
@@ -77,24 +91,20 @@ $(document).ready(function(){
                         min: 0,
                         stepSize: 1
                     }
+
             }]}
         
-    }
+    };
 
     var chart = new Chart(ctx, {
         type: "line",
         data: data,
-        options: options
-            });
-
-        },
+        options: options,
+    });
+    },
         error: function (data) {
             console.log(data);
-        },
+        }
 
     });
-
-
-
-   
 });

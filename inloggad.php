@@ -39,6 +39,9 @@ else{
     </head>
     <body>
 
+        <form id="todaysMoodLog" action="./moodForm.php">
+    <input type="submit" class="submit" value="Skriv dagens logg">
+        </form>
 
         <nav role="navigation">
         <div id="menuToggle">

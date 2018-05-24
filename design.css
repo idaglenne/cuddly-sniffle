@@ -443,7 +443,12 @@ a:hover{
 
 /* Grafen */
 .chart_container{
-    width: 50%;
-    height: 300px;
+    width: 70%;
+    height: 400px;
     margin: 0 auto;
+}
+
+/*knappen som leder från inloggad-sidan till mood form-sidan*/
+#todaysMoodLog {
+    /*fixa placering av knappen*/
 }
