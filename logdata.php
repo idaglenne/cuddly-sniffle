@@ -18,6 +18,14 @@ foreach($dates as $row){
 
     }
 
+
+while ($weekrating = $dates->fetch_assoc()){
+
+    $weekrating = ($weekrating + $dates["rating"]);
+}
+
 print json_encode($data);
+
+
 
 ?>
