@@ -30,6 +30,7 @@ $(document).ready(function(){
         labels: mood.logDate,
         datasets: [{
             label: "Mood rating",
+           
             data: mood.rating,
             backgroundcolor: "#F8B195",
             borderColor: "#F8B195",

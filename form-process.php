@@ -8,7 +8,10 @@
         $moodComment = $connection->real_escape_string($_POST["commentSection"]);
         $moodRating = $connection->real_escape_string($_POST["moodOneToSeven"]);
 
-        $query = "INSERT INTO Log (clientID, rating, comment) VALUES ('".$client_ID."', '".$moodRating."', '".$moodComment."')";
+        date_default_timezone_set('UTC');
+        $date = date('Y-m-d');
+
+        $query = "INSERT INTO Log VALUES ('".$date."' '".$client_ID."', '".$moodRating."', '".$moodComment."')";
         $connection->query($query);
 
         $symptom1 = $_POST["symptom1"];
