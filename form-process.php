@@ -28,7 +28,7 @@
 
         $symptomsValuesString = implode(",", $symptomsValues);
         
-        $symptomsQuery = "INSERT INTO Symptoms (clientID, sDate, symptom1, symptom2, symptom3, symptom4, symptom5, symptom6, symptom7, symptom8, symptom9, symptom10) VALUES (".$client_ID.", '".$date."', ".$symptomsValuesString.")";
+        $symptomsQuery = "INSERT INTO Symptoms VALUES (".$client_ID.", '".$date."', ".$symptomsValuesString.")";
 
         $result = $connection->query($symptomsQuery);
 
