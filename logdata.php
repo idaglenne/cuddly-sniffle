@@ -19,6 +19,9 @@ foreach($dates as $row){
     }
 
 
+$rating_query = "SELECT rating FROM Log WHERE clientID = '".$client_ID."'";
+
+
 while ($weekrating = $dates->fetch_assoc()){
 
 }
