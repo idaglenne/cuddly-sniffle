@@ -25,6 +25,7 @@ while ($weekrating = $dates->fetch_assoc()){
 }
 
 print json_encode($data);
+//hej
 
 
 
