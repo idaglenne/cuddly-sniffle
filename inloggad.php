@@ -39,7 +39,6 @@ else{
     </head>
     <body>
 
-        <!--<button><a href="./moodForm.php" target="_blank">Logga!</a></button>-->
         <form id="todaysMoodLog" action="./moodForm.php">
     <input type="submit" class="submit" value="Skriv dagens logg">
         </form>
