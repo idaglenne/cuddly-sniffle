@@ -1,12 +1,12 @@
 body{
 
     text-align: center;
-    background-color: #D6E6F2;
+    background-color: #dcfde5;
 }
 
 h1{
 
-    color: #75C2F6;
+    color: #4A8DAC;
     font-family: 'Montserrat', sans-serif;
     font-weight: lighter;
     font-size: 75px;
@@ -17,7 +17,7 @@ h1{
 
 h2{
 
-    color: #F8B195;
+    color: #4A8DAC;
     font-family: 'Montserrat', sans-serif;
     font-weight: lighter;
     text-align: center;
@@ -25,7 +25,7 @@ h2{
 }
 
 h3{
-    color: #F8B195;
+    color: #4A8DAC;
     font-family: 'Montserrat', sans-serif;
     font-weight: lighter;
 
@@ -101,6 +101,7 @@ ul {
     border-radius: 10px;
     color: black;
     text-align: center;
+    font-size: 11pt;
     position: absolute;
     left: 27.5%;
     
@@ -108,7 +109,7 @@ ul {
 
 .submit {
 
-    background-color: #7DC383;
+    background-color: #FEDCD2;
     font-family: 'Montserrat', sans-serif;
     font-weight: lighter;
     margin-top: 1%;
@@ -137,7 +138,7 @@ ul {
 
 a{
 
-    color: #75C2F6;
+    color: #4A8DAC;
     text-decoration: none;
     transition: color 0.4s ease;
 
