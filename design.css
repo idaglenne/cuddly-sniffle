@@ -353,16 +353,8 @@ a:hover{
     margin-right: 10%;
 }
 
-<<<<<<< HEAD
-
-
 #text p {
     font-family: 'Montserrat', sans-serif;
-=======
-#text p{
-
-  font-family: 'Montserrat', sans-serif;
->>>>>>> f870ce3fee7a6134cb771f570648fa583ebdf40b
     font-weight: lighter;
     text-align: center;
 }
@@ -455,8 +447,6 @@ a:hover{
     border: none;
     resize: none;
 }
-<<<<<<< HEAD
-=======
 
 /*Väkomsttext på inlogg*/
 .welcome{
@@ -523,7 +513,4 @@ a:hover{
     /*text-align: center;*/
     font-family: 'Montserrat', sans-serif;
     font-size: 12pt;
-
-
 }
->>>>>>> f870ce3fee7a6134cb771f570648fa583ebdf40b
