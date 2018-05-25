@@ -44,11 +44,10 @@ $(document).ready(function(){
                 var data= {
                     labels: mood.logDate,
                     datasets: [{
-                        label: "Mood rating",
+                        label: "Mood rating", 
                         data: mood.rating,
                         backgroundcolor: "#F8B195",
                         borderColor: "#F8B195",
-                        fillColor: "#F8B195",
                         fill: true,
                         lineTension: 0.4,
                         pointRadius: 3
@@ -79,7 +78,6 @@ $(document).ready(function(){
                 fontColor: "#75C2F6"
 
             },
-            events: ['click'],
             legend: {
                 display: true,
                 position: "bottom"
