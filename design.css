@@ -127,7 +127,7 @@ ul {
 
 }
 
-/*tillbaka knapp*/
+/*/*tillbaka knapp*/
 .submitbutton
 {
 background-color: #FEDCD2;
@@ -548,7 +548,7 @@ a:hover{
     right: 30%;
 
 }
-/*.todays_log_rating{
+.todays_log_rating{
     
     text-align: left;
     font-family: 'Montserrat', sans-serif;
@@ -563,9 +563,9 @@ a:hover{
     display: inline-block;
     
 
-}*/
+}
 
-/*.mButton {
+.mButton {
     background-color: #7DC383;
     font-family: 'Montserrat', sans-serif;
     font-weight: lighter;
@@ -591,5 +591,5 @@ a:hover{
 
 .headerandfooter {
     background-color: #F8B595;
-}*/
+}
 
