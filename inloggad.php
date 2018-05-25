@@ -106,8 +106,6 @@ else{
         <script src="js/Chart.min.js"></script>
         <script src="js/chart.js"></script>
 
-        
-
        <div class="log_container">
            <div class="log_container_left">
            <!--Ruta med dagens mående-->
@@ -131,7 +129,8 @@ else{
 
            ?>
 
-
+           </div>
+ </div>
 
     </body>
 </html>

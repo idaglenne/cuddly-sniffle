@@ -144,7 +144,7 @@ background-color: #FEDCD2;
     position:absolute; top:0; right:0;
 }
 
-.submitbutton:hover
+.submitbutton::hover
 {
     background-color: #F8B595;
 }
@@ -526,7 +526,7 @@ a:hover{
     color:#F8B595;
 
 }
-/*
+
 .log_container{
 
     position: relative;
@@ -592,7 +592,7 @@ a:hover{
 
 /*.todays_log{
     
-    /*text-align: center;
+    /*text-align: center;*/
     font-family: 'Montserrat', sans-serif;
     font-size: 12pt;
 }
@@ -607,5 +607,5 @@ a:hover{
 
 .headerandfooter {
     background-color: #F8B595;
-}*/
+}
 
