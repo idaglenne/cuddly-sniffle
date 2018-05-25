@@ -11,19 +11,6 @@ $log = $connection->query($log_query);
 $symptoms_query = "SELECT * FROM Symptoms WHERE clientID = '".$clientID."' AND sDate = '".$date."'";
 $symptoms = $connection->query($symptoms_query);
 
-while ($todays_log = $log->fetch_assoc()){
-
-    $log_date = $todays_log["logDate"];
-    //echo $log_date;
-
-}
-//
-//$todays_symptoms = array();
-//foreach($symptoms as $row){
-
-   // $todays_symptoms[] = $row;
-
-   // }
 
 
 ?>

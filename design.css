@@ -144,7 +144,7 @@ background-color: #FEDCD2;
     position:absolute; top:0; right:0;
 }
 
-.submitbutton:hover
+.submitbutton::hover
 {
     background-color: #F8B595;
 }
@@ -156,7 +156,7 @@ background-color: #FEDCD2;
     font-family: 'Montserrat', sans-serif;
 
 }
-/*en allmän länk? vad är detta*/
+/*en allmän länk? vad är detta Det ändrar utseende för alla länkar. */
 a{
 
     color: #4A8DAC;
@@ -221,12 +221,7 @@ a:hover{
     font-weight: lighter;   
 }
 
-/* Grafen */
-.chart_container{
-    width: 70%;
-    height: 40%;
-    margin: 0 auto;
-}
+
 
 /*knappen som leder från inloggad-sidan till mood form-sidan*/
 #todaysMoodLog {
@@ -290,7 +285,11 @@ a:hover{
   margin-bottom: 5px;
   position: relative;
 
+
   background: #6e91bf;
+
+  background: #cdcdcd;
+
   border-radius: 3px;
 
   z-index: 1;
@@ -347,12 +346,11 @@ a:hover{
 #menu
 {
   position: absolute;
-  width: 100px;
+  width: 220px;
     height: 100vh;
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
-
   background: #6e91bf;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
@@ -377,10 +375,10 @@ a:hover{
     transform: none;
 }
 
-/*design på grafen*/
+/*design på grafen
 #graph {
     margin-right: 10%;
-}
+}*/
 
 #text p {
     font-family: 'Montserrat', sans-serif;
@@ -509,6 +507,7 @@ a:hover{
     margin: 0 auto;
 }
 
+
 /*knappen som leder från inloggad-sidan till mood form-sidan*/
 #todaysMoodLog {
     /*fixa placering av knappen*/
@@ -566,19 +565,36 @@ a:hover{
 }
 
 .mButton {
-    background-color: #7DC383;
+
+   
+
+    background-color: #FEDCD2;
     font-family: 'Montserrat', sans-serif;
     font-weight: lighter;
     text-align: center;
+    font-size: 10pt;
     border: none;
-    border-radius: 10%;
+    border-radius: 7%;
     transition: all 0.4s ease 0s;
-    width: 40%;
-    height: 30%;
+    margin-top: 7%;
+    width: 15%;
+    height: 5%;
 }
 
 .mButton:hover {
     background-color: #F8B595;
+    background-color: #ededed;
+    box-sizing: border-box;
+    padding: 2px;
+    border-radius: 7px;
+    /*text-align: center;*/
+}
+
+.todays_log{
+    
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12pt;
 }
 
 #modalText {
