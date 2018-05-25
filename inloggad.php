@@ -86,7 +86,7 @@ else{
             <ul id="menu">
               <a href="#"><li>Hem</li></a>
               <a href="./OmOss.php"><li>Om oss</li></a>
-              <a href="#"><li>Kontaktuppgifter</li></a>
+              <a href="./contactSide.php"><li>Kontaktuppgifter</li></a>
                 <a href="./logout.php"><li>Logga ut</li></a>
               </ul>
         </div>
