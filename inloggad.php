@@ -33,10 +33,12 @@ else{
     <link rel="stylesheet" href="./design.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="icon" type="image/png" href="./cloud.png">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
     </head>
     <body>
-    
+
     <?php 
 
         date_default_timezone_set('UTC');
@@ -123,7 +125,30 @@ else{
 
            ?>
 
+           <div class="w3-container">
+  <button onclick="document.getElementById('id01').style.display='block'" class="mButton">Se dagens meddelande</button>
+
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="headerandfooter"> 
+        <span onclick="document.getElementById('id01').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2 id="modalText">Dagens meddelande</h2>
+      </header>
+      <div class="w3-container">
+        <p id="modalText">här vill vi echo:a ut php</p>
+        <p id="modalText">baserat på senaste ratingen</p>
+      </div>
+      <footer class="headerandfooter">
+        <p id="modalText">:)</p>
+      </footer>
+    </div>
+  </div>
+</div>
+
+        
+
        </div>
-    
+
     </body>
 </html>

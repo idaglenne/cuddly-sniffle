@@ -514,3 +514,32 @@ a:hover{
     font-family: 'Montserrat', sans-serif;
     font-size: 12pt;
 }
+
+
+.mButton {
+    background-color: #7DC383;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    border: none;
+    border-radius: 10%;
+    transition: all 0.4s ease 0s;
+    width: 40%;
+    height: 30%;
+}
+
+.mButton:hover {
+    background-color: #F8B595;
+}
+
+#modalText {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    font-size: 10pt;   
+    color: black;
+}
+
+.headerandfooter {
+    background-color: #F8B595;
+}
