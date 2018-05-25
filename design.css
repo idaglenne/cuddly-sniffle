@@ -1,12 +1,12 @@
 body{
 
     text-align: center;
-    background-color: #D6E6F2;
+    background-color: #dcfde5;
 }
 
 h1{
 
-    color: #75C2F6;
+    color: #4A8DAC;
     font-family: 'Montserrat', sans-serif;
     font-weight: lighter;
     font-size: 70pt;
@@ -17,7 +17,7 @@ h1{
 
 h2{
 
-    color: #F8B195;
+    color: #4A8DAC;
     font-family: 'Montserrat', sans-serif;
     font-weight: lighter;
     text-align: center;
@@ -25,7 +25,7 @@ h2{
 }
 
 h3{
-    color: #F8B195;
+    color: #4A8DAC;
     font-family: 'Montserrat', sans-serif;
     font-weight: lighter;
 
@@ -100,6 +100,7 @@ ul {
     border-radius: 9%;
     color: black;
     text-align: center;
+    font-size: 11pt;
     position: absolute;
     left: 27.5%;
     
@@ -107,7 +108,7 @@ ul {
 
 .submit {
 
-    background-color: #7DC383;
+    background-color: #FEDCD2;
     font-family: 'Montserrat', sans-serif;
     font-weight: lighter;
     margin-top: 1%;
@@ -136,7 +137,7 @@ ul {
 /*en allmän länk? vad är detta*/
 a{
 
-    color: #75C2F6;
+    color: #4A8DAC;
     text-decoration: none;
     transition: color 0.4s ease;
 
@@ -353,16 +354,8 @@ a:hover{
     margin-right: 10%;
 }
 
-<<<<<<< HEAD
-
-
 #text p {
     font-family: 'Montserrat', sans-serif;
-=======
-#text p{
-
-  font-family: 'Montserrat', sans-serif;
->>>>>>> f870ce3fee7a6134cb771f570648fa583ebdf40b
     font-weight: lighter;
     text-align: center;
 }
@@ -455,8 +448,6 @@ a:hover{
     border: none;
     resize: none;
 }
-<<<<<<< HEAD
-=======
 
 /*Väkomsttext på inlogg*/
 .welcome{
@@ -511,7 +502,7 @@ a:hover{
     top:5%;
     width: 40%;
     height: 20%;
-    background-color: white;
+    background-color: #ededed;
     box-sizing: border-box;
     padding: 2px;
     border-radius: 7px;
@@ -523,7 +514,4 @@ a:hover{
     /*text-align: center;*/
     font-family: 'Montserrat', sans-serif;
     font-size: 12pt;
-
-
 }
->>>>>>> f870ce3fee7a6134cb771f570648fa583ebdf40b
