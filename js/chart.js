@@ -46,8 +46,8 @@ $(document).ready(function(){
                     datasets: [{
                         label: "Mood rating", 
                         data: mood.rating,
-                        backgroundcolor: "#F8B195",
-                        borderColor: "#F8B195",
+                        backgroundcolor: "#6e91bf",
+                        borderColor: "#6e91bf",
                         fill: true,
                         lineTension: 0.4,
                         pointRadius: 3
@@ -64,7 +64,7 @@ $(document).ready(function(){
                 fontFamily: "Montserrat",
                 fontWeight: "lighter",
                 fontSize: 25,
-                fontColor: "#75C2F6"
+                fontColor: "#4A8DAC"
 
             },
             legend: {

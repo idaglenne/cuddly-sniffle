@@ -352,7 +352,6 @@ a:hover{
   padding: 50px;
   padding-top: 125px;
   background: #6e91bf;
-  background: #ededed;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
@@ -519,7 +518,7 @@ a:hover{
     font-family: 'Montserrat', sans-serif;
     font-size: 13pt;
     font-weight: lighter;  
-    color:#F8B595;
+    color:#4A8DAC;
 
 }
 
@@ -563,18 +562,20 @@ a:hover{
     display: inline-block;
     
 
-}*/
+}
 
-/*.mButton {
-    background-color: #7DC383;
+.mButton {
+    background-color: #FEDCD2;
     font-family: 'Montserrat', sans-serif;
     font-weight: lighter;
     text-align: center;
+    font-size: 10pt;
     border: none;
-    border-radius: 10%;
+    border-radius: 7%;
     transition: all 0.4s ease 0s;
-    width: 40%;
-    height: 30%;
+    margin-top: 7%;
+    width: 15%;
+    height: 5%;
 }
 
 .mButton:hover {
@@ -583,12 +584,12 @@ a:hover{
     box-sizing: border-box;
     padding: 2px;
     border-radius: 7px;
-    /*text-align: center;
-}*/
+    /*text-align: center;*/
+}
 
-/*.todays_log{
+.todays_log{
     
-    /*text-align: center;
+    text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 12pt;
 }

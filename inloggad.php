@@ -130,42 +130,52 @@ else{
 
                     if ($todays_symptoms["symptom1"]==1){
                         echo "<p class='todays_log'>"."Spänd rygg och nacke"."</p>";
+                        echo "<br>";
 
                     }
                     if ($todays_symptoms["symptom2"]==1){
                         echo"<p class='todays_log'>". "Ont i magen"."</p>";
+                        echo "<br>";
 
                     }
                     if ($todays_symptoms["symptom3"]==1){
                         echo"<p class='todays_log'>". "Hyperventilering"."</p>";
+                        echo "<br>";
 
                     }
                     if ($todays_symptoms["symptom4"]==1){
                         echo "<p class='todays_log'>"."Bröstsmärtor"."</p>";
+                        echo "<br>";
 
                     }
                     if ($todays_symptoms["symptom5"]==1){
                         echo "<p class='todays_log'>"."Orolig mage/illamående"."</p>";
+                        echo "<br>";
 
                     }
                     if ($todays_symptoms["symptom6"]==1){
                         echo "<p class='todays_log'>"."Yr/Svimfärdig"."</p>";
+                        echo "<br>";
 
                     }
                     if ($todays_symptoms["symptom7"]==1){
                         echo "<p class='todays_log'>"."Hjärtklappning"."</p>";
+                        echo "<br>";
 
                     }
                     if ($todays_symptoms["symptom8"]==1){
                         echo "<p class='todays_log'>"."Kallsvettningar"."</p>";
+                        echo "<br>";
 
                     }
                     if ($todays_symptoms["symptom9"]==1){
                         echo "<p class='todays_log'>"."Koncentrationssvårigheter"."</p>";
+                        echo "<br>";
 
                     }
                     if ($todays_symptoms["symptom10"]==1){
                         echo "<p class='todays_log'>"."Trötthet/Sömnsvårigheter"."</p>";
+                        echo "<br>";
 
                     }
 
@@ -176,33 +186,26 @@ else{
            </div>
  </div>
 
+<div class="w3-container">
+  <button onclick="document.getElementById('id01').style.display='block'" class="mButton">Se dagens meddelande</button>
+
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="headerandfooter"> 
+        <span onclick="document.getElementById('id01').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2 id="modalText">Dagens meddelande</h2>
+      </header>
+      <div class="w3-container">
+        <p id="modalText">här vill vi echo:a ut php</p>
+        <p id="modalText">baserat på senaste ratingen</p>
+      </div>
+      <footer class="headerandfooter">
+        <p id="modalText">:)</p>
+      </footer>
+    </div>
+  </div>
+</div>
+
             </body>
 </html>
-
-      <!-- <div class="log_container">
-           <div class="log_container_left">
-           uta med dagens mående
-           //<?php
-              //  while ($todays_log = $log->fetch_assoc()){
-
-
-                   // echo "<p class='todays_log_rating'>"."Här är dagens ifyllda mående"."</p>";
-
-                   // echo "<p class='todays_log'>".$todays_log["logDate"]."</p>";
-                    //echo "<br>";
-                  //  echo "<p class='todays_log'>".$todays_log["rating"]."</p>";
-                    //echo "<br>";
-                  //  echo "<p class='todays_log'>"."Du skrev:" .$todays_log["comment"]."</p>";
-
-               // }
-                ?>
-                </div>
-                <div class="log_container_right">
-              //  <?php
-
-           ?>
-
-           </div>
- </div>
-
-
