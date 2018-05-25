@@ -1,6 +1,7 @@
 <?php
 include "db_connect.php";
 include "login_process.php";
+include "get_log.php";
 
 if (isset($_SESSION["clientID"]))
 {
@@ -43,6 +44,7 @@ else{
         $todayslog_query = "SELECT * FROM Log WHERE clientID = '".$client_ID."' AND logDate = '".$date."'";
         $log = $connection->query($todayslog_query);
 
+        //Knapp till mood-formuläret
         if ($log->num_rows == 0){
             
             echo "<form id='todaysMoodLog' action='./moodForm.php'>
@@ -52,22 +54,13 @@ else{
         }
         else{
             
-            echo "Du har fyllt i dagens logg!";     
+            echo "<div class='header_text'>" ."Du har fyllt i dagens logg!". "</div>";     
             
         }
 
-
-        //while ($hej = $log->fetch_assoc()){
-        //    echo $hej["rating"];
-       // }
-        //if(!empty($log)){
-        //    echo "hej";
-       // }
-
-            //7<!--Knapp till mood formuläret-->
-            
         ?>
 
+        <!--Hamburgermenyn-->
         <nav role="navigation">
         <div id="menuToggle">
             <!--
@@ -91,9 +84,9 @@ else{
             but hey, it's pure CSS magic. target="_blank" öppnar länkarna i en ny flik
             -->
             <ul id="menu">
-              <a href="#" target="_blank"><li>Hem</li></a>
-              <a href="./OmOss.php" target="_blank"><li>Om oss</li></a>
-              <a href="#" target="_blank"><li>Kontaktuppgifter</li></a>
+              <a href="#"><li>Hem</li></a>
+              <a href="./OmOss.php"><li>Om oss</li></a>
+              <a href="#"><li>Kontaktuppgifter</li></a>
                 <a href="./logout.php"><li>Logga ut</li></a>
               </ul>
         </div>
@@ -115,6 +108,22 @@ else{
             
        </script>
 
+       <div class="log_container">
+
+           <?php
+                while ($todays_log = $log->fetch_assoc()){
+
+                echo "<p class='todays_log'>".$todays_log["logDate"]."</p>";
+                //echo "<br>";
+                echo "<p class='todays_log'>".$todays_log["rating"]."</p>";
+                //echo "<br>";
+                echo "<p class='todays_log'>"."Du skrev:" .$todays_log["comment"]."</p>";
+
+                }
+
+           ?>
+
+       </div>
     
     </body>
 </html>
