@@ -110,14 +110,15 @@ else{
 
        <div class="log_container">
 
+           <!--Ruta med dagens mående-->
            <?php
                 while ($todays_log = $log->fetch_assoc()){
 
-                echo "<p class='todays_log'>".$todays_log["logDate"]."</p>";
-                //echo "<br>";
-                echo "<p class='todays_log'>".$todays_log["rating"]."</p>";
-                //echo "<br>";
-                echo "<p class='todays_log'>"."Du skrev:" .$todays_log["comment"]."</p>";
+                    echo "<p class='todays_log'>".$todays_log["logDate"]."</p>";
+                    //echo "<br>";
+                    echo "<p class='todays_log'>".$todays_log["rating"]."</p>";
+                    //echo "<br>";
+                    echo "<p class='todays_log'>"."Du skrev:" .$todays_log["comment"]."</p>";
 
                 }
 
