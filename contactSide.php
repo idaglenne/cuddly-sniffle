@@ -9,7 +9,7 @@
     <body>
         <div class="header">
             <h1>mood log</h1>
-            <h2>Vård- och stödkontaker</h2>
+            <h2>Vård- och stödkontaker!</h2>
         </div>
         <div class="kontaker">
             <p>Mina Vårdkontaker <a href="https://kontakt.minavardkontakter.se/mvk/login/login.xhtml">Besök oss här</a></p>
