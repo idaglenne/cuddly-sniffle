@@ -221,12 +221,7 @@ a:hover{
     font-weight: lighter;   
 }
 
-/* Grafen */
-.chart_container{
-    width: 70%;
-    height: 40%;
-    margin: 0 auto;
-}
+
 
 /*knappen som leder från inloggad-sidan till mood form-sidan*/
 #todaysMoodLog {
@@ -351,7 +346,7 @@ a:hover{
 #menu
 {
   position: absolute;
-  width: 100px;
+  width: 220px;
     height: 100vh;
   margin: -100px 0 0 -50px;
   padding: 50px;
@@ -381,10 +376,10 @@ a:hover{
     transform: none;
 }
 
-/*design på grafen*/
+/*design på grafen
 #graph {
     margin-right: 10%;
-}
+}*/
 
 #text p {
     font-family: 'Montserrat', sans-serif;
@@ -513,6 +508,7 @@ a:hover{
     margin: 0 auto;
 }
 
+
 /*knappen som leder från inloggad-sidan till mood form-sidan*/
 #todaysMoodLog {
     /*fixa placering av knappen*/
@@ -552,7 +548,7 @@ a:hover{
     right: 30%;
 
 }
-/*.todays_log_rating{
+.todays_log_rating{
     
     text-align: left;
     font-family: 'Montserrat', sans-serif;
@@ -592,7 +588,7 @@ a:hover{
 
 /*.todays_log{
     
-    /*text-align: center;*/
+    /*text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 12pt;
 }

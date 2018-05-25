@@ -20,22 +20,10 @@ foreach($dates as $row){
     }
 
 
-$todaysRating = "SELECT rating FROM Log WHERE clientID = '".$client_ID."' AND logDate = '".$date."'";
-
-
-while ($weekrating = $dates->fetch_assoc()){
-
-
-
-}
 //lägg ihop 7 dagars rating & spara i variabel
 //använd variabeln i messages.js
 
 print json_encode($data);
-
-
-
-
 
 
 

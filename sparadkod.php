@@ -1,4 +1,25 @@
-<?php
+ <!-- <div class="w3-container">
+  <button onclick="document.getElementById('id01').style.display='block'" class="mButton">Se dagens meddelande</button>
+
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="headerandfooter"> 
+        <span onclick="document.getElementById('id01').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2 id="modalText">Dagens meddelande</h2>
+      </header>
+      <div class="w3-container">
+        <p id="modalText">här vill vi echo:a ut php</p>
+        <p id="modalText">baserat på senaste ratingen</p>
+      </div>
+      <footer class="headerandfooter">
+        <p id="modalText">:)</p>
+      </footer>
+    </div>
+  </div>
+</div>-->
+
+ <?php
 include "db_connect.php";
 include "login_process.php";
 include "get_log.php";
@@ -27,7 +48,6 @@ else{
 }
 
 ?>
-
 <html>
     <head>
     <title>inloggad</title>
@@ -100,15 +120,19 @@ else{
             <canvas id="line_chart"></canvas>
         </div>
 
+
         <!-- javascript -->
         <script src="https://code.jquery.com/jquery-1.12.0.min.js" integrity="sha256-Xxq2X+KtazgaGuA2cWR1v3jJsuMJUozyIXDB3e793L8="
   crossorigin="anonymous"></script>
         <script src="js/Chart.min.js"></script>
         <script src="js/chart.js"></script>
 
+        
+       <!--<script type="text/javascript">
+            
+       </script>-->
 
-
- <div class="log_container">
+       <div class="log_container">
            <div class="log_container_left">
            <!--Ruta med dagens mående-->
            <?php
@@ -176,33 +200,98 @@ else{
            </div>
  </div>
 
-            </body>
+    </body>
 </html>
 
-      <!-- <div class="log_container">
-           <div class="log_container_left">
-           uta med dagens mående
-           //<?php
-              //  while ($todays_log = $log->fetch_assoc()){
 
+css/* Grafen */
+.chart_container{
+    width: 60%;
+    height: 350px;
+    margin: 0 auto;
+}
 
-                   // echo "<p class='todays_log_rating'>"."Här är dagens ifyllda mående"."</p>";
+/*knappen som leder från inloggad-sidan till mood form-sidan*/
+#todaysMoodLog {
+    /*fixa placering av knappen*/
+}
 
-                   // echo "<p class='todays_log'>".$todays_log["logDate"]."</p>";
-                    //echo "<br>";
-                  //  echo "<p class='todays_log'>".$todays_log["rating"]."</p>";
-                    //echo "<br>";
-                  //  echo "<p class='todays_log'>"."Du skrev:" .$todays_log["comment"]."</p>";
+.header_text{
 
-               // }
-                ?>
-                </div>
-                <div class="log_container_right">
-              //  <?php
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13pt;
+    font-weight: lighter;  
+    color:#4A8DAC;
 
-           ?>
+}
 
-           </div>
- </div>
+.log_container{
 
+    position: relative;
+    left: 30%;
+    top:5%;
+    width: 40%;
+    height: 20%;
+    background-color: #6e91bf;
+    box-sizing: border-box;
+    padding: 2px;
+    border-radius: 7px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10pt;
+
+}
+.log_container_right{
+    position: relative;
+    left:20%;
+    bottom:70%; 
+}
+.log_container_left{
+    position: relative;
+    right: 30%;
+
+}
+/*.todays_log_rating{
+    
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11pt;
+}
+
+.todays_log{
+
+    text-align:right;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11pt;
+    display: inline-block;
+    
+
+}*/
+
+/*.mButton {
+    background-color: #7DC383;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    border: none;
+    border-radius: 10%;
+    transition: all 0.4s ease 0s;
+    width: 40%;
+    height: 30%;
+}
+
+.mButton:hover {
+    background-color: #F8B595;
+}
+
+#modalText {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    font-size: 10pt;   
+    color: black;
+}
+
+.headerandfooter {
+    background-color: #F8B595;
+}*/
 
