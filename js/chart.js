@@ -46,24 +46,13 @@ $(document).ready(function(){
                     datasets: [{
                         label: "Mood rating", 
                         data: mood.rating,
-                        backgroundcolor: "#FEDCD2",
-                        borderColor: "#4A8DAC",
+                        backgroundcolor: "#F8B195",
+                        borderColor: "#F8B195",
                         fill: true,
                         lineTension: 0.4,
                         pointRadius: 3
 
                     }
-                    //,
-                    //{
-                    //  label: "Fysiska symptom",
-                    //   data: mood.symptoms,
-                    //  backgroundcolor: "black",
-                    // borderColor: "black",
-                    //  fill: false,
-                    //  lineTension: 0.5,
-                    //  pointRadius: 3
-
-                //  }
                     ]
                 };
 
@@ -75,7 +64,7 @@ $(document).ready(function(){
                 fontFamily: "Montserrat",
                 fontWeight: "lighter",
                 fontSize: 25,
-                fontColor: "#4A8DAC"
+                fontColor: "#75C2F6"
 
             },
             legend: {

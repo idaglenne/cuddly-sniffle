@@ -156,7 +156,7 @@ background-color: #FEDCD2;
     font-family: 'Montserrat', sans-serif;
 
 }
-/*en allmän länk? vad är detta*/
+/*en allmän länk? vad är detta Det ändrar utseende för alla länkar. */
 a{
 
     color: #4A8DAC;
@@ -221,12 +221,7 @@ a:hover{
     font-weight: lighter;   
 }
 
-/* Grafen */
-.chart_container{
-    width: 70%;
-    height: 40%;
-    margin: 0 auto;
-}
+
 
 /*knappen som leder från inloggad-sidan till mood form-sidan*/
 #todaysMoodLog {
@@ -290,7 +285,11 @@ a:hover{
   margin-bottom: 5px;
   position: relative;
 
-  background: #4A8DAC;
+
+  background: #6e91bf;
+
+  background: #cdcdcd;
+
   border-radius: 3px;
 
   z-index: 1;
@@ -347,13 +346,13 @@ a:hover{
 #menu
 {
   position: absolute;
-  width: 100px;
+  width: 220px;
     height: 100vh;
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
-
-  background: #A7D7C5;
+  background: #6e91bf;
+  background: #ededed;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
@@ -377,10 +376,10 @@ a:hover{
     transform: none;
 }
 
-/*design på grafen*/
+/*design på grafen
 #graph {
     margin-right: 10%;
-}
+}*/
 
 #text p {
     font-family: 'Montserrat', sans-serif;
@@ -509,6 +508,7 @@ a:hover{
     margin: 0 auto;
 }
 
+
 /*knappen som leder från inloggad-sidan till mood form-sidan*/
 #todaysMoodLog {
     /*fixa placering av knappen*/
@@ -519,7 +519,7 @@ a:hover{
     font-family: 'Montserrat', sans-serif;
     font-size: 13pt;
     font-weight: lighter;  
-    color:#4A8DAC;
+    color:#F8B595;
 
 }
 
@@ -530,13 +530,24 @@ a:hover{
     top:5%;
     width: 40%;
     height: 20%;
-    background-color: #A7D7C5;
+    background-color: #6e91bf;
     box-sizing: border-box;
     padding: 2px;
     border-radius: 7px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10pt;
 
 }
+.log_container_right{
+    position: relative;
+    left:20%;
+    bottom:70%; 
+}
+.log_container_left{
+    position: relative;
+    right: 30%;
 
+}
 .todays_log_rating{
     
     text-align: left;
@@ -549,11 +560,12 @@ a:hover{
     text-align:right;
     font-family: 'Montserrat', sans-serif;
     font-size: 11pt;
+    display: inline-block;
     
-}
 
+}*/
 
-.mButton {
+/*.mButton {
     background-color: #7DC383;
     font-family: 'Montserrat', sans-serif;
     font-weight: lighter;
@@ -567,6 +579,18 @@ a:hover{
 
 .mButton:hover {
     background-color: #F8B595;
+    background-color: #ededed;
+    box-sizing: border-box;
+    padding: 2px;
+    border-radius: 7px;
+    /*text-align: center;
+}*/
+
+/*.todays_log{
+    
+    /*text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12pt;
 }
 
 #modalText {
@@ -580,3 +604,4 @@ a:hover{
 .headerandfooter {
     background-color: #F8B595;
 }
+
