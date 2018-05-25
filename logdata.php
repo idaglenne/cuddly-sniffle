@@ -20,7 +20,7 @@ foreach($dates as $row){
     }
 
 
-$rating_query = "SELECT rating FROM Log WHERE clientID = '".$client_ID."'";
+$todaysRating = "SELECT rating FROM Log WHERE clientID = '".$client_ID."' AND logDate = '".$date."'";
 
 
 while ($weekrating = $dates->fetch_assoc()){
