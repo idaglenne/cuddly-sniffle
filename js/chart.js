@@ -53,17 +53,6 @@ $(document).ready(function(){
                         pointRadius: 3
 
                     }
-                    //,
-                    //{
-                    //  label: "Fysiska symptom",
-                    //   data: mood.symptoms,
-                    //  backgroundcolor: "black",
-                    // borderColor: "black",
-                    //  fill: false,
-                    //  lineTension: 0.5,
-                    //  pointRadius: 3
-
-                //  }
                     ]
                 };
 
