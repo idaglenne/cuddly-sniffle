@@ -109,19 +109,22 @@ else{
        </script>
 
        <div class="log_container">
-
+           <div class="log_container_left">
            <!--Ruta med dagens mående-->
-           <div class="log_container">
            <?php
                 while ($todays_log = $log->fetch_assoc()){
 
-                    echo "<p class='todays_log_rating'>".$todays_log["logDate"]."</p>";
+                    echo "<p class='todays_log_rating'>"."Här är dagens ifyllda mående"."</p>";
                     //echo "<br>";
                     echo "<p class='todays_log_rating'>".$todays_log["rating"]."</p>";
                     //echo "<br>";
                     echo "<p class='todays_log_rating'>"."Du skrev:" .$todays_log["comment"]."</p>";
 
                 }
+                ?>
+                </div>
+                <div class="log_container_right">
+                <?php
 
                 while($todays_symptoms = $symptoms->fetch_assoc()){
 
@@ -169,7 +172,7 @@ else{
             }
 
            ?>
-
+           </div>
        </div>
     
     </body>

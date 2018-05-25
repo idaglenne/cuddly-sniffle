@@ -268,7 +268,7 @@ a:hover{
   margin-bottom: 5px;
   position: relative;
 
-  background: #4A8DAC;
+  background: #6e91bf;
   border-radius: 3px;
 
   z-index: 1;
@@ -331,7 +331,7 @@ a:hover{
   padding: 50px;
   padding-top: 125px;
 
-  background: #A7D7C5;
+  background: #6e91bf;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
@@ -508,14 +508,25 @@ a:hover{
     top:5%;
     width: 40%;
     height: 20%;
-    background-color: #A7D7C5;
+    background-color: #6e91bf;
     box-sizing: border-box;
     padding: 2px;
     border-radius: 7px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10pt;
 
 }
+.log_container_right{
+    position: relative;
+    left:20%;
+    bottom:70%; 
+}
+.log_container_left{
+    position: relative;
+    right: 30%;
 
-.todays_log_rating{
+}
+/*.todays_log_rating{
     
     text-align: left;
     font-family: 'Montserrat', sans-serif;
@@ -527,5 +538,6 @@ a:hover{
     text-align:right;
     font-family: 'Montserrat', sans-serif;
     font-size: 11pt;
+    display: inline-block;
     
-}
+}*/
