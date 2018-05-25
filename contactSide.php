@@ -4,7 +4,7 @@
         <link rel="stylesheet" href="./design.css">
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
         <link rel="icon" type="image/png" href="./cloud.png">
-        <script src="js/returnButton.js";></script>
+        <script src="js/returnButton.js"></script>
     </head>
     <body>
         <div class="header">
