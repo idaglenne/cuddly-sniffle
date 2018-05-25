@@ -94,6 +94,7 @@ else{
         </div>
         </nav>
 
+        <!-- Grafen -->
         <div class="chart_container">
             <canvas id="line_chart"></canvas>
         </div>
@@ -105,25 +106,28 @@ else{
         <script src="js/Chart.min.js"></script>
         <script src="js/chart.js"></script>
 
-        <!-- Grafen -->
-       <script type="text/javascript">
+        
+       <!--<script type="text/javascript">
             
-       </script>
+       </script>-->
 
        <div class="log_container">
-
+           <div class="log_container_left">
            <!--Ruta med dagens mående-->
-           <div class="log_container">
            <?php
                 while ($todays_log = $log->fetch_assoc()){
 
-                    echo "<p class='todays_log_rating'>".$todays_log["logDate"]."</p>";
+                    echo "<p class='todays_log_rating'>"."Här är dagens ifyllda mående"."</p>";
                     //echo "<br>";
                     echo "<p class='todays_log_rating'>".$todays_log["rating"]."</p>";
                     //echo "<br>";
                     echo "<p class='todays_log_rating'>"."Du skrev:" .$todays_log["comment"]."</p>";
 
                 }
+                ?>
+                </div>
+                <div class="log_container_right">
+                <?php
 
                 while($todays_symptoms = $symptoms->fetch_assoc()){
 
@@ -172,30 +176,8 @@ else{
 
            ?>
 
-           <div class="w3-container">
-  <button onclick="document.getElementById('id01').style.display='block'" class="mButton">Se dagens meddelande</button>
-
-  <div id="id01" class="w3-modal">
-    <div class="w3-modal-content">
-      <header class="headerandfooter"> 
-        <span onclick="document.getElementById('id01').style.display='none'" 
-        class="w3-button w3-display-topright">&times;</span>
-        <h2 id="modalText">Dagens meddelande</h2>
-      </header>
-      <div class="w3-container">
-        <p id="modalText">här vill vi echo:a ut php</p>
-        <p id="modalText">baserat på senaste ratingen</p>
-      </div>
-      <footer class="headerandfooter">
-        <p id="modalText">:)</p>
-      </footer>
-    </div>
-  </div>
-</div>
-
-        
-
-       </div>
+           </div>
+ </div>
 
     </body>
 </html>
