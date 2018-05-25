@@ -111,16 +111,62 @@ else{
        <div class="log_container">
 
            <!--Ruta med dagens mående-->
+           <div class="log_container">
            <?php
                 while ($todays_log = $log->fetch_assoc()){
 
-                    echo "<p class='todays_log'>".$todays_log["logDate"]."</p>";
+                    echo "<p class='todays_log_rating'>".$todays_log["logDate"]."</p>";
                     //echo "<br>";
-                    echo "<p class='todays_log'>".$todays_log["rating"]."</p>";
+                    echo "<p class='todays_log_rating'>".$todays_log["rating"]."</p>";
                     //echo "<br>";
-                    echo "<p class='todays_log'>"."Du skrev:" .$todays_log["comment"]."</p>";
+                    echo "<p class='todays_log_rating'>"."Du skrev:" .$todays_log["comment"]."</p>";
 
                 }
+
+                while($todays_symptoms = $symptoms->fetch_assoc()){
+
+                    if ($todays_symptoms["symptom1"]==1){
+                        echo "<p class='todays_log'>"."Spänd rygg och nacke"."</p>";
+
+                    }
+                    if ($todays_symptoms["symptom2"]==1){
+                        echo"<p class='todays_log'>". "Ont i magen"."</p>";
+
+                    }
+                    if ($todays_symptoms["symptom3"]==1){
+                        echo"<p class='todays_log'>". "Hyperventilering"."</p>";
+
+                    }
+                    if ($todays_symptoms["symptom4"]==1){
+                        echo "<p class='todays_log'>"."Bröstsmärtor"."</p>";
+
+                    }
+                    if ($todays_symptoms["symptom5"]==1){
+                        echo "<p class='todays_log'>"."Orolig mage/illamående"."</p>";
+
+                    }
+                    if ($todays_symptoms["symptom6"]==1){
+                        echo "<p class='todays_log'>"."Yr/Svimfärdig"."</p>";
+
+                    }
+                    if ($todays_symptoms["symptom7"]==1){
+                        echo "<p class='todays_log'>"."Hjärtklappning"."</p>";
+
+                    }
+                    if ($todays_symptoms["symptom8"]==1){
+                        echo "<p class='todays_log'>"."Kallsvettningar"."</p>";
+
+                    }
+                    if ($todays_symptoms["symptom9"]==1){
+                        echo "<p class='todays_log'>"."Koncentrationssvårigheter"."</p>";
+
+                    }
+                    if ($todays_symptoms["symptom10"]==1){
+                        echo "<p class='todays_log'>"."Trötthet/Sömnsvårigheter"."</p>";
+
+                    }
+
+            }
 
            ?>
 
