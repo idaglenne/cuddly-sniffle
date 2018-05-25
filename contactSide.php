@@ -12,6 +12,10 @@
         </div>
         <div class="kontaker">
             <p>Mina Vårdkontaker <a href="https://kontakt.minavardkontakter.se/mvk/login/login.xhtml">Länk</a></p>
+            <p>SjälvmordsLinjen <a href="https://mind.se/hitta-hjalp/sjalvmordslinjen/">Länk</a></p>
+            <p>Sjukvårdsrådgivningen <a href="https://www.1177.se">Länk</a></p>
+            <p>UMO <a href="https://www.umo.se">Länk</a></p>
+            <p>Samtalsstöd via Svenska Kyrkan <a href="https://www.svenskakyrkan.se/fa-hjalp">Länk</a></p>
         </div>
     </body>
 </html>
