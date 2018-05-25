@@ -144,7 +144,7 @@ background-color: #FEDCD2;
     position:absolute; top:0; right:0;
 }
 
-.submitbutton::hover
+.submitbutton:hover
 {
     background-color: #F8B595;
 }
