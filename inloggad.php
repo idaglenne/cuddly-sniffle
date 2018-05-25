@@ -33,10 +33,12 @@ else{
     <link rel="stylesheet" href="./design.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="icon" type="image/png" href="./cloud.png">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
     </head>
     <body>
-    
+
     <?php 
 
         date_default_timezone_set('UTC');
@@ -86,12 +88,13 @@ else{
             <ul id="menu">
               <a href="#"><li>Hem</li></a>
               <a href="./OmOss.php"><li>Om oss</li></a>
-              <a href="#"><li>Kontaktuppgifter</li></a>
+              <a href="./contactSide.php"><li>Kontaktuppgifter</li></a>
                 <a href="./logout.php"><li>Logga ut</li></a>
               </ul>
         </div>
         </nav>
 
+        <!-- Grafen -->
         <div class="chart_container">
             <canvas id="line_chart"></canvas>
         </div>
@@ -103,10 +106,10 @@ else{
         <script src="js/Chart.min.js"></script>
         <script src="js/chart.js"></script>
 
-        <!-- Grafen -->
-       <script type="text/javascript">
+        
+       <!--<script type="text/javascript">
             
-       </script>
+       </script>-->
 
        <div class="log_container">
            <div class="log_container_left">
@@ -172,8 +175,9 @@ else{
             }
 
            ?>
+
            </div>
-       </div>
-    
+ </div>
+
     </body>
 </html>
