@@ -127,6 +127,28 @@ ul {
 
 }
 
+/*tillbaka knapp*/
+.submitbutton
+{
+background-color: #FEDCD2;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    margin-top: 1%;
+    text-align: center;
+    width: 10%;
+    height: 6%;
+    border: none;
+    border-radius: 10%;
+    transition: all 0.4s ease 0s;
+    margin-right: 1%;
+    position:absolute; top:0; right:0;
+}
+
+.submitbutton::hover
+{
+    background-color: #F8B595;
+}
+
 
 .inlog_form p {
 
