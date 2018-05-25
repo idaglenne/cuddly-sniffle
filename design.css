@@ -1,7 +1,7 @@
 body{
 
     text-align: center;
-    background-color: #dcfde5;
+    background-color: #f8eeec;
 }
 
 h1{
@@ -25,7 +25,7 @@ h2{
 }
 
 h3{
-    color: #4A8DAC;
+    color: #f8eeec;
     font-family: 'Montserrat', sans-serif;
     font-weight: lighter;
 
@@ -34,7 +34,7 @@ h3{
 /*bakgrund på policy-sidan*/
 .policy {
     width: 40vw;
-    background-color: #A7D7C5;
+    background-color: #6e91bf;
     padding: 4%;
     border: none;
     border-radius: 10%;
@@ -94,7 +94,7 @@ ul {
 #text
 {
     width: 40vw;
-    background-color: #A7D7C5;
+    background-color: #6e91bf;
     padding: 3%;
     border: none;
     border-radius: 9%;
@@ -166,6 +166,12 @@ a:hover{
 .register_form p {
   font-size: 10pt;
   font-family: 'Montserrat', sans-serif;
+}
+/* Header nr 3 färg till reg sidan */
+#hreg {
+    color: #4A8DAC;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
 }
 
 /*inloggad.php*/
@@ -374,7 +380,7 @@ a:hover{
     font-family: 'Montserrat', sans-serif;
     font-weight: lighter;
     width: 40vw;
-    background-color: #A7D7C5;
+    background-color: #6e91bf;
     padding: 5%;
     border: none;
     border-radius: 3%;
