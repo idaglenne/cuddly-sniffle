@@ -1,12 +1,12 @@
 body{
 
     text-align: center;
-    background-color: #D6E6F2;
+    background-color: #f8eeec;
 }
 
 h1{
 
-    color: #75C2F6;
+    color: #4A8DAC;
     font-family: 'Montserrat', sans-serif;
     font-weight: lighter;
     font-size: 70pt;
@@ -17,7 +17,7 @@ h1{
 
 h2{
 
-    color: #F8B195;
+    color: #4A8DAC;
     font-family: 'Montserrat', sans-serif;
     font-weight: lighter;
     text-align: center;
@@ -25,7 +25,7 @@ h2{
 }
 
 h3{
-    color: #F8B195;
+    color: #f8eeec;
     font-family: 'Montserrat', sans-serif;
     font-weight: lighter;
 
@@ -34,7 +34,7 @@ h3{
 /*bakgrund på policy-sidan*/
 .policy {
     width: 40vw;
-    background-color: #A7D7C5;
+    background-color: #6e91bf;
     padding: 4%;
     border: none;
     border-radius: 10%;
@@ -94,12 +94,13 @@ ul {
 #text
 {
     width: 40vw;
-    background-color: #A7D7C5;
+    background-color: #6e91bf;
     padding: 3%;
     border: none;
     border-radius: 9%;
     color: black;
     text-align: center;
+    font-size: 11pt;
     position: absolute;
     left: 27.5%;
     
@@ -107,7 +108,7 @@ ul {
 
 .submit {
 
-    background-color: #7DC383;
+    background-color: #FEDCD2;
     font-family: 'Montserrat', sans-serif;
     font-weight: lighter;
     margin-top: 1%;
@@ -136,7 +137,7 @@ ul {
 /*en allmän länk? vad är detta*/
 a{
 
-    color: #75C2F6;
+    color: #4A8DAC;
     text-decoration: none;
     transition: color 0.4s ease;
 
@@ -165,6 +166,12 @@ a:hover{
 .register_form p {
   font-size: 10pt;
   font-family: 'Montserrat', sans-serif;
+}
+/* Header nr 3 färg till reg sidan */
+#hreg {
+    color: #4A8DAC;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
 }
 
 /*inloggad.php*/
@@ -261,7 +268,7 @@ a:hover{
   margin-bottom: 5px;
   position: relative;
 
-  background: #cdcdcd;
+  background: #4A8DAC;
   border-radius: 3px;
 
   z-index: 1;
@@ -324,7 +331,7 @@ a:hover{
   padding: 50px;
   padding-top: 125px;
 
-  background: #ededed;
+  background: #A7D7C5;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
@@ -373,7 +380,7 @@ a:hover{
     font-family: 'Montserrat', sans-serif;
     font-weight: lighter;
     width: 40vw;
-    background-color: #A7D7C5;
+    background-color: #6e91bf;
     padding: 5%;
     border: none;
     border-radius: 3%;
@@ -490,7 +497,7 @@ a:hover{
     font-family: 'Montserrat', sans-serif;
     font-size: 13pt;
     font-weight: lighter;  
-    color:#F8B595;
+    color:#4A8DAC;
 
 }
 
@@ -501,18 +508,26 @@ a:hover{
     top:5%;
     width: 40%;
     height: 20%;
-    background-color: white;
+    background-color: #A7D7C5;
     box-sizing: border-box;
     padding: 2px;
     border-radius: 7px;
-    /*text-align: center;*/
+
+}
+
+.todays_log_rating{
+    
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11pt;
 }
 
 .todays_log{
-    
-    /*text-align: center;*/
+
+    text-align:right;
     font-family: 'Montserrat', sans-serif;
-    font-size: 12pt;
+    font-size: 11pt;
+    
 }
 
 

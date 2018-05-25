@@ -16,7 +16,7 @@ include "db_connect.php";
 
       <h1>mood log</h1>
       <h2>Logga ditt mående</h2>
-      <h3>Fyll i dina uppgifter och registrera dig nu!</h3>
+      <h3 id="hreg">Fyll i dina uppgifter och registrera dig nu!</h3>
 
       <form class="register_form" name="reg_form" method=POST action="register_process.php" onsubmit= "return validateform()">
         <input type="text" class=register id=name_register placeholder="Namn" name="reg_name">
