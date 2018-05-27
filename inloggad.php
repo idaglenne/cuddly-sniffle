@@ -109,16 +109,17 @@ else{
 
 
  <div class="log_container">
+     <p>Här är dagens ifyllda mående:</p>
            <div class="log_container_left">
            <!--Ruta med dagens mående-->
            <?php
                 while ($todays_log = $log->fetch_assoc()){
 
-                    echo "<p id='todays_log_h'>"."Här är dagens ifyllda mående"."</p>";
-                    echo "<br>";
+                    echo "<p id='todays_log_h'>"."Dagens rating:"."</p>";
                     echo "<p class='todays_log_rating'>".$todays_log["rating"]."</p>";
                     //echo "<br>";
-                    echo "<p class='todays_log_rating'>"."Du skrev:" .$todays_log["comment"]."</p>";
+                    echo "<p id='todays_log_h'>"."Din kommentar för dagen:"."</p>";
+                    echo "<p class='todays_log_rating'>".$todays_log["comment"]."</p>";
 
                 }
                 ?>
@@ -127,6 +128,7 @@ else{
             <div class="log_container_right">
                 <?php
 
+                echo "<p class='todays_log'>"."Fysiska symptom:"."</p>";
                 while($todays_symptoms = $symptoms->fetch_assoc()){
 
                     if ($todays_symptoms["symptom1"]==1){

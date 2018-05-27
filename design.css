@@ -236,26 +236,7 @@ ul {
 #todaysMoodLog {
     /*fixa placering av knappen*/
 }
-#moodform_button{
 
-    background-color: #FEDCD2;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: lighter;
-    margin-top: 1%;
-    text-align: center;
-    width: 14%;
-    height: 6%;
-    border: none;
-    border-radius: 10%;
-    transition: all 0.4s ease 0s;
-
-}
-
-#moodform_button:hover {
-
-  background-color: #F8B595;
-
-}
 
 /*hamburgermeny*/
 
@@ -279,9 +260,7 @@ ul {
   position: relative;
   top: 50px;
   left: 50px;
-
   z-index: 1;
-
   -webkit-user-select: none;
   user-select: none;
 }
@@ -294,9 +273,7 @@ ul {
   position: absolute;
   top: -7px;
   left: -5px;
-
   cursor: pointer;
-
   opacity: 0; /* hide this */
   z-index: 2; /* and place it over the hamburger */
 
@@ -313,18 +290,11 @@ ul {
   height: 4px;
   margin-bottom: 5px;
   position: relative;
-
-
   background: #6e91bf;
-
   background: #cdcdcd;
-
   border-radius: 3px;
-
   z-index: 1;
-
   transform-origin: 4px 0px;
-
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
               background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
               opacity 0.55s ease;
@@ -414,6 +384,103 @@ ul {
     font-weight: lighter;
     text-align: center;
 }
+
+/*Rutan med dagens ifyllda mående under grafen*/
+.log_container{
+
+    position: relative;
+    left: 23%;
+    top:5%;
+    width: 35%;
+    height: 40%;
+    background-color: #6e91bf;
+    box-sizing: border-box;
+    /*padding: 2px;*/
+    border-radius: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12pt;
+
+}
+
+.log_container_right{
+    position: relative;
+    left:60%;
+    bottom:40%; 
+}
+
+.log_container_left{
+    position: relative;
+    left: 3%;
+    bottom: 0%;
+
+}
+.todays_log_rating{
+    
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 9pt;
+}
+
+#todays_log_h{
+
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10pt;
+    font-weight: bold;
+
+}
+
+.todays_log{
+
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 9pt;
+    /*display: inline-block;*/
+
+}
+
+/*Meddelandeknappen*/
+.mButton {
+
+    background-color: #FEDCD2;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    font-size: 10pt;
+    border: none;
+    border-radius: 7%;
+    transition: all 0.4s ease 0s;
+    margin-top: 7%;
+    margin-left: 40%;
+    margin-bottom: 40%;
+    width: 15%;
+    height: 5%;
+}
+
+.mButton:hover {
+    background-color: #F8B595;
+    background-color: #ededed;
+    box-sizing: border-box;
+    padding: 2px;
+    border-radius: 7px;
+    /*text-align: center;*/
+}
+
+
+#modalText {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    font-size: 10pt;   
+    color: black;
+}
+
+.headerandfooter {
+    background-color: #F8B595;
+}
+
+
+
 
 /*--------------------moodForm.php-------------------------*/
 
@@ -559,94 +626,4 @@ ul {
 
 }
 
-/*Rutan med dagens ifyllda mående under grafen*/
-.log_container{
-
-    position: relative;
-    left: 23%;
-    top:5%;
-    width: 35%;
-    height: 25%;
-    background-color: #6e91bf;
-    box-sizing: border-box;
-    /*padding: 2px;*/
-    border-radius: 7px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 8pt;
-
-}
-
-.log_container_right{
-    position: relative;
-    left:65%;
-    bottom:25%; 
-}
-.log_container_left{
-    position: relative;
-    left: 2%;
-    top: 25%
-
-}
-.todays_log_rating{
-    
-    text-align: left;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 9pt;
-}
-
-#todays_log_h{
-
-    text-align: top center;
-
-}
-
-.todays_log{
-
-    text-align: left;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 9pt;
-    /*display: inline-block;*/
-
-}
-
-.mButton {
-
-   
-
-    background-color: #FEDCD2;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: lighter;
-    text-align: center;
-    font-size: 10pt;
-    border: none;
-    border-radius: 7%;
-    transition: all 0.4s ease 0s;
-    margin-top: 7%;
-    margin-left: 40%;
-    margin-bottom: 40%;
-    width: 15%;
-    height: 5%;
-}
-
-.mButton:hover {
-    background-color: #F8B595;
-    background-color: #ededed;
-    box-sizing: border-box;
-    padding: 2px;
-    border-radius: 7px;
-    /*text-align: center;*/
-}
-
-
-#modalText {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: lighter;
-    text-align: center;
-    font-size: 10pt;   
-    color: black;
-}
-
-.headerandfooter {
-    background-color: #F8B595;
-}
 
