@@ -33,12 +33,12 @@
         $result = $connection->query($symptomsQuery);
 
 
-        header("Refresh: 0; URL=inloggad.php");
+        header("Location: inloggad.php");
         
     }
     else
     {
-        header("Refresh: 0; URL=index.php");
+        header("Location: index.php");
         exit;
     }
 

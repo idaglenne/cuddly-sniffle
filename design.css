@@ -1,3 +1,5 @@
+/*---------------Generella css-klasser----------------*/
+
 body{
 
     text-align: center;
@@ -30,6 +32,45 @@ h3{
     font-weight: lighter;
 
 }
+
+/*Länkar*/
+a{
+
+    color: #4A8DAC;
+    text-decoration: none;
+    transition: color 0.4s ease;
+
+}
+
+a:hover{
+
+    color: #F8B595;
+
+}
+
+/*Knapp på index och register*/
+.submit {
+
+    background-color: #FEDCD2;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    margin-top: 1%;
+    text-align: center;
+    width: 10%;
+    height: 6%;
+    border: none;
+    border-radius: 10%;
+    transition: all 0.4s ease 0s;
+
+}
+
+.submit:hover {
+
+  background-color: #F8B595;
+
+}
+
+/*-------------infoPolicy.php-------------*/
 
 /*bakgrund på policy-sidan*/
 .policy {
@@ -65,6 +106,10 @@ ul {
     margin-left: 30%;    
 }
 
+
+/*-------------Index.php-------------*/
+
+/*Login formuläret*/
 .inlog {
 
     text-align: center;
@@ -80,7 +125,16 @@ ul {
     margin-top: 20px;
 }
 
-/*OmOss.php*/
+.inlog_form p {
+
+    font-size: 10pt;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+
+/*-------------OmOss.php-------------*/
+
 /*Om oss text*/
 .omOss {
     text-align: center;
@@ -91,8 +145,7 @@ ul {
     color: black;
 }
 
-#text
-{
+#omoss_text{
     width: 40vw;
     background-color: #6e91bf;
     padding: 3%;
@@ -106,31 +159,9 @@ ul {
     
 }
 
-.submit {
-
-    background-color: #FEDCD2;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: lighter;
-    margin-top: 1%;
-    text-align: center;
-    width: 10%;
-    height: 6%;
-    border: none;
-    border-radius: 10%;
-    transition: all 0.4s ease 0s;
-
-}
-
-.submit:hover {
-
-  background-color: #F8B595;
-
-}
-
 /*tillbaka knapp*/
-.submitbutton
-{
-background-color: #FEDCD2;
+.submitbutton{
+    background-color: #FEDCD2;
     font-family: 'Montserrat', sans-serif;
     font-weight: lighter;
     margin-top: 1%;
@@ -144,33 +175,13 @@ background-color: #FEDCD2;
     position:absolute; top:0; right:0;
 }
 
-.submitbutton::hover
-{
+.submitbutton:hover{
     background-color: #F8B595;
 }
 
+/*-------------------register.php------------------*/
 
-.inlog_form p {
-
-    font-size: 10pt;
-    font-family: 'Montserrat', sans-serif;
-
-}
-/*en allmän länk? vad är detta Det ändrar utseende för alla länkar. */
-a{
-
-    color: #4A8DAC;
-    text-decoration: none;
-    transition: color 0.4s ease;
-
-}
-
-a:hover{
-
-    color: #F8B595;
-
-}
-
+/*Input-fält i registreringsformuläret*/
 .register {
   text-align: center;
   width: 25%;
@@ -189,6 +200,7 @@ a:hover{
   font-size: 10pt;
   font-family: 'Montserrat', sans-serif;
 }
+
 /* Header nr 3 färg till reg sidan */
 #hreg {
     color: #4A8DAC;
@@ -196,15 +208,13 @@ a:hover{
     font-weight: lighter;
 }
 
-/*inloggad.php*/
+/*--------------------inloggad.php-----------------------*/
+
 /*Väkomsttext på inlogg*/
 .welcome {
 
     padding-top: 1%;
     text-align: left;
-/*  width: 15vw;
-    height: 5vh;
-    background-color:#EBEBEB;  */
     color: #000000;
     font-weight: lighter;
     box-sizing: border-box;
@@ -221,11 +231,29 @@ a:hover{
     font-weight: lighter;   
 }
 
-
-
 /*knappen som leder från inloggad-sidan till mood form-sidan*/
 #todaysMoodLog {
     /*fixa placering av knappen*/
+}
+#moodform_button{
+
+    background-color: #FEDCD2;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    margin-top: 1%;
+    text-align: center;
+    width: 14%;
+    height: 6%;
+    border: none;
+    border-radius: 10%;
+    transition: all 0.4s ease 0s;
+
+}
+
+#moodform_button:hover {
+
+  background-color: #F8B595;
+
 }
 
 /*hamburgermeny*/
@@ -386,7 +414,8 @@ a:hover{
     text-align: center;
 }
 
-/*moodForm.php*/
+/*--------------------moodForm.php-------------------------*/
+
 /*alternativen från 1 till 7*/
 .mood {
     font-family: 'Montserrat', sans-serif;
@@ -470,29 +499,36 @@ a:hover{
     font-weight: lighter;
     width: 70%;
     height: 50%;
-    border-radius: 15%;
-    border: none;
+    border-radius: 3%;
+    border:1px solid #6e91bf;
+    border-radius: 7px;
+    -moz-border-radius :7px;
+    -webkit-border-radius: 7px;
+    padding: 7px;
     resize: none;
 }
 
-/*Väkomsttext på inlogg*/
-.welcome{
-
-    padding-top: 2px;
-    text-align: left;
-/*  width: 15vw;
-    height: 5vh;
-    background-color:#EBEBEB;  */
-    color: #000000;
+#moodSubmit {
+    background-color: #FEDCD2;
+    font-family: 'Montserrat', sans-serif;
     font-weight: lighter;
-    box-sizing: border-box;
-    border-radius: 7px;
-    font-family: 'Montserrat', sans-serif;;
-    font-size: 12pt;
-    margin-top: 15px;
-    margin-left: 5vw;
+    font-size: 11pt;
+    margin-top: 3%;
+    text-align: center;
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 7%;
+    transition: all 0.4s ease 0s;
 
 }
+
+#moodSubmit:hover {
+
+  background-color: #F8B595;
+
+}
+
 
 .errorMessage {
     font-family: 'Montserrat', sans-serif;;
@@ -522,45 +558,53 @@ a:hover{
 
 }
 
+/*Rutan med dagens ifyllda mående under grafen*/
 .log_container{
 
     position: relative;
-    left: 30%;
+    left: 23%;
     top:5%;
-    width: 40%;
-    height: 20%;
+    width: 35%;
+    height: 25%;
     background-color: #6e91bf;
     box-sizing: border-box;
-    padding: 2px;
+    /*padding: 2px;*/
     border-radius: 7px;
     font-family: 'Montserrat', sans-serif;
-    font-size: 10pt;
+    font-size: 8pt;
 
 }
+
 .log_container_right{
     position: relative;
-    left:20%;
-    bottom:70%; 
+    left:65%;
+    bottom:25%; 
 }
 .log_container_left{
     position: relative;
-    right: 30%;
+    left: 2%;
+    top: 25%
 
 }
 .todays_log_rating{
     
     text-align: left;
     font-family: 'Montserrat', sans-serif;
-    font-size: 11pt;
+    font-size: 9pt;
+}
+
+#todays_log_h{
+
+    text-align: top center;
+
 }
 
 .todays_log{
 
-    text-align:right;
+    text-align: left;
     font-family: 'Montserrat', sans-serif;
-    font-size: 11pt;
-    display: inline-block;
-    
+    font-size: 9pt;
+    /*display: inline-block;*/
 
 }
 
@@ -574,6 +618,8 @@ a:hover{
     border-radius: 7%;
     transition: all 0.4s ease 0s;
     margin-top: 7%;
+    margin-left: 40%;
+    margin-bottom: 40%;
     width: 15%;
     height: 5%;
 }
@@ -587,12 +633,6 @@ a:hover{
     /*text-align: center;*/
 }
 
-.todays_log{
-    
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 12pt;
-}
 
 #modalText {
     font-family: 'Montserrat', sans-serif;

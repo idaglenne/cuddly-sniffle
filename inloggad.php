@@ -51,7 +51,7 @@ else{
         if ($log->num_rows == 0){
             
             echo "<form id='todaysMoodLog' action='./moodForm.php'>
-                            <input type='submit' class='submit' value='Skriv dagens logg'>
+                            <input type='submit' id='moodform_button' value='Fyll i dagens logg'>
                         </form>";
 
         }
@@ -114,53 +114,47 @@ else{
            <?php
                 while ($todays_log = $log->fetch_assoc()){
 
-                    echo "<p class='todays_log_rating'>"."Här är dagens ifyllda mående"."</p>";
-                    //echo "<br>";
+                    echo "<p id='todays_log_h'>"."Här är dagens ifyllda mående"."</p>";
+                    echo "<br>";
                     echo "<p class='todays_log_rating'>".$todays_log["rating"]."</p>";
                     //echo "<br>";
                     echo "<p class='todays_log_rating'>"."Du skrev:" .$todays_log["comment"]."</p>";
 
                 }
                 ?>
-                </div>
-                <div class="log_container_right">
+            </div>
+
+            <div class="log_container_right">
                 <?php
 
                 while($todays_symptoms = $symptoms->fetch_assoc()){
 
                     if ($todays_symptoms["symptom1"]==1){
                         echo "<p class='todays_log'>"."Spänd rygg och nacke"."</p>";
-                        echo "<br>";
 
                     }
                     if ($todays_symptoms["symptom2"]==1){
                         echo"<p class='todays_log'>". "Ont i magen"."</p>";
-                        echo "<br>";
-
+                        
                     }
                     if ($todays_symptoms["symptom3"]==1){
                         echo"<p class='todays_log'>". "Hyperventilering"."</p>";
-                        echo "<br>";
 
                     }
                     if ($todays_symptoms["symptom4"]==1){
                         echo "<p class='todays_log'>"."Bröstsmärtor"."</p>";
-                        echo "<br>";
 
                     }
                     if ($todays_symptoms["symptom5"]==1){
                         echo "<p class='todays_log'>"."Orolig mage/illamående"."</p>";
-                        echo "<br>";
 
                     }
                     if ($todays_symptoms["symptom6"]==1){
                         echo "<p class='todays_log'>"."Yr/Svimfärdig"."</p>";
-                        echo "<br>";
 
                     }
                     if ($todays_symptoms["symptom7"]==1){
                         echo "<p class='todays_log'>"."Hjärtklappning"."</p>";
-                        echo "<br>";
 
                     }
                     if ($todays_symptoms["symptom8"]==1){
@@ -170,12 +164,10 @@ else{
                     }
                     if ($todays_symptoms["symptom9"]==1){
                         echo "<p class='todays_log'>"."Koncentrationssvårigheter"."</p>";
-                        echo "<br>";
 
                     }
                     if ($todays_symptoms["symptom10"]==1){
                         echo "<p class='todays_log'>"."Trötthet/Sömnsvårigheter"."</p>";
-                        echo "<br>";
 
                     }
 
