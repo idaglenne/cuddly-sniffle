@@ -149,8 +149,8 @@ ul {
     width: 40vw;
     background-color: #6e91bf;
     padding: 3%;
-    border: none;
-    border-radius: 9%;
+    border: 1px solid #6e91bf ;
+    border-radius: 18px;
     color: black;
     text-align: center;
     font-size: 11pt;
@@ -160,7 +160,8 @@ ul {
 }
 
 /*tillbaka knapp*/
-.submitbutton{
+.submitbutton
+{
     background-color: #FEDCD2;
     font-family: 'Montserrat', sans-serif;
     font-weight: lighter;
@@ -609,6 +610,9 @@ ul {
 }
 
 .mButton {
+
+   
+
     background-color: #FEDCD2;
     font-family: 'Montserrat', sans-serif;
     font-weight: lighter;
