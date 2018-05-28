@@ -2,9 +2,9 @@
 include "db_connect.php";
 include "login_process.php";
 
-if (isset($_SESSION["clientName"])){
+if (isset($_SESSION["clientID"])){
 
-    header("location: inloggad.php");
+    header("Location: inloggad.php");
 }
 ?>
 
@@ -17,9 +17,9 @@ if (isset($_SESSION["clientName"])){
     </head>
     <body>
       
-      <div class="header">
+
       <h1>mood log</h1>
-    </div>
+
         <h2>Logga ditt mående</h2>
 
         <form class=inlog_form method=POST name="inlog_form">

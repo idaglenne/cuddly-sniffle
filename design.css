@@ -15,7 +15,7 @@ h1{
     font-weight: lighter;
     font-size: 70pt;
     text-align: center;
-    /*margin-top: 8%;*/
+    margin-top: 3%;
 }
 
 
@@ -526,9 +526,6 @@ ul {
 .headerandfooter {
     background-color: #F8B595;
 }
-
-
-
 
 /*--------------------moodForm.php-------------------------*/
 
