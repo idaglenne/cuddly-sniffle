@@ -229,10 +229,11 @@ ul {
 .errorMessage {
     font-family: 'Montserrat', sans-serif;;
     font-size: 12pt;
-    font-weight: lighter;   
+    font-weight: lighter;  
+    color: #F8B595; 
 }
 
-
+/*knappen som leder från inloggad-sidan till mood form-sidan*/
 #moodform_button{
     background-color: #FEDCD2;
     font-family: 'Montserrat', sans-serif;
@@ -251,11 +252,13 @@ ul {
   background-color: #F8B595;
 
 }
-/*knappen som leder från inloggad-sidan till mood form-sidan*/
-#todaysMoodLog {
-    /*fixa placering av knappen*/
-}
 
+/* Grafen */
+.chart_container{
+    width: 55%;
+    height: 330px;
+    margin: 0 auto;
+}
 
 /*hamburgermeny*/
 
@@ -393,10 +396,6 @@ ul {
     transform: none;
 }
 
-/*design på grafen
-#graph {
-    margin-right: 10%;
-}*/
 
 #text p {
     font-family: 'Montserrat', sans-serif;
@@ -449,6 +448,15 @@ ul {
 
 }
 
+#todays_log_b{
+    
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 9pt;
+    font-weight: bold;
+
+}
+
 .todays_log{
 
     text-align: left;
@@ -469,6 +477,8 @@ ul {
     border: none;
     border-radius: 7%;
     transition: all 0.4s ease 0s;
+    position: relative;
+    bottom: 40%;
     margin-top: 7%;
     margin-left: 40%;
     margin-bottom: 40%;
@@ -621,13 +631,6 @@ ul {
     font-family: 'Montserrat', sans-serif;;
     font-size: 12pt;
     font-weight: lighter;   
-}
-
-/* Grafen */
-.chart_container{
-    width: 60%;
-    height: 350px;
-    margin: 0 auto;
 }
 
 .header_text{

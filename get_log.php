@@ -12,5 +12,4 @@ $symptoms_query = "SELECT * FROM Symptoms WHERE clientID = '".$clientID."' AND s
 $symptoms = $connection->query($symptoms_query);
 
 
-
 ?>
