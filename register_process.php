@@ -28,7 +28,7 @@ if (isset($_POST["submit"])) {
         else 
         {
             $reg_error = "This email adress is already registered.";
-            //header("Refresh: 0; URL=register.php");
+          
         }
 
     }

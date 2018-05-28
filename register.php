@@ -9,7 +9,7 @@ include "register_process.php";
       <link rel="stylesheet" href="./design.css">
       <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
       <link rel="icon" type="image/png" href="./cloud.png">
-      <script src="./validation.js"></script>
+      <script src="./js/validation.js"></script>
     </head>
     <body>
 
