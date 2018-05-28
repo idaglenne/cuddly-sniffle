@@ -128,8 +128,9 @@ else{
             <div class="log_container_right">
                 <?php
 
-                echo "<p class='todays_log'>"."Fysiska symptom:"."</p>";
+               
                 while($todays_symptoms = $symptoms->fetch_assoc()){
+                     echo "<p class='todays_log'>"."Fysiska symptom:"."</p>";
 
                     if ($todays_symptoms["symptom1"]==1){
                         echo "<p class='todays_log'>"."Spänd rygg och nacke"."</p>";

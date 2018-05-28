@@ -1,7 +1,8 @@
 /*---------------Generella css-klasser----------------*/
 
 body{
-
+    margin-top:0;
+    padding: 0;
     text-align: center;
     background-color: #f8eeec;
 }
@@ -13,7 +14,7 @@ h1{
     font-weight: lighter;
     font-size: 70pt;
     text-align: center;
-    margin-top: 8%;
+    /*margin-top: 8%;*/
 }
 
 
@@ -214,7 +215,6 @@ ul {
 /*Väkomsttext på inlogg*/
 .welcome {
 
-    padding-top: 1%;
     text-align: left;
     color: #000000;
     font-weight: lighter;
@@ -222,7 +222,7 @@ ul {
     border-radius: 3%;
     font-family: 'Montserrat', sans-serif;;
     font-size: 12pt;
-    margin-top: 3%;
+    margin-top: 2%;
     margin-left: 5vw;
 }
 
@@ -232,6 +232,25 @@ ul {
     font-weight: lighter;   
 }
 
+
+#moodform_button{
+    background-color: #FEDCD2;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    width: 15%;
+    height: 6%;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.4s ease 0s;
+
+}
+
+#moodform_button:hover {
+
+  background-color: #F8B595;
+
+}
 /*knappen som leder från inloggad-sidan till mood form-sidan*/
 #todaysMoodLog {
     /*fixa placering av knappen*/
@@ -609,12 +628,6 @@ ul {
     width: 60%;
     height: 350px;
     margin: 0 auto;
-}
-
-
-/*knappen som leder från inloggad-sidan till mood form-sidan*/
-#todaysMoodLog {
-    /*fixa placering av knappen*/
 }
 
 .header_text{
