@@ -28,6 +28,9 @@ include "db_connect.php";
 <p>Du har när som helst rätt att se, ändra eller ta bort de personuppgifter som vi har sparat om dig.</p> 
 <br>
 <p>Kontakta oss på moodlog@gmail.com så hjälper vi dig.</p>
+<h3>mood logs användarvillkor</h3>
+<p>I samband med registrering godkänner du att du inte kommer att: hantera tjänsten med syfte att skada mood log och relaterade tjänster på ett sätt som kan hindra driften av tjänsten eller uppfattas som olaglig aktivitet enligt rådande svensk lagstiftning.</p>
+<p> Mood log tillhandahåller en tjänst för att logga ditt mående. I tjänsterna ingår inte och ska inte tolkas som medicinska råd. Mood log är inte licensierad sjukvårdspersonal och är inte verksam för att ge medicinsk rådgivning. Din användning av webbplatsen skapar inte en doktor-patientförbindelse mellan dig och mood log.</p>
 </div>
 
 </html>

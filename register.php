@@ -29,6 +29,8 @@ include "db_connect.php";
         <br>
         <input type="password" class=register id=confirmpsw_register placeholder="Bekräfta lösenord" name="reg_confirmpsw">
         <div class="errormessage_reg" id="psw_error"></div>
+        <input type="checkbox" name="userAgree" id="agreebtn" value="Yes">
+        <label id="userAgree">Jag har läst och godkänner <a href="infoPolicy.php">användarvillkoren.</a></label>
 
         <p>Har du redan ett konto? <a href="./index.php">Logga in här!</a></p>
         <br>
