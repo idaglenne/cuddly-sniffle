@@ -10,7 +10,7 @@ $(document).ready(function(){
                 rating: [],
                 logDate: []
             };
-
+            var len = "";
             var len = data.length;
 
             console.log(data.length);
@@ -27,7 +27,7 @@ $(document).ready(function(){
             }
             //Om fler än 7 inlägg
             else if(len > 7) {
-                for (var i = (len-7); i < (len-1); i++){
+                for (var i = (len-7); i < len; i++){
 
                // console.log(data[i]);
                 mood.rating.push(data[i].rating);

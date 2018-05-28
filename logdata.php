@@ -16,8 +16,6 @@ foreach($dates as $row){
 
     }
 
-
-
 print json_encode($data);
 
 
