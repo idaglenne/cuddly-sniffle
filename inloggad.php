@@ -128,7 +128,6 @@ else{
             <div class="log_container_right">
                 <?php
 
-               
                 while($todays_symptoms = $symptoms->fetch_assoc()){
                      echo "<p id='todays_log_b'>"."Fysiska symptom:"."</p>";
 
@@ -193,6 +192,7 @@ else{
       </header>
       <div class="w3-container">
         <?php
+<<<<<<< HEAD
                
                 if ($todays_log["rating"] == 1) {
                 echo "<p class='modalText'>"."Kanske känner du någon som mådde väldigt dåligt under en period men som nu mår bättre? Kolla fliken för kontakter och hitta den som passar dig bäst.". "</p>";
@@ -201,12 +201,29 @@ else{
                 echo "<p class='modalText'>"."Känner du dig nere? Du vet väl att du kan vända dig till dessa stödkontakter om du behöver prata med någon.". "</p>";
                 }
                 if (($todays_log["rating"] == 4) || ($todays_log["rating"] == 5)) {
+=======
+        
+            date_default_timezone_set('UTC');
+            $date = date('Y-m-d');
+            $mess_query = "SELECT * FROM Log WHERE clientID = '".$client_ID."' AND logDate = '".$date."'";
+            $mess = $connection->query($mess_query);
+
+            while ($mess_log = $mess->fetch_assoc()){
+                if ($mess_log["rating"] < 2) {
+                echo "<p class='modalText'>"."Kanske känner du någon som mådde väldigt dåligt under en period men som nu mår bättre? Kolla fliken för kontakter och hitta den som passar dig bäst.". "</p>";
+                }
+                if (($mess_log["rating"] > 1) && ($mess_log["rating"] < 4)) {
+                echo "<p class='modalText'>"."Känner du dig nere? Du vet väl att du kan vända dig till dessa stödkontakter om du behöver prata med någon.". "</p>";
+                }
+                if (($mess_log["rating"] > 3) && ($mess_log["rating"] < 6)) {
+>>>>>>> a21a658d4d3acb515342c5f23d3a79a1676bb987
                 echo "<p class='modalText'>"."Det verkar som att du mår ganska bra. Vad härligt! Har du gjort något särskilt under de senaste dagarna som påverkat dig positivt?"."</p>";
                 }
-                if (($todays_log["rating"] == 6) || ($todays_log["rating"] == 7)) {
+                if (($mess_log["rating"] > 5) && ($mess_log["rating"] < 8)) {
                 echo "<p class='modalText'>"."Vad roligt att du skattar ditt mående högt idag! Försök att stanna upp och känna efter hur det känns.". "</p>";
 
-                }
+            }
+        }
                   
         ?>
       </div>

@@ -43,7 +43,7 @@ if (isset($_POST["submit"])) {
                         
                         //Initierar en session för användaren
                         $_SESSION["clientID"] =  $client_ID["clientID"];
-                        header("Refresh: 0; URL=inloggad.php");
+                        header("Location: inloggad.php");
                     }
 
                     else {

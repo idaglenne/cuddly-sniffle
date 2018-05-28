@@ -498,9 +498,9 @@ ul {
     transition: all 0.4s ease 0s;
     position: relative;
     bottom: 42%;
-    margin-top: 5%;
+    margin-top: 6%;
     margin-left: 36%;
-    margin-bottom: 40%;
+    margin-bottom: 36%;
     width: 14%;
     height: 10%;
 }
@@ -576,7 +576,7 @@ ul {
   text-align: center;
 }
 
-/*försök att dela upp så de skulle ordna sig horisontellt :-)*/
+/*ordnar horisontellt*/
 .alternative label {
     display: block;
     width: auto; 
