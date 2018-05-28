@@ -27,7 +27,7 @@ $(document).ready(function(){
             }
             //Om fler än 7 inlägg
             else if(len > 7) {
-                for (var i = 0; i < 7; i++){
+                for (var i = (len-7); i < (len-1); i++){
 
                // console.log(data[i]);
                 mood.rating.push(data[i].rating);
