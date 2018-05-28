@@ -8,6 +8,7 @@ include "db_connect.php";
     <link rel="stylesheet" href="./design.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="icon" type="image/png" href="./cloud.png">
+    <script src="js/returnButton.js"></script>
     </head>
     <body>
         <div class="policyHeader">
@@ -32,5 +33,7 @@ include "db_connect.php";
 <p>I samband med registrering godkänner du att du inte kommer att: hantera tjänsten med syfte att skada mood log och relaterade tjänster på ett sätt som kan hindra driften av tjänsten eller uppfattas som olaglig aktivitet enligt rådande svensk lagstiftning.</p>
 <p> Mood log tillhandahåller en tjänst för att logga ditt mående. I tjänsterna ingår inte och ska inte tolkas som medicinska råd. Mood log är inte licensierad sjukvårdspersonal och är inte verksam för att ge medicinsk rådgivning. Din användning av webbplatsen skapar inte en doktor-patientförbindelse mellan dig och mood log.</p>
 </div>
+<button class="submitbutton" onclick="goBack()">Tillbaka</button>
+</body>
 
 </html>
