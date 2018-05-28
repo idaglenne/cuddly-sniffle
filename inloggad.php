@@ -193,9 +193,9 @@ else{
       </header>
       <div class="w3-container">
         <?php
-                
-                if ($todays_log["rating"] < 2) {
-                echo "<div class='modalText'>"."Kanske känner du någon som mådde väldigt dåligt under en period men som nu mår bättre? Kolla fliken för kontakter och hitta den som passar dig bäst.". "</div>";
+                                 
+                if ($todays_log["rating"] == 1) {
+                echo "<p class='modalText'>"."Kanske känner du någon som mådde väldigt dåligt under en period men som nu mår bättre? Kolla fliken för kontakter och hitta den som passar dig bäst.". "</p>";
                 }
                 if (($todays_log["rating"] == 2) || ($todays_log["rating"] == 3)) {
                 echo "<div class='modalText'>"."Känner du dig nere? Du vet väl att du kan vända dig till dessa stödkontakter om du behöver prata med någon.". "</div>";
@@ -203,8 +203,9 @@ else{
                 if (($todays_log["rating"] == 4) || ($todays_log["rating"] == 5)) {
                 echo "<div class='modalText'>"."Det verkar som att du mår ganska bra. Vad härligt! Har du gjort något särskilt under de senaste dagarna som påverkat dig positivt?"."</div>";
                 }
-                if ($todays_log["rating"] > 5) {
-                echo "<div class='modalText'>"."Vad roligt att du skattar ditt mående högt idag! Försök att stanna upp och känna efter hur det känns.". "</div>";
+                if (($todays_log["rating"] == 6) || ($todays_log["rating"] == 7)) {
+                echo "<p class='modalText'>"."Vad roligt att du skattar ditt mående högt idag! Försök att stanna upp och känna efter hur det känns.". "</p>";
+
                 }
                   
         ?>
