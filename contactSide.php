@@ -17,6 +17,7 @@
             <p>Sjukvårdsrådgivningen <a href="https://www.1177.se">Besök oss här</a></p>
             <p>UMO <a href="http://www.umo.se/">Besök oss här</a></p>
             <p>Samtalsstöd via Svenska Kyrkan <a href="https://www.svenskakyrkan.se/sjalavard-och-tystnadsplikt">Besök oss här</a></p>
+            <p>BlueCall <a href="https://bluecallapp.com/">Besök oss här</a></p>
             <button class="submitbutton" onclick="goBack()">Tillbaka</button>
         </div>
     </body>
