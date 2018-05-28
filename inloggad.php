@@ -30,7 +30,7 @@ else{
 
 <html>
     <head>
-    <title>inloggad</title>
+    <title>mood log</title>
     <link rel="stylesheet" href="./design.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="icon" type="image/png" href="./cloud.png">
@@ -78,10 +78,10 @@ else{
             They are acting like a real hamburger,
             not that McDonalds stuff.
             -->
+           
             <span></span>
             <span></span>
             <span></span>
-
             <!--
             Too bad the menu has to be inside of the button
             but hey, it's pure CSS magic. target="_blank" öppnar länkarna i en ny flik
@@ -94,7 +94,7 @@ else{
               </ul>
         </div>
         </nav>
-
+        
         <!-- Grafen -->
         <div class="chart_container">
             <canvas id="line_chart"></canvas>

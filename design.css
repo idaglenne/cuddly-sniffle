@@ -2,6 +2,7 @@
 
 body{
     margin-top:0;
+    margin-bottom: 0;
     padding: 0;
     text-align: center;
     background-color: #f8eeec;
@@ -273,8 +274,8 @@ ul {
 
 /* Grafen */
 .chart_container{
-    width: 55%;
-    height: 330px;
+    width: 50%;
+    height: 320px;
     margin: 0 auto;
 }
 
@@ -394,7 +395,6 @@ ul {
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
-
   transform-origin: 0% 0%;
   transform: translate(-100%, 0);
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
@@ -432,6 +432,7 @@ ul {
     background-color: #6e91bf;
     box-sizing: border-box;
     padding-top: 1px;
+    margin-top: 1%;
     border-radius: 15px;
     font-family: 'Montserrat', sans-serif;
     font-size: 12pt;
@@ -442,12 +443,14 @@ ul {
     position: relative;
     left:60%;
     bottom:40%; 
+
 }
 
 .log_container_left{
     position: relative;
     left: 3%;
     bottom: 0%;
+     width: 50%;
 
 }
 .todays_log_rating{
@@ -494,23 +497,19 @@ ul {
     text-align: center;
     font-size: 10pt;
     border: none;
-    border-radius: 7%;
+    border-radius: 15px;
     transition: all 0.4s ease 0s;
     position: relative;
     bottom: 42%;
-    margin-top: 6%;
-    margin-left: 36%;
-    margin-bottom: 36%;
-    width: 14%;
+    margin-top: 5.5%;
+    margin-left: 37%;
+    width: 14.5%;
     height: 10%;
 }
 
 .mButton:hover {
-    background-color: #F8B595;
-    background-color: #ededed;
-    box-sizing: border-box;
+    background-color:#F8B595;
     padding: 2px;
-    border-radius: 7px;
     /*text-align: center;*/
 }
 
@@ -647,7 +646,7 @@ ul {
 
 
 .header_text{
-
+    margin-bottom:0;
     font-family: 'Montserrat', sans-serif;
     font-size: 13pt;
     font-weight: lighter;  
