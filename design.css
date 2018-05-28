@@ -231,7 +231,7 @@ ul {
     font-family: 'Montserrat', sans-serif;;
     font-size: 12pt;
     font-weight: lighter;  
-    color: #F8B595; 
+    color: red; 
 }
 
 /*knappen som leder från inloggad-sidan till mood form-sidan*/
@@ -411,7 +411,7 @@ ul {
     left: 23%;
     top:5%;
     width: 35%;
-    height: 40%;
+    height: 35%;
     background-color: #6e91bf;
     box-sizing: border-box;
     /*padding: 2px;*/
@@ -479,12 +479,12 @@ ul {
     border-radius: 7%;
     transition: all 0.4s ease 0s;
     position: relative;
-    bottom: 40%;
+    bottom: 42%;
     margin-top: 7%;
-    margin-left: 40%;
+    margin-left: 36%;
     margin-bottom: 40%;
     width: 15%;
-    height: 5%;
+    height: 10%;
 }
 
 .mButton:hover {
@@ -627,12 +627,6 @@ ul {
 
 }
 
-
-.errorMessage {
-    font-family: 'Montserrat', sans-serif;;
-    font-size: 12pt;
-    font-weight: lighter;   
-}
 
 .header_text{
 

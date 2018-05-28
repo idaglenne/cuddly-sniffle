@@ -23,9 +23,9 @@ if (isset($_SESSION["clientName"])){
         <h2>Logga ditt mående</h2>
 
         <form class=inlog_form method=POST name="inlog_form">
-        <div class="errorMessage">
-        <span><?php echo .$error. ; ?></span>
-        </div>
+        
+        <span><?php echo"<p class='errorMessage'>" .$error."</p>" ; ?></span>
+      
         <input type="text" class="inlog" id="email_inlog" placeholder="Email" name="email_inlog">
         <br>
         <input type="password" class="inlog" id="psw_inlog" placeholder="Lösenord" name="psw_inlog">
