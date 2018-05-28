@@ -196,21 +196,21 @@ else{
         <?php
             while ($todays_log = $log->fetch_assoc()){
                 
-                echo "<p id='modalText'>";
+                 
                 if ($todays_log["rating"] < 2) {
-                echo "Kanske känner du någon som mådde väldigt dåligt under en period men som nu mår bättre? Kolla fliken för kontakter och hitta den som passar dig bäst.";
+                echo "<p id='modalText'>"."Kanske känner du någon som mådde väldigt dåligt under en period men som nu mår bättre? Kolla fliken för kontakter och hitta den som passar dig bäst.". "</p>";
                 }
                 if (($todays_log["rating"] == 2) || ($todays_log["rating"] == 3)) {
-                echo "Känner du dig nere? Du vet väl att du kan vända dig till dessa stödkontakter om du behöver prata med någon.";
+                echo "<p id='modalText'>"."Känner du dig nere? Du vet väl att du kan vända dig till dessa stödkontakter om du behöver prata med någon.". "</p>";
                 }
                 if (($todays_log["rating"] == 4) || ($todays_log["rating"] == 5)) {
-                echo "Det verkar som att du mår ganska bra. Vad härligt! Har du gjort något särskilt under de senaste dagarna som påverkat dig positivt?";
+                echo "<p id='modalText'>"."Det verkar som att du mår ganska bra. Vad härligt! Har du gjort något särskilt under de senaste dagarna som påverkat dig positivt?"."</p>";
                 }
                 if ($todays_log["rating"] > 5) {
-                echo "Vad roligt att du skattar ditt mående högt idag! Försök att stanna upp och känna efter hur det känns.";
+                echo "<p id='modalText'>"."Vad roligt att du skattar ditt mående högt idag! Försök att stanna upp och känna efter hur det känns.". "</p>";
                 }
               }
-              echo "</p>";
+              
 ?>
         
       </div>
