@@ -192,16 +192,6 @@ else{
       </header>
       <div class="w3-container">
         <?php
-<<<<<<< HEAD
-               
-                if ($todays_log["rating"] == 1) {
-                echo "<p class='modalText'>"."Kanske känner du någon som mådde väldigt dåligt under en period men som nu mår bättre? Kolla fliken för kontakter och hitta den som passar dig bäst.". "</p>";
-                }
-                if (($todays_log["rating"] == 2) || ($todays_log["rating"] == 3 )) {
-                echo "<p class='modalText'>"."Känner du dig nere? Du vet väl att du kan vända dig till dessa stödkontakter om du behöver prata med någon.". "</p>";
-                }
-                if (($todays_log["rating"] == 4) || ($todays_log["rating"] == 5)) {
-=======
         
             date_default_timezone_set('UTC');
             $date = date('Y-m-d');
@@ -216,7 +206,6 @@ else{
                 echo "<p class='modalText'>"."Känner du dig nere? Du vet väl att du kan vända dig till dessa stödkontakter om du behöver prata med någon.". "</p>";
                 }
                 if (($mess_log["rating"] > 3) && ($mess_log["rating"] < 6)) {
->>>>>>> a21a658d4d3acb515342c5f23d3a79a1676bb987
                 echo "<p class='modalText'>"."Det verkar som att du mår ganska bra. Vad härligt! Har du gjort något särskilt under de senaste dagarna som påverkat dig positivt?"."</p>";
                 }
                 if (($mess_log["rating"] > 5) && ($mess_log["rating"] < 8)) {
