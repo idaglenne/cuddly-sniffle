@@ -1,13 +1,16 @@
 <?php
 include "db_connect.php";
 
+$reg_error = "";
+
 if (isset($_POST["submit"])) {
     if (empty($_POST["reg_name"]) || empty($_POST["reg_email"]) || empty($_POST["reg_psw"]) || empty($_POST["userAgree"]) || !filter_var($_POST["reg_email"], FILTER_VALIDATE_EMAIL)) {
-    echo "Invalid input";
+    $reg_error = "Du måste fylla i alla fält och godkänna användarvillkoren!";
+
     }
 
     else{
-        $error = "";
+        
         $reg_name = $connection->real_escape_string($_POST["reg_name"]);
         $reg_email = $connection->real_escape_string($_POST["reg_email"]);
         $psw = $connection->real_escape_string($_POST["reg_psw"]);
@@ -19,13 +22,13 @@ if (isset($_POST["submit"])) {
         {
             $query = "INSERT INTO Clients (clientName, clientEmail, clientPassword) VALUES ('".$reg_name."', '".$reg_email."', '".$psw."')";
             $connection->query($query);
-            header("Refresh: 0; URL=reg_success.php");
+            header("Location: reg_success.php");
 
         }
         else 
         {
-            $error = "This email adress is already registered.";
-            header("Refresh: 0; URL=register.php");
+            $reg_error = "This email adress is already registered.";
+            //header("Refresh: 0; URL=register.php");
         }
 
     }
