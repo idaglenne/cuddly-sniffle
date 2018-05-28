@@ -211,6 +211,17 @@ ul {
     font-weight: lighter;
 }
 
+/* Label till checkboxen på registreringssidan */
+#userAgree {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    font-size: 10pt;
+}
+
+#agreebtn {
+    margin-top: 1%;
+}
+
 /*--------------------inloggad.php-----------------------*/
 
 /*Väkomsttext på inlogg*/

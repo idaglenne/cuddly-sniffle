@@ -192,8 +192,27 @@ else{
         <h2 id="modalText">Dagens meddelande</h2>
       </header>
       <div class="w3-container">
-        <p id="modalText">här vill vi echo:a ut php</p>
-        <p id="modalText">baserat på senaste ratingen</p>
+        <p id="modalText">
+        <?php
+            while ($todays_log = $log->fetch_assoc()){
+                
+                echo "<p id='modalText'>";
+                if ($todays_log["rating"] < 2) {
+                echo "Kanske känner du någon som mådde väldigt dåligt under en period men som nu mår bättre? Kolla fliken för kontakter och hitta den som passar dig bäst.";
+                }
+                if (($todays_log["rating"] == 2) || ($todays_log["rating"] == 3)) {
+                echo "Känner du dig nere? Du vet väl att du kan vända dig till dessa stödkontakter om du behöver prata med någon.";
+                }
+                if (($todays_log["rating"] == 4) || ($todays_log["rating"] == 5)) {
+                echo "Det verkar som att du mår ganska bra. Vad härligt! Har du gjort något särskilt under de senaste dagarna som påverkat dig positivt?";
+                }
+                if ($todays_log["rating"] > 5) {
+                echo "Vad roligt att du skattar ditt mående högt idag! Försök att stanna upp och känna efter hur det känns.";
+                }
+              }
+              echo "</p>";
+?>
+        
       </div>
       <footer class="headerandfooter">
         <p id="modalText">:)</p>
@@ -201,6 +220,7 @@ else{
     </div>
   </div>
 </div>
+
 
             </body>
 </html>
