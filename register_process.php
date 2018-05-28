@@ -2,7 +2,7 @@
 include "db_connect.php";
 
 if (isset($_POST["submit"])) {
-    if (empty($_POST["reg_name"]) || empty($_POST["reg_email"]) || empty($_POST["reg_psw"]) || !filter_var($_POST["reg_email"], FILTER_VALIDATE_EMAIL)) {
+    if (empty($_POST["reg_name"]) || empty($_POST["reg_email"]) || empty($_POST["reg_psw"]) || empty($_POST["userAgree"]) || !filter_var($_POST["reg_email"], FILTER_VALIDATE_EMAIL)) {
     echo "Invalid input";
     }
 
