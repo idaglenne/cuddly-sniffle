@@ -192,7 +192,7 @@ else{
       </header>
       <div class="w3-container">
         <?php
-        
+
             date_default_timezone_set('UTC');
             $date = date('Y-m-d');
             $mess_query = "SELECT * FROM Log WHERE clientID = '".$client_ID."' AND logDate = '".$date."'";
@@ -200,10 +200,10 @@ else{
 
             while ($mess_log = $mess->fetch_assoc()){
                 if ($mess_log["rating"] < 2) {
-                echo "<p class='modalText'>"."Kanske känner du någon som mådde väldigt dåligt under en period men som nu mår bättre? Kolla fliken för kontakter och hitta den som passar dig bäst.". "</p>";
+                echo "<p class='modalText'>"."Kanske känner du någon som mådde väldigt dåligt under en period men som nu mår bättre? Om du vill prata med någon ring till svenska kyrkans samtalsstöd på 031800650 eller ladda ner BlueCalls app och boka en tid med en samtalsterapeut. För dig som har tankar på att ta ditt liv ring självmordslinjen på 90101.". "</p>";
                 }
                 if (($mess_log["rating"] > 1) && ($mess_log["rating"] < 4)) {
-                echo "<p class='modalText'>"."Känner du dig nere? Du vet väl att du kan vända dig till dessa stödkontakter om du behöver prata med någon.". "</p>";
+                echo "<p class='modalText'>"."Känner du dig nere? Du vet väl att du kan vända dig till våra stödkontakter om du behöver prata med någon.". "<a href='contactSide.php'>". " Klicka här för att komma till dem. "."</a>". "Undrar du över några symptom ring till sjukvårdsrådgivningen på 1177.". "</p>";
                 }
                 if (($mess_log["rating"] > 3) && ($mess_log["rating"] < 6)) {
                 echo "<p class='modalText'>"."Det verkar som att du mår ganska bra. Vad härligt! Har du gjort något särskilt under de senaste dagarna som påverkat dig positivt?"."</p>";
