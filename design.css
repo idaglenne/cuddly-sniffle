@@ -95,7 +95,7 @@ a:hover{
 
 /*placering av rubrik på policy-sidan*/
 .policyHeader {
-    margin-top: 9.5%;
+    /*margin-top: 9.5%;*/
     font-size: 20pt;
 }
 
