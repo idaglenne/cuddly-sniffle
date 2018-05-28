@@ -192,7 +192,6 @@ else{
         <h2 id="modalText">Dagens meddelande</h2>
       </header>
       <div class="w3-container">
-        <p id="modalText">
         <?php
             while ($todays_log = $log->fetch_assoc()){
                 
