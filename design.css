@@ -182,6 +182,12 @@ ul {
     background-color: #F8B595;
 }
 
+/*--------------------contactSide.php-------------------------*/
+.kontaker p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+}
+
 /*-------------------register.php------------------*/
 
 /*Input-fält i registreringsformuläret*/
