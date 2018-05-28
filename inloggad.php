@@ -189,32 +189,39 @@ else{
       <header class="headerandfooter"> 
         <span onclick="document.getElementById('id01').style.display='none'" 
         class="w3-button w3-display-topright">&times;</span>
-        <h2 id="modalText">Dagens meddelande</h2>
+        <h2 class="modalText">Dagens meddelande</h2>
       </header>
       <div class="w3-container">
         <?php
-            while ($todays_log = $log->fetch_assoc()){
                 
+<<<<<<< HEAD
                  
                 if ($todays_log["rating"] == 1) {
                 echo "<p id='modalText'>"."Kanske känner du någon som mådde väldigt dåligt under en period men som nu mår bättre? Kolla fliken för kontakter och hitta den som passar dig bäst.". "</p>";
+=======
+                if ($todays_log["rating"] < 2) {
+                echo "<div class='modalText'>"."Kanske känner du någon som mådde väldigt dåligt under en period men som nu mår bättre? Kolla fliken för kontakter och hitta den som passar dig bäst.". "</div>";
+>>>>>>> 4a33701a6fb9bfc674913f9a68d6108e5c563b89
                 }
                 if (($todays_log["rating"] == 2) || ($todays_log["rating"] == 3)) {
-                echo "<p id='modalText'>"."Känner du dig nere? Du vet väl att du kan vända dig till dessa stödkontakter om du behöver prata med någon.". "</p>";
+                echo "<p class='modalText'>"."Känner du dig nere? Du vet väl att du kan vända dig till dessa stödkontakter om du behöver prata med någon.". "</p>";
                 }
                 if (($todays_log["rating"] == 4) || ($todays_log["rating"] == 5)) {
-                echo "<p id='modalText'>"."Det verkar som att du mår ganska bra. Vad härligt! Har du gjort något särskilt under de senaste dagarna som påverkat dig positivt?"."</p>";
+                echo "<p class='modalText'>"."Det verkar som att du mår ganska bra. Vad härligt! Har du gjort något särskilt under de senaste dagarna som påverkat dig positivt?"."</p>";
                 }
+<<<<<<< HEAD
                 if (($todays_log["rating"] == 6) || ($todays_log["rating"] == 7)) {
                 echo "<p id='modalText'>"."Vad roligt att du skattar ditt mående högt idag! Försök att stanna upp och känna efter hur det känns.". "</p>";
+=======
+                if ($todays_log["rating"] > 5) {
+                echo "<p class='modalText'>"."Vad roligt att du skattar ditt mående högt idag! Försök att stanna upp och känna efter hur det känns.". "</p>";
+>>>>>>> 4a33701a6fb9bfc674913f9a68d6108e5c563b89
                 }
-              }
-              
-?>
-        
+                  
+        ?>
       </div>
       <footer class="headerandfooter">
-        <p id="modalText">:)</p>
+        <p class="modalText">:)</p>
       </footer>
     </div>
   </div>

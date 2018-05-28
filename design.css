@@ -191,7 +191,7 @@ ul {
   height: 5%;
   padding: 0,2%;
   border: none;
-  border-radius: 15px;
+  border-radius: 10px;
   background-color: white;
   font-family: 'Montserrat', sans-serif;
   font-weight: lighter;
@@ -509,7 +509,7 @@ ul {
 }
 
 
-#modalText {
+.modalText {
     font-family: 'Montserrat', sans-serif;
     font-weight: lighter;
     text-align: center;
