@@ -20,8 +20,6 @@ foreach($dates as $row){
     }
 
 
-//lägg ihop 7 dagars rating & spara i variabel
-//använd variabeln i messages.js
 
 print json_encode($data);
 
