@@ -26,7 +26,7 @@ if (isset($_POST["submit"])) {
         //Kollar om det finns något salt i variabeln = om den hittade rätt email
         if ($get_password->num_rows == 0)
             {
-                $error = "Mailadressen verkar inte stämma!";
+                $error = "Iput verkar inte stämma!";
 
             }
             else{
@@ -48,7 +48,7 @@ if (isset($_POST["submit"])) {
 
                     else {
 
-                        $error = "Lösenordet verkar inte stämma";
+                        $error = "Input verkar inte stämma";
 
                         }
                             
