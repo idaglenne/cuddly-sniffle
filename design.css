@@ -432,7 +432,7 @@ ul {
     background-color: #6e91bf;
     box-sizing: border-box;
     padding-top: 1px;
-    margin-top: 1%;
+    /*margin-top: 1%;*/
     border-radius: 15px;
     font-family: 'Montserrat', sans-serif;
     font-size: 12pt;

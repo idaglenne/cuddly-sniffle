@@ -1,7 +1,6 @@
 <?php
 include "db_connect.php";
-
-//include ('register_process.php');
+include "register_process.php";
 
 ?>
 <html>
@@ -18,7 +17,11 @@ include "db_connect.php";
       <h2>Logga ditt mående</h2>
       <h3 id="hreg">Fyll i dina uppgifter och registrera dig nu!</h3>
 
-      <form class="register_form" name="reg_form" method=POST action="register_process.php" onsubmit= "return validateform()">
+      <form class="register_form" name="reg_form" method=POST action="" onsubmit= "return validateform()">
+        <span><?php echo "<p class='errorMessage'>". $reg_error. "</p>"; ?></span>
+        <p class ="errorMessage" id="email_error"></p>
+        <p class ="errorMessage" id="name_error"></p>
+        <p class ="errorMessage" id="psw_error"></p>
         <input type="text" class=register id=name_register placeholder="Namn" name="reg_name">
         <br>
         <div class ="errormessage_reg" id="name_error"></div>
@@ -35,7 +38,7 @@ include "db_connect.php";
         <p>Har du redan ett konto? <a href="./index.php">Logga in här!</a></p>
         <br>
         <input type="submit" class="submit" value="Klar!" name="submit">
-        <!--<span><?php //echo $error; ?></span>-->
+        
       </form>
 
     </body>
