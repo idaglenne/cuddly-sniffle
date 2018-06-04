@@ -1,6 +1,7 @@
 <?php
 include 'db_connect.php';
 
+//Raderar klient samt all dess data
 $client = $_POST['fields'];
 $delete_client_query = "DELETE FROM Clients WHERE clientID = '".$client."'";
 $delete_log_query = "DELETE FROM Log WHERE clientID = '".$client."'";

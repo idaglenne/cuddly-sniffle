@@ -55,13 +55,13 @@ else{
         $clients_query = "SELECT clientID, clientName FROM Clients";
         $clients = $connection->query($clients_query);
 
-        function clist() { //function to show the client list and edit/delete buttons
-        //$this->load->model('list_model');
+        //Funktion som visar clients+delete buttons
+        function clist() { 
         $fields = $clients;
         $data = array();
         $data['fields'] = $fields;
         $this->load->view('clientlist', $data);
-        if ($_POST['del'] == 1) { //if the user selects the delete button then call model to delete the fields for the button they selected
+        if ($_POST['del'] == 1) { 
         $fields = $_POST['fields'];
         delcli($fields);
         }
@@ -70,7 +70,7 @@ else{
     echo "<p class='header_text'>Radera kunder</p>";
    echo "<div id='delete_clients'>";
 
-
+        //Raderingsformulär klienter
         foreach($clients as $field){
             ?>
                  
