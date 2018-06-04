@@ -15,11 +15,11 @@ if (isset($_POST["submit"])) {
     }
     else
     {
-        $user_email = $connection->real_escape_string($_POST["email_inlog"]);
-        $user_psw = $connection->real_escape_string($_POST["psw_inlog"]);
+        $admin_email = $connection->real_escape_string($_POST["email_inlog"]);
+        $admin_psw = $connection->real_escape_string($_POST["psw_inlog"]);
 
-        $query = "SELECT clientPassword FROM Clients WHERE clientEmail = '".$user_email."'";
-        $id_query = "SELECT clientID FROM Clients WHERE clientEmail = '".$user_email."'";
+        $query = "SELECT adminPsw FROM Admin WHERE adminEmail = '".$admin_email."'";
+        $id_query = "SELECT adminID FROM Admin WHERE adminEmail = '".$admin_email."'";
         $get_password = $connection->query($query);
         $get_id = $connection->query($id_query);
 
@@ -34,16 +34,16 @@ if (isset($_POST["submit"])) {
                 //Hämtar lösenordet associerat med emailen från databasen
                 while ($password = $get_password->fetch_assoc()){
                    
-                    while ($client_ID = $get_id->fetch_assoc()){
+                    while ($admin_ID = $get_id->fetch_assoc()){
 
                     //Jämför lösenordet med användarens input
-                    if (($password["clientPassword"]) == $user_psw)
+                    if (($password["adminPsw"]) == $admin_psw)
                     {
 
                         
                         //Initierar en session för användaren
-                        $_SESSION["clientID"] =  $client_ID["clientID"];
-                        header("Location: inloggad.php");
+                        $_SESSION["adminID"] =  $admin_ID["adminID"];
+                        header("Location: inloggad_admin.php");
                     }
 
                     else {

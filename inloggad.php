@@ -1,7 +1,8 @@
 <?php
 include "db_connect.php";
 include "login_process.php";
-include "get_log.php";
+//include "get_log.php";
+//include "searchdb.php";
 
 if (isset($_SESSION["clientID"]))
 {
@@ -107,77 +108,106 @@ else{
         <script src="js/chart.js"></script>
 
 
-
- <div class="log_container">
-     <p>Här är dagens ifyllda mående:</p>
-           <div class="log_container_left">
-           <!--Ruta med dagens mående-->
-           <?php
-                while ($todays_log = $log->fetch_assoc()){
-
-                    echo "<p id='todays_log_h'>"."Dagens rating:"."</p>";
-                    echo "<p class='todays_log_rating'>".$todays_log["rating"]."</p>";
-                    //echo "<br>";
-                    echo "<p id='todays_log_h'>"."Din kommentar för dagen:"."</p>";
-                    echo "<p class='todays_log_rating'>".$todays_log["comment"]."</p>";
-
-                }
-                ?>
+        <!--Sökruta för att filtrera loggen-->
+        <form name="search_form" class="search_form" method="POST" action="">
+            <div id="search_left">
+            <label for="search_date">Sök på ett loggdatum</label>
+            <br>
+            <input id ="search_date" name="search_date" type="text" placeholder="Datum">
+            <p>Skriv datum i formen YYYY-MM-DD</p>
+            </div>
+            <div id="search_right">
+            <input type="submit" name="search_submit" id="search_submit" value="Sök">
             </div>
 
-            <div class="log_container_right">
-                <?php
+        </form>
 
-                while($todays_symptoms = $symptoms->fetch_assoc()){
-                     echo "<p id='todays_log_b'>"."Fysiska symptom:"."</p>";
+        <div class="log_container">
 
-                    if ($todays_symptoms["symptom1"]==1){
-                        echo "<p class='todays_log'>"."Spänd rygg och nacke"."</p>";
+            
+           
+           <!--Ruta med den sökta dagens mående-->
+           <?php
+           $search_date="";
+           include "searchdb.php";
+        
+           if (!empty($search_date)){
+               echo "Ifyllt mående för den valda dagen:";
+               echo "<div class='log_container_left'>";
+                if (!empty($show_log) && !empty($symptoms)){
+                    while ($print_todays_log = $show_log->fetch_assoc()){
 
-                    }
-                    if ($todays_symptoms["symptom2"]==1){
-                        echo"<p class='todays_log'>". "Ont i magen"."</p>";
-                        
-                    }
-                    if ($todays_symptoms["symptom3"]==1){
-                        echo"<p class='todays_log'>". "Hyperventilering"."</p>";
-
-                    }
-                    if ($todays_symptoms["symptom4"]==1){
-                        echo "<p class='todays_log'>"."Bröstsmärtor"."</p>";
-
-                    }
-                    if ($todays_symptoms["symptom5"]==1){
-                        echo "<p class='todays_log'>"."Orolig mage/illamående"."</p>";
+                        echo "<p id='todays_log_h'>"."Dagens rating:"."</p>";
+                        echo "<p class='todays_log_rating'>".$print_todays_log["rating"]."</p>";
+                        //echo "<br>";
+                        echo "<p id='todays_log_h'>"."Din kommentar för dagen:"."</p>";
+                        echo "<p class='todays_log_rating'>".$print_todays_log["comment"]."</p>";
 
                     }
-                    if ($todays_symptoms["symptom6"]==1){
-                        echo "<p class='todays_log'>"."Yr/Svimfärdig"."</p>";
+                    ?>
+                </div>
 
-                    }
-                    if ($todays_symptoms["symptom7"]==1){
-                        echo "<p class='todays_log'>"."Hjärtklappning"."</p>";
+                <div class="log_container_right">
+                    <?php
 
-                    }
-                    if ($todays_symptoms["symptom8"]==1){
-                        echo "<p class='todays_log'>"."Kallsvettningar"."</p>";
-                        echo "<br>";
+                    while($todays_symptoms = $symptoms->fetch_assoc()){
+                        echo "<p id='todays_log_b'>"."Fysiska symptom:"."</p>";
 
-                    }
-                    if ($todays_symptoms["symptom9"]==1){
-                        echo "<p class='todays_log'>"."Koncentrationssvårigheter"."</p>";
+                        if ($todays_symptoms["symptom1"]==1){
+                            echo "<p class='todays_log'>"."Spänd rygg och nacke"."</p>";
 
-                    }
-                    if ($todays_symptoms["symptom10"]==1){
-                        echo "<p class='todays_log'>"."Trötthet/Sömnsvårigheter"."</p>";
+                        }
+                        if ($todays_symptoms["symptom2"]==1){
+                            echo"<p class='todays_log'>". "Ont i magen"."</p>";
+                            
+                        }
+                        if ($todays_symptoms["symptom3"]==1){
+                            echo"<p class='todays_log'>". "Hyperventilering"."</p>";
 
-                    }
+                        }
+                        if ($todays_symptoms["symptom4"]==1){
+                            echo "<p class='todays_log'>"."Bröstsmärtor"."</p>";
 
+                        }
+                        if ($todays_symptoms["symptom5"]==1){
+                            echo "<p class='todays_log'>"."Orolig mage/illamående"."</p>";
+
+                        }
+                        if ($todays_symptoms["symptom6"]==1){
+                            echo "<p class='todays_log'>"."Yr/Svimfärdig"."</p>";
+
+                        }
+                        if ($todays_symptoms["symptom7"]==1){
+                            echo "<p class='todays_log'>"."Hjärtklappning"."</p>";
+
+                        }
+                        if ($todays_symptoms["symptom8"]==1){
+                            echo "<p class='todays_log'>"."Kallsvettningar"."</p>";
+                            echo "<br>";
+
+                        }
+                        if ($todays_symptoms["symptom9"]==1){
+                            echo "<p class='todays_log'>"."Koncentrationssvårigheter"."</p>";
+
+                        }
+                        if ($todays_symptoms["symptom10"]==1){
+                            echo "<p class='todays_log'>"."Trötthet/Sömnsvårigheter"."</p>";
+
+                        }
+                  }
             }
+           }
+           else{
 
+               echo "<p id='info_text'>" ."Sök på ett datum för att se loggdetaljer". "</p>";
+
+
+           }
            ?>
 
            </div>
+    
+
  </div>
 
 <div class="w3-container">

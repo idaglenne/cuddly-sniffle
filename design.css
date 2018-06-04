@@ -193,7 +193,7 @@ ul {
 
 /*Input-fält i registreringsformuläret*/
 .register {
-    text-align: center;
+text-align: center;
   width: 25%;
   height: 5%;
   padding: 0,2%;
@@ -421,7 +421,74 @@ ul {
     text-align: center;
 }
 
-/*Rutan med dagens ifyllda mående under grafen*/
+#search_submit{
+    position: relative;  
+    right: 0;
+    background-color: #FEDCD2;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    font-size: 9pt;
+    text-align: center;
+    width: 15%;
+    height: 4%;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.4s ease 0s;
+
+}
+
+#search_submit:hover {
+
+  background-color: #F8B595;
+
+}
+
+.search_form p{
+    font-size: 7pt;
+}
+
+.search_form{
+    position: relative;
+    left: 36%;
+    width: 50%;
+    font-size: 10pt;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+
+}
+
+#search_date{
+    position: relative;
+    text-align: center;
+    width: 35%;
+    height: 4%;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    font-size: 12px;
+    margin-top: 5px;
+
+}
+#search_left{
+    width: 70%;
+    position: relative;
+    right: 20%;
+    bottom: 0;
+}
+
+#search_right{
+    width:100%;
+    position:relative;
+    left: 7%;
+    margin-top: -9.5%;
+
+}
+
+/*Rutan med ifyllda måendet under grafen*/
 .log_container{
 
     position: relative;
@@ -652,4 +719,49 @@ ul {
 
 }
 
+#delete_clients{
+    margin-top: 1%;
+    padding: 2%;
+    position:relative;
+    left: 25%;
+    width: 50%;
+    border-radius: 10px;
+    height: auto;
+    background-color: #6e91bf;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+}
 
+.delete_submit{
+
+    background-color: #FEDCD2;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    margin-top: 1%;
+    text-align: center;
+    width: 20%;
+    height: 6%;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.4s ease 0s;
+
+}
+
+.delete_submit:hover{
+      background-color: #F8B595;
+
+}
+
+#logout{
+
+    text-align: left;
+    margin-left: 14%;
+}
+
+/*#info_text{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    margin-left: 40px;
+
+}*/

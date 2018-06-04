@@ -1,13 +1,12 @@
 <?php
 include "db_connect.php";
-include "login_process.php";
+include "admin_login_process.php";
 
-if (isset($_SESSION["clientID"])){
+if (isset($_SESSION["adminID"])){
 
-    header("Location: inloggad.php");
+    header("Location: inloggad_admin.php");
 }
 ?>
-
 <html>
     <head>
     <title>mood log</title>
@@ -20,27 +19,19 @@ if (isset($_SESSION["clientID"])){
 
       <h1>mood log</h1>
 
-        <h2>Logga ditt mående</h2>
+        <h2>admin inlogg</h2>
 
         <form class=inlog_form method=POST name="inlog_form">
         
-        <span><?php echo"<p class='errorMessage'>" .$error."</p>" ;?></span>
+        <!--<span><?php //echo"<p class='errorMessage'>" .$error."</p>" ;?></span>-->
       
         <input type="text" class="inlog" id="email_inlog" placeholder="Email" name="email_inlog">
         <br>
         <input type="password" class="inlog" id="psw_inlog" placeholder="Lösenord" name="psw_inlog">
-        <p>Ny på mood log? <a href="./register.php">Registrera dig här!</a></p>
         <br>
-
         <input type="submit" class="submit" value="Logga in" name="submit">
         </form>
       
-        <div class="omOss">
-    
-    <p><a href="./OmOss.php">Här</a> kan du läsa om oss!</p>
-    <p><a href="infoPolicy.php">Personuppgiftspolicy</a></p>
-
-      </div>
 
 
     </body>
